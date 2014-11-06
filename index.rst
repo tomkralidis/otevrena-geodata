@@ -65,6 +65,7 @@ Obsah
     pozitiva
     opendata
     sour-systemy
+    licence
     bib
 
 
