@@ -66,7 +66,15 @@ Obsah
     opendata
     sour-systemy
     licence
+    otevirani
+    technicke-reseni
     bib
+    priloha-a
+    priloha-b
+    priloha-c
+    priloha-d
+    priloha-e
+    priloha-f
 
 
 Indices and tables

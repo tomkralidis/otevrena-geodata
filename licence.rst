@@ -1,7 +1,7 @@
 Výběr licence pro otevřená geodata
 ==================================
 
-..note:: Autoři následující kapitoly nejsou právníci, pouze popisují své
+.. note:: Autoři následující kapitoly nejsou právníci, pouze popisují své
     zkušenosti v dané oblasti. Před aplikací toho textu je proto důrazně doporučeno
     jej konzultovat s expertem na autorské právo.
 
@@ -38,8 +38,8 @@ Celní správa.
 Doporučení
 ----------
 Pro účely vymezené v začátku tohoto oddílu se jeví jako vhodná licence Creative
-Commons BY-SA 4.0 [47], případně Open Data Commons Attribution License (ODC-By)
-[48]. Výhodou první je její obecná známost (i napříč veřejnou správou), druhá je
+Commons BY-SA 4.0 [47]_, případně Open Data Commons Attribution License (ODC-By)
+[48]_. Výhodou první je její obecná známost (i napříč veřejnou správou), druhá je
 lépe přizpůsobena pro využití v oblasti geodat.
 
 Třetí možností je vytvořit licenci na míru danému projektu, a to případně i

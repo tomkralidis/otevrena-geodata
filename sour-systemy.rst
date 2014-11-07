@@ -6,7 +6,7 @@ systému S-JTSK (EPSG 5514). Pro vojenské mapové podklady se v minulosti použ
 souřadnicový systém S-42 (EPSG 3835). Vzhledem k zániku Varšavské smlouvy a
 pozdějšímu přistoupení k NATO se začal místo souřadnicového systému S-42
 používat systém UTM/WGS-84 (zóny 33 - EPSG 32633 a 34 - EPSG 32634). Evropská
-směrnice INSPIRE [26] zejména pak ve specifikaci věnované souřadnicovým systémům
+směrnice INSPIRE [26]__ zejména pak ve specifikaci věnované souřadnicovým systémům
 [29, str VII] dále pro měřítka větší než 1:500 000 mezi podporované systémy
 přidává ETRS89-TM (EPSG 3035). Praxe si vynutila použití souřadnicového systému
 Spherical Mercator (EPSG 3857), zavedeného firmou Google pro jejich mapové
@@ -21,7 +21,7 @@ relevantní desktopové GIS programy jsou schopny transformovat geodata do
 uživatelem požadovaných cílových souřadnicových systémů za běhu. Pokud se přeci
 jen ukáže, že je potřeba poskytnout některým klientům možnost stahovat data v
 jiném souřadnicovém systému, doporučujeme zprovoznit transformační souřadnicovou
-službu podle specifikace INSPIRE [30].
+službu podle specifikace INSPIRE [30]__.
 
 V každém případě je potřebné zajistit, aby distribuovaná data měla korektně
 nastaveny definice souřadnicových systémů. V případě S-JTSK je nutné, aby
@@ -29,7 +29,7 @@ informace o souřadnicovém systému obsahovala parametry pro transformaci mezi
 referenčním Besselovým elipsoidem a elipsoidem WGS-84 nebo tzv. transformační
 parametry anebo grid, jinak může dojít k nepřesnosti při transformaci až v řádu
 několika desítek metrů. Více informací k tomuto tématu lze najít například na
-Portálu FreeGIS [31].
+Portálu FreeGIS [31]__.
 
 Vedle S-JTSK doporučujeme nabízet data v souřadnicovém systému WGS84 (EPSG
 4326). Zejména zahraniční uživatelé či uživatelé kombinující data z různých
@@ -61,10 +61,10 @@ může být X,Y ale i Y,X. To platí zejména pro souřadnicové systémy WGS-84
 nezohledňuje.
 
 Zdaleka ne všechny serverové ale i klientské implementace standardů jsou schopny
-pořadí souřadnic korektně zohlednit [54], což je dobré mít na paměti.
+pořadí souřadnic korektně zohlednit [54]__, což je dobré mít na paměti.
 
 Doporučení pro prohlížecí a stahovací služby
--------------------------------------------
+--------------------------------------------
 
 OGC WMTS
 ~~~~~~~~
@@ -72,8 +72,8 @@ OGC WMTS
 Pro prohlížecí službu OGC WMTS je výhodné nabízet předgenerované dlaždice
 minimálně pro souřadnicové systémy EPSG 3857 (Spherical Mercator) a to ve
 schématu, ve kterém je nabízí např. mapy firmy Google, ale i projekt
-OpenStreetMap [52] (ale nakonec i služby ČÚZK) a pro souřadnicový systém S-JTSK
-(EPSG 5514) ve schématu používaném servery ČÚZK [53].
+OpenStreetMap [52]__ (ale nakonec i služby ČÚZK) a pro souřadnicový systém S-JTSK
+(EPSG 5514) ve schématu používaném servery ČÚZK [53]__.
 
 OGC WMS,  WFS a WCS
 ~~~~~~~~~~~~~~~~~~~
