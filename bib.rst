@@ -69,7 +69,7 @@ Odkazy a literatura
 .. [66]	Kolektiv autorů: *MapServer*, verze 6.4, http://mapserver.org [cit. 2014-09-29]
 .. [67]	Kolektiv autorů: *Benchmarking WMS*, OSGeo.org, http://wiki.osgeo.org/wiki/Benchmarking_2011 [cit. 2014-09-29]
 .. [68]	Kolektiv autorů: *Formát GeoJSON*, http://geojson.org [cit. 2014-09-29]
-.. [69]	Kolektiv autorů: *PyCWS*, verze 1.10, http://pycsw.org [cit. 2014-09-30]
+.. [69]	Kolektiv autorů: *pycsw*, verze 1.10, http://pycsw.org [cit. 2014-09-30]
 .. [70]	Kolektiv autorů: *The Open Data Handbook*,  Open Knowledge Foundation,  2012, http://opendatahandbook.org [cit. 2014-09-30]
 .. [71]	Directive 2003/98/EC of the European parlaiment and of the Council*, http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2003:345:0090:0096:EN:PDF [cit. 2014-10-10]
 .. [72]	Arne Bröring (editor): *OGC® Sensor Observation Service Interface Standard*, Open Geospatial Consortium, OGC 12-006, Version 2.0,  http://www.opengeospatial.org/standards/sos [cit. 2014-10-08]
