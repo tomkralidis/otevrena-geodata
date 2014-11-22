@@ -1,9 +1,13 @@
+.. index::
+    single: Best practices
+    single: Hackathon
+
 Pozitivní aspekty otevírání geodat, best practices
 ==================================================
 Otevřením dat, tj. jejich zpřístupněním široké veřejnosti bez dalších omezení,
-dochází mimo jiné ke zvyšování jejich hodnoty. Je doložitelné, že státní a
-veřejné instituce již pouhým vystavením dat na Internetu jejich původní hodnotu
-násobí [ref01]_.
+dochází mimo jiné ke zvyšování jejich hodnoty. Většina autorů se shoduje na tom,
+že, státní a veřejné instituce již pouhým vystavením dat na Internetu jejich
+původní hodnotu násobí (např. [ref01]_ str. 19, [ref78]_).
 
 Dále se ukazuje, že s nejzajímavějšími případy využití dat přijdou
 spíše často komerční společnosti nebo jednotlivci než instituce, které
@@ -73,16 +77,14 @@ podobně.
 
 Redukce administrativy a zátěže IT infrastruktury veřejné správy
 ----------------------------------------------------------------
-Veřejná správa je často zbytečně zatěžována požadavky veřejnosti na poskytnutí
-dat, která vytváří a spravuje. Musí udržovat kapacity pro jejich vyřizování a
-spravovat technicky náročnou IT infrastrukturu. Právní oddělení musí být
-připraveno na individuální žádosti ze strany veřejnostia případně na
-zdůvodňování jejich neposkytnutí atp. Navíc po veřejné správě většinou nejsou
+Veřejná správa je často zatěžována požadavky veřejnosti na poskytnutí
+dat, která vytváří a spravuje. Pro vyřizování těchto žádostí musí udržovat
+kapacity a IT infrastrukturu. Právní oddělení musí být
+připraveno na posouzení žádostí ze strany veřejnosti a případně
+zdůvodnit jejich neposkytnutí atp. Po veřejné správě přitom ale nejsou
 vyžadovány žádné dodatečné analýzy, ale pouze kopie již existujících datových
-sad. Každá žádost je přitom posuzována a zpracovávána individuálně, což výrazně
-navyšuje nároky na její vyřízení, které je v praxi prováděno specializovanými IT
-pracovníky, na které je z důvodů složitosti přenášena i další administrativní
-zátěž.
+sad. Každá žádost je posuzována a zpracovávána individuálně, většinou
+specializovanými pracovníky. Také to zvyšuje celkovou administrativní zátěž.
 
 Vzhledem ke složitosti tohoto způsobu získávání dat je většinou uživateli
 vyžadováno více dat než skutečně potřebují, zvláště pokud jsou poskytována
@@ -112,6 +114,9 @@ V této kapitole si představíme některé příklady otevírání geografický
 * Český úřad zeměměřický a katastrální
 * Ministerstvo zemědělství - systém LPIS
 
+.. index::
+    single: Londýn
+
 Londýn ★★★
 ~~~~~~~~~~
 
@@ -127,6 +132,9 @@ domlouvání spolujízd. Přehled aplikací vzniklých v Londýně, a to nejen
 nad dopravními daty, je k dispozici na adrese
 http://data.london.gov.uk/datastore/inspirational-uses.
 
+.. index::
+    single: Chicago
+
 Chicago ★★★
 ~~~~~~~~~~~
 
@@ -135,6 +143,9 @@ umožnilo tak uživatelům pohodlný přístup k jejich stažení. Vedle samotn�
 město publikovalo i analytické skripty v jazyce R s tím, že je zájemci z řad
 veřejnosti mohou otestovat a případně navrhovat jejich zlepšení či opravit
 chyby.
+
+.. index::
+    single: Berlín
 
 Berlín ★★★
 ~~~~~~~~~~
@@ -147,6 +158,9 @@ pro přenos dat využívá formáty `XML
 <http://cs.wikipedia.org/wiki/Extensible_Markup_Language>`_ a `JSON
 <http://cs.wikipedia.org/wiki/JavaScript_Object_Notation>`_.
 
+.. index::
+    single: Vídeň
+
 Vídeň ★★★
 ~~~~~~~~~
 
@@ -156,6 +170,9 @@ Open Geospatial Consortium (OGC). Pro tabelární data je používán
 jednoduchý formát `Comma Separated Values
 <http://cs.wikipedia.org/wiki/CSV>`_ (CSV).
 
+.. index::
+    single: Děčín
+
 Děčín ★★★
 ~~~~~~~~~
 
@@ -163,11 +180,17 @@ Město Děčín ve spolupráci s Fondem Otakara Motejla a Fórem pro
 otevřená data jako první v České republice otevřelo svá data. Data
 jsou zveřejněna na webových stránkách statutárního města Děčín na
 adrese http://www.mmdecin.cz/dokumenty/cat_view/238-otevrena-data a
-označená jako *“otevřená data”*. Uživateli je povoleno data dále šířit
+označená jako *"otevřená data"*. Uživateli je povoleno data dále šířit
 a komerčně využívat, za podmínky uvedení zdroje. Data publikovaná ve
 skupině geografických a mapových dat jsou dostupná ke stažení ve
 formátu `Esri Shapefile <http://cs.wikipedia.org/wiki/Shapefile>`_
-(SHP).
+(SHP). Licence těchto dat není nikde na stránkách města zmíněná, lze tedy
+soudit, že se jedná o tzv. `Public domain
+<http://cs.wikipedia.org/wiki/Voln%C3%A9_d%C3%ADlo>`_ dílo -- dílo, které je
+volně k použití bez specifické licence.
+
+.. index::
+    single: Opava
 
 Opava ★
 ~~~~~~~
@@ -176,6 +199,9 @@ Podobnou cestou jako Děčín se vydalo město Opava, které na svých
 stránkách na adrese http://www.opava-city.cz/cs/mapovy-portal
 publikuje data ve formě prohlížecích služeb OGC Web Map Services (WMS)
 [ref20]_ a některé mapy ve formátu PDF.
+
+.. index::
+    pair: Český statistický úřad; ČSÚ
 
 Český statistický úřad ★★★
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -188,6 +214,13 @@ data ze Sčítání lidu domů a bytů 2011, která jsou k dispozici ve
 formátech `CSV <http://cs.wikipedia.org/wiki/CSV>`_, `DBF
 <http://cs.wikipedia.org/wiki/DBase>`_ a `XML
 <http://cs.wikipedia.org/wiki/Extensible_Markup_Language>`_.
+
+.. index::
+    pair: Český úřad zeměměřický a katastrální; ČÚZK
+    single: RUIAN
+    single: VFR
+    single: RUIAN
+    single: GML
 
 Český úřad zeměměřický a katastrální ★★★
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -217,13 +250,21 @@ kvalitní dokumentace publikovaná s předstihem před jejím samotným spuště
 Z technického hlediska je formát VFR odvozen od standardu OGC GML [ref19]_, proto je
 na straně aplikací poměrně snadno uchopitelný. To umožnilo rychlé začlenění
 podpory tohoto formátu do nejrozšířenějších Open Source a proprietárních GIS
-nástrojů.  Zároveň umožňuje vyjádřit vazby mezi jednotlivými prvky s ohledem na
-strukturu datového modelu, ze kterého RÚIAN vychází. 
+nástrojů. Zároveň umožňuje vyjádřit vazby mezi jednotlivými prvky s ohledem na
+strukturu datového modelu, ze kterého RÚIAN vychází. Je potřeba zmínit, že
+výměný formát VFR není standardizovaný mezinárodní institucí, ale ze standardu
+(GML) vychází, je dobře dokumentovaný a jeho licence je nerestriktivní, proto se
+jedná o formát *otevřený*, i když *proprietární*.
 
-Ministerstvo zemědělství - systém LPIS ★★★
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. index::
+    single: LPIS
+    pair: Mze; Ministerstvo zemědělství
+    
+Ministerstvo zemědělství ★★★
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Projekt Český LPIS [ref73]_ představuje novou filozofii v řešení geografického
+Projekt veřejný registr půd LPIS [ref73]_ provozovaný Ministerstvem zemědelství
+představuje novou filozofii v řešení geografického
 informačního systému pro evidenci využití zemědělské půdy. Jeho základním cílem
 je umožnit bezproblémové zvládnutí administrace a kontroly žádostí o zemědělské
 dotace. LPIS poskytuje i mapové služby, které lze vyhledat v matadatovém
