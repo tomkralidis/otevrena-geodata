@@ -29,6 +29,9 @@ Revize dokumentu
 |            |        | Radek Augustýn, Jan Michálek  | Zapracování připomínek    |
 |            |        |                               | IPR Praha.                |
 +------------+--------+-------------------------------+---------------------------+
+| 2014-11-03 | 2.1.0  | Jáchym Čepický                | Převod dokumentu do       |
+|            |        |                               | formátu reStructuredText  |
++------------+--------+-------------------------------+---------------------------+
 
 Licence
 =======
