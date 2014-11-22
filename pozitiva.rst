@@ -32,7 +32,7 @@ Otevírání dat má v obecné rovině hned několik pozitivních efektů, zejm�
 Kvalitnější služby, zvýšení informovanosti veřejnosti
 -----------------------------------------------------
 
-Projekty jako “Mapa kriminality” [ref04], různé cenové srovnávače (např. server
+Projekty jako “Mapa kriminality” [ref04]_, různé cenové srovnávače (např. server
 http://www.heureka.cz/), “Váš majetek” [ref05]_ a další vedou k efektivnějšímu
 nakládání se soukromým a především veřejným majetkem. Soukromé osoby, ale i
 veřejné instituce dostávají k dispozici větší množství relevantních podkladů pro
