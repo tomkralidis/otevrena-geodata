@@ -10,7 +10,7 @@ komerční společnosti nebo jednotlivci než instituce, které data původně
 vytvořily anebo zadaly jejich vytvoření. Tento efekt byl znatelný například na
 akci “První Pražský GeoData Hackathon” [ref02]_. Během jednoho víkendu vzniklo nad
 vybranými datovými sadami publikovanými Institutem plánování a rozvoje hl. m.
-Prahy šest zcela nových aplikací a analýz [ref03] a to i přes počáteční technické
+Prahy šest zcela nových aplikací a analýz [ref03]_ a to i přes počáteční technické
 problémy související s formou zpřístupnění geodat pomocí proprietárního rozhraní
 XML-RPC. Jako příklad ze zahraničí lze uvést například město Londýn, které
 otevřelo data spojená s přepravním systémem. Na základě těchto dat následně
@@ -30,7 +30,7 @@ Kvalitnější služby, zvýšení informovanosti veřejnosti
 -----------------------------------------------------
 
 Projekty jako “Mapa kriminality” [ref04], různé cenové srovnávače (např. server
-http://www.heureka.cz/), “Váš majetek” [ref05] a další vedou k efektivnějšímu
+http://www.heureka.cz/), “Váš majetek” [ref05]_ a další vedou k efektivnějšímu
 nakládání se soukromým a především veřejným majetkem. Soukromé osoby, ale i
 veřejné instituce dostávají k dispozici větší množství relevantních podkladů pro
 efektivnější rozhodování. Dochází tak i k propojení veřejných institucí s
