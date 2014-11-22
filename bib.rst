@@ -73,7 +73,9 @@ Odkazy a literatura
 .. [ref70]	Kolektiv autorů: *The Open Data Handbook*,  Open Knowledge Foundation,  2012, http://opendatahandbook.org [cit. 2014-09-30]
 .. [ref71]	Directive 2003/98/EC of the European parlaiment and of the Council*, http://eur-lex.europa.eu/LexUriServ/LexUriServ.do?uri=OJ:L:2003:345:0090:0096:EN:PDF [cit. 2014-10-10]
 .. [ref72]	Arne Bröring (editor): *OGC® Sensor Observation Service Interface Standard*, Open Geospatial Consortium, OGC 12-006, Version 2.0,  http://www.opengeospatial.org/standards/sos [cit. 2014-10-08]
-.. [ref73] MZe: *LPIS - veřejný registr půdy*, http://lpis.cz/ [cit. 2014-10-09]
+.. [ref73]      MZe: *LPIS - veřejný registr půdy*, http://lpis.cz/ [cit. 2014-10-09]
 .. [ref74]	WikiProject Czech Republic/freemap*,  http://wiki.openstreetmap.org/wiki/WikiProject_Czech_Republic/freemap [cit 2014-10-09]
 .. [ref75]	London Datastore*, http://data.london.gov.uk/ [cit. 2014-10-09]
-.. [ref76] Kolektiv autorů: *Portable Network Graphics (PNG) Specification (Second Edition)*, ISO/IEC 15948:2003, W3C Recommendation 10 November 2003, http://www.w3.org/TR/PNG/ [cit. 2014-11-05]
+.. [ref76]      Kolektiv autorů: *Portable Network Graphics (PNG) Specification (Second Edition)*, ISO/IEC 15948:2003, W3C Recommendation 10 November 2003, http://www.w3.org/TR/PNG/ [cit. 2014-11-05]
+.. [ref77]      *Geografická informace – Značkovací jazyk geografie (GML)*, Česká technická norma, ČSN EN ISO 19136, 
+.. [ref78]      Capgemini Consulting: *The Open Data Economy: Unlocking Economic Value by Opening Government and Public Data*, http://www.capgemini-consulting.com/resource-file-access/resource/pdf/opendata_pov_6feb.pdf [cit 2014-11-22]

@@ -72,6 +72,13 @@ Pro ukládání, zpracování a výměnu geografických dat existuje velké mno�
 formátů. Z hlediska otevřených geodat se prozatím můžeme omezit na formáty
 rastrové a vektorové. 
 
+.. index::
+    single: Rastry
+    pair: GeoTIFF; TIFF
+    single: JPEG
+    single: PNG
+    single: GIF
+
 Rastrová data
 ~~~~~~~~~~~~~
 
@@ -113,43 +120,26 @@ samostatně, je potřeba jej opatřit metadatovým souborem se souř. umístěn�
 
 Ostatní formáty pro uložení rastrových dat nedosáhly takového rozšíření jako
 formát GeoTIFF. Řada z nich je proprietárních a jsou používany často pouze
-oborově. Můžeme se také setkat s rozšířením běžných obrazových formátů (JPEG,
-PNG, GIF) ve formě uložení jejich souřadnicového připojení v metadatovém souboru
-(tzv. world file) s příponou odvozenou z formátu souboru. Nicméně v případě
-otevřených dat není toto řešení vhodné.
+oborově (MrSID, BMP, ArcSDE Raster, ...).
+Za zmínku stojí formát GIF, který měl své využití v minulosti hlavně
+mezi webovými mapovými aplikacemi. Formát GIF disponuje omezenou barevnou
+škálou, pro geodata je nevhodný (nejedná-li se o data binární nebo s rozsahem
+hodnot 0-255).  Z tohoto důvodu byl GIF nahrazen zmíněným modernějším formátem
+PNG. Pro GIF platí to samé, co pro soubory JPEG a PNG - pokud již obsahuje
+geodata a je šířen samostatně - tedy není výsledkem volání webové služby, musí u
+něj být přítomen metadatový soubor .gfw.
 
-Za zmínku stojí i formát GIF, který měl své využití v minulosti hlavně mezi
-webovými mapovými aplikacemi. Formát GIF disponuje omezenou barevnou škálou, pro
-geodata je nevhodný (nejedná-li se o data binární nebo s rozsahem hodnot 0-255).
-Z tohoto důvodu byl GIF nahrazen modernějším formátem PNG. Pro GIF platí to
-samé, co pro soubory JPEG a PNG - pokud již obsahuje geodata a je šířen
-samostatně - tedy není výsledkem volání webové služby, musí u něj být přítomen
-metadatový soubor .gfw.
+.. index::
+    single: Vektory
+    pair: SHP; Esri Shapefile
+    single: GML
+    single: KML
+    tripple: JSON; GeoJSON; TopoJSON
+    single: SpatiaLite
+    single: GeoPackage
 
 Vektorová data
 ~~~~~~~~~~~~~~
-
-**Esri Shapefile**
-
-Esri Shapefile (Shapefile, SHP) je v praxi již dlouhou dobu nejpoužívanějším
-formátem pro výměnu vektorových geodat [ref18]_. Přestože je technologicky
-zastaralý, je používán pro menší datové soubory a jednoduché datové sady bez
-komplikovaných vazeb mezi objekty a tabulkami.
-
-Hlavní nevýhody: 
-
-* Data nejsou uložena v jednom souboru, ale hned ve trojici (shp+shx+dbf). Různé
-  softwarové produkty si navíc přidávají vlastní metadatové soubory, které nejsou
-  součástí specifikace tohoto formátu. Shoda napříč programy panuje alespoň na
-  souboru s příponou .prj, který obsahuje informace o souřadnicovém systému.
-* Názvy atributů jsou omezeny pouze na deset znaků.
-* Data neobsahují informaci o znakové sadě, což vede k problémům při automatické
-  konverzi dat a používání na více operačních systémech.
-* Velikost souborů je maximálně 2GB, což dnes často nedostačuje.
-* Neumožňuje ukládat topologické informace o vzájemných vztazích mezi geoprvky.
-* Každý soubor shp umožňuje ukládat pouze jeden typ geometrie (bod, linie,
-  polygon).
-* Neumožňuje uložit stromovou strukturu dat.
 
 **OGC Geospatial Markup Language**
 
@@ -178,7 +168,7 @@ nasazován na webových aplikacích, protože je v porovnání s GML menší a o
 zmíněnou informaci o vizualizaci jednotlivých geoprvků. Ačkoliv byl v době před
 cca 3 lety tento formát populární, dnes je často nahrazován formátem GeoJSON.
 
-**GeoJSON**
+**Formáty odvozené z datového formátu JSON**
 
 Populárním formátem se v poslední době stává formát GeoJSON [ref68]_, který je
 založen na formátu JSON. Své uplatnění má především mezi webovými technologiemi.
@@ -195,6 +185,22 @@ Formát GeoJSON je využíván u webových služeb pro svůj malý objem a jedno
 Je méně náročný na zpracování, což je vhodné zejména u webových prohlížečů. U
 uživatelů mimo svět GIS je oblíbený, protože jeho strukturu je možné rychle
 pochopit a připravit vlastní parser.
+
+Dalším formátem odvozeným z formátu JSON, který ale zatím nenabyl takové
+popularity jako GeoJSON je formát `TopoJSON
+<https://github.com/mbostock/topojson>`_. Hlavním úkolwm formátu TopoJSON je
+minimalizace datového toku mezi webovým serverem i klientem. Formát je částečně
+ztrátový, neboť souřadnice bodů a lomových bodů jsou zapisovány v relativní
+poloze od danného počátku a v celých číslech (ztrácí se přesnost). K úspoře
+datové velikosti vede také fakt, že např. hranice polygonů jsou uloženy pro dvě
+sousedící plochy pouze jednou (formát je tedy topologický).
+
+Formát TopoJSON je velice slibný a v budoucnu nebude jediný (firma MabBox přišla
+v poslední době také se svým vlastním formátem progeodata postaveným nad
+zápisem JSON). V tuto chvíli naráží zejména na nedostatečnou podporu v
+softwarech. Není ani vhodný jako obecný formát pro výměnu dat mezi systémy, je
+ale navržen s ohledem na optimalizaci aplikací ve webovém prostředí a tam má
+taky své místo.
 
 **Geodatabáze SpatialLite**
 
@@ -224,8 +230,28 @@ podporu pro OGC GeoPackage nabízí, včetně Open Source knihovny GDAL od verze
 OGC GeoPackage se zatím v praxi příliš nepoužívá. Nicméně vzhledem k tomu, že se
 jedná o standard OGC umožňující  práci s opravdu komplexními datovými
 strukturami, jsme toho názoru, že by se tento formát měl pro otevřená geodata
-využívatA to i přesto, že podpora tohoto formátu není v běžných programech mimo
+využívat A to i přesto, že podpora tohoto formátu není v běžných programech mimo
 svět GIS příliš rozšířena.
+
+**Esri Shapefile**
+
+Esri Shapefile (Shapefile, SHP) je v praxi již dlouhou dobu nejpoužívanějším
+formátem pro výměnu vektorových geodat [ref18]_. Bohužel je tento formát v
+dnešní době již poněkud omezující, zejména z důvodů zmíněných níže.
+Stále je ale používán pro menší datové soubory a jednoduché datové sady bez
+komplikovaných vazeb mezi objekty a tabulkami, protože je to formát jednoduchý a
+poskytuje jistotu kompatibility mezi různými softwarovými platformami.
+
+Mezi slabá místa formátu patří zejména to, že data nejsou uložena v jednom
+souboru, ale hned ve trojici (shp+shx+dbf), různé softwarové produkty si navíc
+přidávají vlastní metadatové soubory, které nejsou součástí specifikace tohoto
+formátu[#shp]_. Názvy atributů jsou omezeny pouze na deset znaků. Data
+neobsahují informaci o znakové sadě, což vede k problémům při automatické
+konverzi dat a používání na více operačních systémech. Velikost souborů je
+maximálně 2GB.  Neumožňuje ukládat topologické informace o vzájemných vztazích
+mezi geoprvky.  Každý soubor `shp` umožňuje ukládat pouze jeden typ geometrie
+(bod, linie, polygon) a neumožňuje uložit stromovou strukturu dat.
+
 
 Doporučení formátu souborů
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -717,3 +743,8 @@ nepovažujeme. Důležité je, aby metadata byla dostupná přes rozhraní webov
 služby OGC Catalog Service for Web (CSW) [ref37]_. Zároveň doporučujeme tuto službu
 otestovat na dostupném software (Esri ArcGIS, QGIS a další) tak, aby byla
 ověřena její praktická funkčnost a dostupnost na různých platformách.
+
+.. rubric:: Poznámky pod čarou
+
+.. [#shp] Shoda napříč programy panuje alespoň na souboru s příponou .prj, který
+    obsahuje informace o souřadnicovém systému.

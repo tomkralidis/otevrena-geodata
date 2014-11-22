@@ -1,3 +1,9 @@
+.. index:: 
+    single: Veřejná správa
+    single: CKAN
+    single: Open Data Handbook
+    single: OpenStreetMap
+    single: 
 Úvod
 ====
 Je všeobecně uznávaným faktem, že sebelepší řešení není udržitelné, pokud není
@@ -31,7 +37,6 @@ Source, se rychle rozšířil do celého světa. Data z projektu OSM jsou
 poskytována pod otevřenou licencí `Open Database Licence
 <http://opendatacommons.org/licenses/odbl/>`_.
 
-
 Veřejná správa vždy shromažďovala data potřebná pro výkon svých agend.
 Zpřístupnění těchto dat umožní veřejnosti nejen využít informace v nich
 obsažené, ale především řádově znásobit jejich hodnotu tím, že kdokoliv nad nimi
@@ -54,23 +59,27 @@ technologických oblastí, podporován již delší dobu, což výrazně
 ulehčuje tvorbu dalších doporučení. V současnosti drtivá většina
 výrobců softwarových produktů (proprietárních i otevřených), ale
 např. i Evropská komise skrze směrnici `INSPIRE
-<http://inspire.gov.cz/>`_ dodržuje a dále spolupracuje na rozvoji
-standardů v této oblasti. Ty jsou vytvářeny mezinárodní standardizační
+<http://inspire.gov.cz/>`_ navazuje na existující standardy v oblasti, které
+pomáhá dále rozvíjet. Ty jsou vytvářeny mezinárodní standardizační
 organizací `Open Geospatial Consortium
 <http://www.opengeospatial.org/>`_ (OGC) a technickou komisí `ISO TC
-211 <http://www.isotc211.org/>`_.  Mezinárodní technické normy ISO
-jsou následně přejímány jako normy národní (ČSN EN ISO).
+211 <http://www.isotc211.org/>`_.  Mezinárodní technické normy ISO mohou následně být přejímány jako normy
+národní (označné jako ČSN EN ISO, například ČSN EN ISO 19136 *Geografická informace
+– Značkovací jazyk geografie (GML)* [ref77]_). 
+
+.. index::
+    pair: Otevřená data; Open Data
+    pair: Pěti hvězdičkový systém; Fivestar system
 
 Otevřená data
 -------------
 
-Pod pojmem “Otevřená data” (*Open Data*) rozumíme data z jakékoliv oblasti
-působení veřejné správy, soukromých subjektů či fyzických osob, která splňují
-předem definované předpoklady pro jejich další zpracování a využití širokou
-veřejností. Tyto předpoklady jsou jak legislativní, tak technické a jedním z
-jejich charakteristických rysů je, že mohou být postupně upřesňovány.
+Aby data mohla být označena za *otevřená*, musí splňovat několik
+legislativních a technických podmínek (viz níže). Tyto podmínky nejsou v čase
+konstantní, vyvíjí se spolu s technickými prostředky, standardy ale i
+legislativou či postoji společnosti.
 
-V současnosti těmito předpoklady myslíme zejména:
+V současnosti těmito podmínkami myslíme zejména:
 
 * Data jsou dostupná na síti Internet a dohledatelná běžnými nástroji.
 * Data jsou čitelná, tedy v textovém či binárním formátu.
@@ -133,7 +142,7 @@ sada dostane, tím větší je možnost jejího využití veřejností.
     tzn. v podobě adresy URL. Tím se zajistí, že uživatelé mohou daný
     prvek kdykoli najít.
 
-**★★★★★ Data jsou provázaná**
+**★★★★★ Provázaná data**
 
     Data jsou navzájem prolinkovaná, lze mezi nimi
     navigovat, “surfovat” [ref71]_.  Data jsou nejen identifikovatelná pomocí URI, ale
@@ -205,8 +214,9 @@ Výhody ☑ a omezení ☒ – z hlediska poskytovatele
 | ★★★    | ☑ Další rozšíření skupiny potenciálních uživatelů o ty, kteří                         |
 |        | nepoužívají programové vybavení kompatibilní s vybavením poskytovatele                |
 +--------+---------------------------------------------------------------------------------------+
-|        | ☒ Náklady na  konverzi a uložení dat do zvolených formátů. Samotná                    |
-|        | konverze je však většinou poměrně jednoduchá                                          |
+|        | ☒ Náklady na  konverzi a uložení dat do zvolených formátů. Tyto náklady nemusí být v  |
+|        | konečném důsledku příliš vysoké, protože konverze mezi jednotlivými formáty je poměrně|
+|        | běžná a dobře zvládnutá. Je však třeba s nimi počítat.                                |
 +--------+---------------------------------------------------------------------------------------+
 | ★★★★   | ☑ Uživatel má velice dobrou kontrolu členění dat a může optimalizovat přístup k nim   |
 +--------+---------------------------------------------------------------------------------------+
@@ -221,6 +231,12 @@ Výhody ☑ a omezení ☒ – z hlediska poskytovatele
 | ★★★★★★ | ☑ Data jsou dohledatelná a prohledatelná, čímž se výrazně zvyšuje jejich hodnota      |
 +--------+---------------------------------------------------------------------------------------+
 |        | ☑ Poskytovatel může profitovat ze vzájemného provázání dat, podobně jako uživatelé    |
++--------+---------------------------------------------------------------------------------------+
+|        | ☒ Poskytoval musí investovat do propojení vlastních dat s dalšími datovými sadami     |
++--------+---------------------------------------------------------------------------------------+
+|        | ☒ Poskytoval musí udržovat tato propojení aktuální, pokud možno                       |
+|        | odstraňovat propojení vedoucí na již neexistující cíle (např. pokud je nějaká         |
+|        | webová stránka odstraněna.                                                            |
 +--------+---------------------------------------------------------------------------------------+
 
 
