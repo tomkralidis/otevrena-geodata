@@ -154,6 +154,7 @@ sada dostane, tím větší je možnost jejího využití veřejností.
 Výhody ☑ a omezení ☒ – z hlediska uživatele
 -------------------------------------------
 
+.. tabularcolumns:: |p{.1\textwidth}|p{.8\textwidth}|
 +-------+---------------------------------------------------------------------------------+
 | ★     | ☑ Data lze prohlížet                                                            |
 +-------+---------------------------------------------------------------------------------+
@@ -199,6 +200,7 @@ Výhody ☑ a omezení ☒ – z hlediska uživatele
 Výhody ☑ a omezení ☒ – z hlediska poskytovatele
 -----------------------------------------------
 
+.. tabularcolumns:: |p{.1\textwidth}|p{.8\textwidth}|
 +--------+---------------------------------------------------------------------------------------+
 | ★      | ☑ Odpadá opakovaná činnost související s distribucí dat, uživatelé si je              |
 |        | mohou stáhnout z Internetu                                                            |

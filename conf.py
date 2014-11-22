@@ -183,6 +183,7 @@ htmlhelp_basename = 'Otevrngeografickchdatdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
+
 latex_elements = {
 # The paper size ('letterpaper' or 'a4paper').
     'papersize': 'a4paper',
@@ -195,7 +196,18 @@ latex_elements = {
         '\\usepackage{pifont}',
         '\DeclareUnicodeCharacter{2605}{\ding{72}}',
         '\DeclareUnicodeCharacter{2611}{\ding{51}}',  
-        '\DeclareUnicodeCharacter{2612}{\ding{55}}',  
+        '\DeclareUnicodeCharacter{2612}{\ding{55}}',
+        r'''\makeatletter
+        \fancypagestyle{normal}{
+        \fancyhf{}
+        \fancyfoot[LE,RO]{{\py@HeaderFamily\thepage}}
+        \fancyfoot[LO]{{\py@HeaderFamily\nouppercase{\rightmark}}}
+        \fancyfoot[RE]{{\py@HeaderFamily\nouppercase{\leftmark}}}
+        \fancyhead[LE,RO]{{\py@HeaderFamily \@title}}
+        \renewcommand{\headrulewidth}{0.4pt}
+        \renewcommand{\footrulewidth}{0.4pt}
+        }
+        \makeatother'''
     )),
 #    'fontenc' : '\\usepackage[T1]{fontenc}',
 #    'inputenc' : '\\usepackage[utf8x]{inputenc}',

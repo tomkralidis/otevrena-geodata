@@ -28,6 +28,7 @@ Z pohledu výše zmíněné :ref:`pětihvězdičkové konvence
 <pet-hvezdicek>`, můžeme pro geodata uvést následující příklady
 vhodných datových formátů:
 
+.. tabularcolumns:: |p{.1\textwidth}|p{.8\textwidth}|
 +-------+--------------------------------------------------------------------------------+
 | ★     | Tisknutelná mapa je uložena ve formátu PDF nebo v rastrovém formátu jako       |
 |       | obrázek, například JPEG, GIF či PNG                                            |
