@@ -1,5 +1,7 @@
-Odkazy a literatura
-===================
+.. only:: html
+
+          Odkazy a literatura
+          ===================
 
 .. [ref01]	Mráček, Jakub a kol.: *Jak otevírat data?*, Fond Otakara Motejla, http://www.otevrenadata.cz/ [cit. 2014-09-06]
 .. [ref02]	Fond Otakara Motejla: *První pražský GeoData Hackathon*, http://www.nasstat.cz/aktualni-deni/1-prazsky-geodata-hackathon/  [cit. 2014-09-06]

@@ -70,6 +70,18 @@ http://www.creativecommons.cz/.
     otevirani
     technicke-reseni
     bib
+
+.. raw:: latex
+    
+         % Set up the appendix mode and modify the LaTex toc behavior
+         \appendix
+         %\noappendicestocpagenum
+         %\addappheadtotoc
+         %\settocdepth{chapter}
+
+.. toctree::
+    :maxdepth: 2
+    
     priloha-a
     priloha-b
     priloha-c
