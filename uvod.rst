@@ -230,7 +230,7 @@ Výhody ☑ a omezení ☒ – z hlediska poskytovatele
 +--------+---------------------------------------------------------------------------------------+
 |        | ☒ Poskytovatel musí najít existující postupy nebo vytvořit své vlastní                |
 +--------+---------------------------------------------------------------------------------------+
-| ★★★★★★ | ☑ Data jsou dohledatelná a prohledatelná, čímž se výrazně zvyšuje jejich hodnota      |
+| ★★★★★  | ☑ Data jsou dohledatelná a prohledatelná, čímž se výrazně zvyšuje jejich hodnota      |
 +--------+---------------------------------------------------------------------------------------+
 |        | ☑ Poskytovatel může profitovat ze vzájemného provázání dat, podobně jako uživatelé    |
 +--------+---------------------------------------------------------------------------------------+
