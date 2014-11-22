@@ -6,11 +6,13 @@ Podrobněji zhodnotíme dostupné webové služby jako vhodný a široce využí
 způsob distribuce geodat.
 
 Formáty pro publikování geodat by měly být zejména otevřené - ať už
-proprietární, tj. spravované konkrétní firmou anebo standardizované konsorciem
-OGC či technickou normou ISO. Otevřený formát je takový formát, ke kterému
-existuje volně dostupná dokumentace a zároveň jeho licence umožňuje jeho volné
-využívání. V ideálním případě je vyvíjen nezávislou mezinárodní standardizační
-organizací a není navázán přímo na žádný privátní subjekt. 
+proprietární, tj. spravované konkrétní firmou anebo standardizované
+`konsorciem OGC <http://www.opengeospatial.org/>`_ či technickou
+normou ISO. Otevřený formát je takový formát, ke kterému existuje
+volně dostupná dokumentace a zároveň jeho licence umožňuje jeho volné
+využívání. V ideálním případě je vyvíjen nezávislou mezinárodní
+standardizační organizací a není navázán přímo na žádný privátní
+subjekt.
 
 Argument masového rozšíření uzavřeného formátu typu “všichni přece používají
 software XYZ” v tomto případě není relevantní, protože:
@@ -22,8 +24,9 @@ software XYZ” v tomto případě není relevantní, protože:
 * Celý systém se stává závislý na jedné firmě či dodavateli softwarového řešení,
   je nepřenositelný a v budoucnu jen těžko rozšiřitelný
 
-Z pohledu výše zmíněné “pětihvězdičkové konvence”, můžeme pro geodata uvést
-následující příklady vhodných datových formátů:
+Z pohledu výše zmíněné :ref:`pětihvězdičkové konvence
+<pet-hvezdicek>`, můžeme pro geodata uvést následující příklady
+vhodných datových formátů:
 
 +-------+--------------------------------------------------------------------------------+
 | ★     | Tisknutelná mapa je uložena ve formátu PDF nebo v rastrovém formátu jako       |

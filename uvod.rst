@@ -79,6 +79,8 @@ V současnosti těmito předpoklady myslíme zejména:
   zveřejněna v maximálním možném rozsahu.
 * Legislativní a technické překážky pro využití dat jsou minimální.
 
+.. _pet-hvezdicek:
+  
 Otevírání dat přináší kromě nákladů na vlastní otevření a provoz také nemalé
 přínosy jak pro poskytovatele, tak pro uživatele. Tim Berners-Lee [ref15]_ sestavil
 tzv. *pětihvězdičkový systém* hodnocení otevřenosti dat, jehož smyslem je umožnit
