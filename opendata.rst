@@ -570,7 +570,7 @@ veškeré historie. Vzhledem k tomu, že je systém pro správu verzí Git vyví
 jako Open Source, tak by bylo možné případný přechod na jinou formu distribuce
 ze služby GitHub realizovat bez větších problémů.
 
-Některé menší obce a samosprávy již se službou GitHub experimentují [ref43, 44].
+Některé menší obce a samosprávy již se službou GitHub experimentují [ref43, 44]_.
 Do prostředí GitHub lze nahrát i dlaždicovaná rastrová data a odkazovat se na ně
 formou zápisu identifikátoru URL podle standardu OGC Tile Map Service (TMS).
 Podle zkušeností uživatelů se jeví tato služba jako dostatečně rychlá. 

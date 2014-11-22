@@ -3,12 +3,12 @@ Pozitivní aspekty otevírání geodat, best practices
 Otevřením dat, tj. jejich zpřístupněním široké veřejnosti bez dalších omezení,
 dochází mimo jiné ke zvyšování jejich hodnoty. Je doložitelné, že státní a
 veřejné instituce již pouhým vystavením dat na Internetu jejich původní hodnotu
-násobí [ref1].
+násobí [ref1]_.
 
 Dále se ukazuje, že s nejzajímavějšími případy využití dat přijdou spíše často
 komerční společnosti nebo jednotlivci než instituce, které data původně
 vytvořily anebo zadaly jejich vytvoření. Tento efekt byl znatelný například na
-akci “První Pražský GeoData Hackathon” [ref2]. Během jednoho víkendu vzniklo nad
+akci “První Pražský GeoData Hackathon” [ref2]_. Během jednoho víkendu vzniklo nad
 vybranými datovými sadami publikovanými Institutem plánování a rozvoje hl. m.
 Prahy šest zcela nových aplikací a analýz [ref3] a to i přes počáteční technické
 problémy související s formou zpřístupnění geodat pomocí proprietárního rozhraní
@@ -47,7 +47,7 @@ dopravy v Praze před a po velké změně jízdního řádu k 1.9.2012.
 Projekt “What’s the Plan” [ref13]_, který byl vytvořen v rámci projektu “EU
 Plan4Business”, kombinuje různé otevřené datové zdroje mimo jiné data z Registru
 Územní Identifikace, Adres a Nemovitostí (RÚIAN) [ref12]_ a z databází Ministerstva
-financí [ref7]. Jeho účelem je zobrazení přehledných informací vhodných zejména pro
+financí [ref7]_. Jeho účelem je zobrazení přehledných informací vhodných zejména pro
 potenciální investory, kteří hledají pro svůj investiční záměr v Evropě vhodnou
 lokalitu.
 
@@ -55,9 +55,9 @@ Zvýšení transparentnosti veřejné správy
 ---------------------------------------
 
 Přehledy hospodaření obcí v ČR jsou dostupné na webových stránkách “Rozpočet
-obce” [ref6]. Tato aplikace vznikla na základě dat, která v surové podobě publikuje
-Ministerstvo financí prostřednictvím registru ÚFIS [ref7]. Na základě analýz těchto
-dat již vznikají další akademické studie [ref8, 9].
+obce” [ref6]_. Tato aplikace vznikla na základě dat, která v surové podobě publikuje
+Ministerstvo financí prostřednictvím registru ÚFIS [ref7]_. Na základě analýz těchto
+dat již vznikají další akademické studie [ref8, 9]_.
 
 Některé politické strany zveřejňují své finanční zprávy na Internetu. Pomocí
 automatických nástrojů (např. [ref11]_) lze zpracovat a vizualizovat mimo jiné i
