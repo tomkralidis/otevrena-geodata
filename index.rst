@@ -32,6 +32,10 @@ Revize dokumentu
 | 2014-11-03 | 2.1.0  | Jáchym Čepický                | Převod dokumentu do       |
 |            |        |                               | formátu reStructuredText. |
 +------------+--------+-------------------------------+---------------------------+
+| 2014-11-22 | 2.2.0  | Jáchym Čepický, Martin Landa  | Revize textu po převodu   |
+|            |        |                               | do formátu                |
+|            |        |                               | reStructuredText.         |
++------------+--------+-------------------------------+---------------------------+
 
 Licence
 =======
@@ -47,7 +51,7 @@ Anotace
 
 Tato případová studie shrnuje výsledky konzultací pro otevírání
 geografických dat, provedených ve prospěch `Institutu plánování a
-rozvoje hlavního města Prahy <http://www.iprpraha.cz/>`_ (**IPR Praha**),
+rozvoje hlavního města Prahy <http://www.iprpraha.cz/>`_ (*IPR Praha*),
 který vznik dokumentu finančně podpořil. Zástupci IPR Praha měli
 velice kvalifikovaný a ucelený názor na celou problematiku. Konzultace
 byly zaměřeny na celkový koncept otevírání dat a na technické pasáže,

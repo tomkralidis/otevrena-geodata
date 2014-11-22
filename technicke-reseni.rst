@@ -36,8 +36,9 @@ umožní zabezpečit její škálovatelnost a dostupnost podle aktuálního zat�
 .. figure:: imgs/technicke-reseni.png
    :scale: 100 %
    :alt: Schéma technické infrastruktury
-
-   Technická infrastruktura při otevírání dat
+   :align: center
+   
+   *Technická infrastruktura při otevírání dat*
 
 
 

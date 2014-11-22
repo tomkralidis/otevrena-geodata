@@ -29,8 +29,9 @@ Doporučený postup otevírání dat je znázorněn na následujícím schématu
 .. figure:: imgs/postup.png
    :scale: 100 %
    :alt: Schéma doporučeného postupu otevírání dat
-
-   Doporučený postup otevírání dat
+   :align: center
+   
+   *Doporučený postup otevírání dat*
 
 Příprava datových sad pro zveřejnění by měla zahrnovat následující kroky [ref70]_:
 

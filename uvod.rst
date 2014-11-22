@@ -3,7 +3,7 @@
 Je všeobecně uznávaným faktem, že sebelepší řešení není udržitelné, pokud není
 naplněno kvalitními a aktuálními daty. V poslední době dochází v této
 souvislosti v čím dál větší míře ke sdílení a šíření dat prostřednictvím sítě
-Internet. Pojmy jako “linked data” nebo “sémantický web” nejsou dávno jen
+Internet. Pojmy jako *“linked data”* nebo *“sémantický web”* nejsou dávno jen
 teoretickým konceptem, ale aktuální skutečností. Bez nadsázky lze říci, že data
 jsou jedna z komodit, které podporují jak technický pokrok, tak rozvoj občanské
 společnosti. Tento fakt začíná být po vzoru našich nejbližších sousedů,
@@ -14,20 +14,22 @@ Právě ve Velké Británii vznikly dva celosvětově nejvýznamnější hnutí 
 otevírání dat. Prvním z nich je nezisková organizace `Open Knowledge
 Foundation <http://cz.okfn.org/>`_ (OKFN), která se orientuje na
 propagaci otevřenosti ve znalostech a datech obecně. OKFN stojí mimo
-jiné za projektem katalogu CKAN [ref45]_ a tzv. Open Data Index (žebříček
-otevřenosti dat). Tento žebříček shrnuje úroveň států z pohledu
-otevřenosti a dostupnosti nejdůležitějších datových sad jako jsou
-např. jízdní řády, státní rozpočet, výsledky voleb, obchodní rejstřík
-a podobně. Základní zkušenosti s právními, sociálními a technickými
-aspekty OKFN shrnuje publikace Open Data Handbook [ref70]_, ze které
-částečně čerpá i tato analýza. Druhým z uvedených hybatelů je projekt
-OpenStreetMap (OSM), který byl založen v roce 2006 právě ve Velké
-Británii s cílem komunitního vytváření volně dostupných geografických
-dat a následně jejich vizualizace do podoby silniční mapy, uličního
-plánu měst a dalších výstupů. Vzhledem k tomu, že je od počátku
-založen na kolektivní spolupráci a na koncepci Open Source, se rychle
-rozšířil do celého světa. Data z projektu OSM jsou poskytována pod
-otevřenou licencí Open Database Licence.
+jiné za projektem katalogu CKAN [ref45]_ a tzv. `Open Data Index
+<http://global.census.okfn.org/>`_ (žebříček otevřenosti dat). Tento
+žebříček shrnuje úroveň států z pohledu otevřenosti a dostupnosti
+nejdůležitějších datových sad jako jsou např. jízdní řády, státní
+rozpočet, výsledky voleb, obchodní rejstřík a podobně. Základní
+zkušenosti s právními, sociálními a technickými aspekty OKFN shrnuje
+publikace *Open Data Handbook* [ref70]_, ze které částečně čerpá i tato
+analýza. Druhým z uvedených hybatelů je projekt `OpenStreetMap
+<http://www.openstreetmap.org/about>`_ 7(OSM), který byl založen v
+roce 2006 právě ve Velké Británii s cílem komunitního vytváření volně
+dostupných geografických dat a následně jejich vizualizace do podoby
+silniční mapy, uličního plánu měst a dalších výstupů. Vzhledem k tomu,
+že je od počátku založen na kolektivní spolupráci a na koncepci Open
+Source, se rychle rozšířil do celého světa. Data z projektu OSM jsou
+poskytována pod otevřenou licencí `Open Database Licence
+<http://opendatacommons.org/licenses/odbl/>`_.
 
 
 Veřejná správa vždy shromažďovala data potřebná pro výkon svých agend.
@@ -44,22 +46,25 @@ záležitostí se jedná především o licenční politiku, která v ideálním
 umožní vývojářům navazujících aplikací data předávat dál a vytvářet nad nimi
 další odvozená díla, která nebudou zatěžována žádnými restrikcemi či omezeními.
 
-Obsahem této analýzy jsou zejména geografická data (tzv. geodata), která se ve
-velké míře řídí na rozdíl od ostatních typů dat vlastními zvyklostmi, standardy
-či technickými normami. Proces standardizace je v oblasti geoinformačních
-technologií, na rozdíl od jiných technologických oblastí, podporován již delší
-dobu, což výrazně ulehčuje tvorbu dalších doporučení. V současnosti drtivá
-většina výrobců softwarových produktů (proprietárních i otevřených), ale např. i
-Evropská komise skrze směrnici INSPIRE dodržuje a dále spolupracuje na rozvoji
+Obsahem této analýzy jsou zejména geografická data (tzv. *geodata*),
+která se ve velké míře řídí na rozdíl od ostatních typů dat vlastními
+zvyklostmi, standardy či technickými normami. Proces standardizace je
+v oblasti geoinformačních technologií, na rozdíl od jiných
+technologických oblastí, podporován již delší dobu, což výrazně
+ulehčuje tvorbu dalších doporučení. V současnosti drtivá většina
+výrobců softwarových produktů (proprietárních i otevřených), ale
+např. i Evropská komise skrze směrnici `INSPIRE
+<http://inspire.gov.cz/>`_ dodržuje a dále spolupracuje na rozvoji
 standardů v této oblasti. Ty jsou vytvářeny mezinárodní standardizační
-organizací Open Geospatial Consortium (OGC) a technickou komisí ISO TC 211.
-Mezinárodní technické normy ISO jsou následně přejímány jako normy národní (ČSN
-EN ISO). 
+organizací `Open Geospatial Consortium
+<http://www.opengeospatial.org/>`_ (OGC) a technickou komisí `ISO TC
+211 <http://www.isotc211.org/>`_.  Mezinárodní technické normy ISO
+jsou následně přejímány jako normy národní (ČSN EN ISO).
 
 Otevřená data
 -------------
 
-Pod pojmem “Otevřená data” (Open Data) rozumíme data z jakékoliv oblasti
+Pod pojmem “Otevřená data” (*Open Data*) rozumíme data z jakékoliv oblasti
 působení veřejné správy, soukromých subjektů či fyzických osob, která splňují
 předem definované předpoklady pro jejich další zpracování a využití širokou
 veřejností. Tyto předpoklady jsou jak legislativní, tak technické a jedním z
@@ -76,45 +81,64 @@ V současnosti těmito předpoklady myslíme zejména:
 
 Otevírání dat přináší kromě nákladů na vlastní otevření a provoz také nemalé
 přínosy jak pro poskytovatele, tak pro uživatele. Tim Berners-Lee [ref15]_ sestavil
-tzv. pětihvězdičkový systém hodnocení otevřenosti dat, jehož smyslem je umožnit
+tzv. *pětihvězdičkový systém* hodnocení otevřenosti dat, jehož smyslem je umožnit
 jednoduchou orientaci ve stupni otevřenosti datových sad. Čím výše se datová
 sada dostane, tím větší je možnost jejího využití veřejností.
 
 .. figure:: imgs/opendata.png
    :scale: 100 %
    :alt: Pěti hvězdičkový systém otevřených dat
+   :align: center
+   
+   *Pěti hvězdičkový systém otevřených dat podle Tim Berners-Lee* [ref15]_
 
-   Pěti hvězdičkový systém otevřených dat podle Tim Berners-Lee [ref15]_
+**★ Dostupná data**
 
-**★ Dostupná data.** Data jsou zveřejněna na Internetu, nezáleží na formátu.
-Data, která jsou zveřejněna na síti Internet v jakémkoli  formátu, ale pod
-otevřenou licencí pro jejich využití. Existují tedy určitá technická omezení pro
-jejich využití, nicméně legislativní omezení jsou odstraněna. Příkladem může být
-mapové dílo ve formátu PDF.
+    Data jsou zveřejněna na Internetu, nezáleží na formátu.
+    Data, která jsou zveřejněna na síti Internet v jakémkoli  formátu, ale pod
+    otevřenou licencí pro jejich využití. Existují tedy určitá technická omezení pro
+    jejich využití, nicméně legislativní omezení jsou odstraněna. Příkladem může být
+    mapové dílo ve formátu `PDF <http://cs.wikipedia.org/wiki/Portable_Document_Format>`_.
 
-**★★ Strukturovaná data.** Data jsou zveřejněna ve strojově čitelném formátu.
-Data jsou zveřejněna ve strojově zpracovatelném formátu, který není otevřený.
-Příkladem mohou být data ve formátu Microsoft Excel nebo data uložená v Esri
-GeoDatabase.
+**★★ Strukturovaná data**
 
-**★★★ Data v otevřeném formátu.** Data jsou zveřejněna v otevřeném formátu.
-Strojový formát, ve kterém jsou data zveřejněna, je otevřený, tj. veřejně
-publikovaný s licencí umožňující jeho využití. Příkladem jsou například formáty
-Geospatial Markup Language (GML), OGC GeoPackage nebo Esri Shapefile.
+    Data jsou zveřejněna ve strojově čitelném formátu.  Data jsou
+    zveřejněna ve strojově zpracovatelném formátu, který není
+    otevřený.  Příkladem mohou být data ve formátu `Microsoft Excel
+    <http://cs.wikipedia.org/wiki/Microsoft_Excel>`_ nebo data uložená
+    v `Esri GeoDatabase
+    <http://cs.wikipedia.org/wiki/Geodatab%C3%A1ze#Souborov.C3.A1_geodatab.C3.A1ze_.28File_geodatabase.29>`_.
 
-**★★★★ Data s identifikátorem.** Data jsou dohledatelná, mají unikátní
-identifikátor.  Data jsou opatřena identifikátorem Uniform Resource Identifier
-(URI), unikátním v rámci celé sítě Internet. Jednotlivé prvky datové sady by
-měly být identifikované pomocí URI ve tvaru použitelném pro protokol HTTP, tzn.
-v podobě adresy URL. Tím se zajistí, že uživatelé mohou daný prvek kdykoli
-najít.
+**★★★ Data v otevřeném formátu**
 
-**★★★★★ Data jsou provázaná.** Data jsou navzájem prolinkovaná, lze mezi nimi
-navigovat, “surfovat” [ref71].  Data jsou nejen identifikovatelná pomocí URI, ale
-obsahují odkazy na další datové sady.  Stejně jako datové sady jsou pomocí
-odkazů provázány i jednotlivé prvky z datových sad. Data jsou dále opatřena
-popisnými informacemi (metadaty) tak, aby v nich bylo možno jednoduše
-vyhledávat. 
+    Data jsou zveřejněna v otevřeném formátu.  Strojový formát, ve
+    kterém jsou data zveřejněna, je otevřený, tj. veřejně publikovaný
+    s licencí umožňující jeho využití. Příkladem jsou například
+    formáty `Geospatial Markup Language
+    <http://www.opengeospatial.org/standards/gml>`_ (GML), `OGC
+    GeoPackage <http://www.opengeospatial.org/standards/geopackage>`_
+    nebo `Esri Shapefile <http://cs.wikipedia.org/wiki/Shapefile>`_.
+
+**★★★★ Data s identifikátorem**
+
+    Data jsou dohledatelná, mají unikátní identifikátor. Data jsou
+    opatřena identifikátorem `Uniform Resource Identifier
+    <http://cs.wikipedia.org/wiki/Uniform_Resource_Identifier>`_
+    (URI), unikátním v rámci celé sítě Internet. Jednotlivé prvky
+    datové sady by měly být identifikované pomocí URI ve tvaru
+    použitelném pro protokol `HTTP
+    <http://cs.wikipedia.org/wiki/Hypertext_Transfer_Protocol>`_,
+    tzn. v podobě adresy URL. Tím se zajistí, že uživatelé mohou daný
+    prvek kdykoli najít.
+
+**★★★★★ Data jsou provázaná**
+
+    Data jsou navzájem prolinkovaná, lze mezi nimi
+    navigovat, “surfovat” [ref71]_.  Data jsou nejen identifikovatelná pomocí URI, ale
+    obsahují odkazy na další datové sady.  Stejně jako datové sady jsou pomocí
+    odkazů provázány i jednotlivé prvky z datových sad. Data jsou dále opatřena
+    popisnými informacemi (metadaty) tak, aby v nich bylo možno jednoduše
+    vyhledávat. 
 
 Výhody ☑ a omezení ☒ – z hlediska uživatele
 -------------------------------------------
