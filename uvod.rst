@@ -28,7 +28,7 @@ rozpočet, výsledky voleb, obchodní rejstřík a podobně. Základní
 zkušenosti s právními, sociálními a technickými aspekty OKFN shrnuje
 publikace *Open Data Handbook* [ref70]_, ze které částečně čerpá i tato
 analýza. Druhým z uvedených hybatelů je projekt `OpenStreetMap
-<http://www.openstreetmap.org/about>`_ 7(OSM), který byl založen v
+<http://www.openstreetmap.org/about>`_ (OSM), který byl založen v
 roce 2006 právě ve Velké Británii s cílem komunitního vytváření volně
 dostupných geografických dat a následně jejich vizualizace do podoby
 silniční mapy, uličního plánu měst a dalších výstupů. Vzhledem k tomu,
