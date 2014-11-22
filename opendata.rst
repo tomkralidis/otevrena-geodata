@@ -231,7 +231,7 @@ podporu pro OGC GeoPackage nabízí, včetně Open Source knihovny GDAL od verze
 OGC GeoPackage se zatím v praxi příliš nepoužívá. Nicméně vzhledem k tomu, že se
 jedná o standard OGC umožňující  práci s opravdu komplexními datovými
 strukturami, jsme toho názoru, že by se tento formát měl pro otevřená geodata
-využívat A to i přesto, že podpora tohoto formátu není v běžných programech mimo
+využívat a to i přesto, že podpora tohoto formátu není v běžných programech mimo
 svět GIS příliš rozšířena.
 
 **Esri Shapefile**
@@ -261,16 +261,15 @@ Nelze jednoduše doporučit jeden či dva formáty vhodné pro všechny uživate
 datové sady. Vždy je potřeba zvážit charakter dat a převládající způsob jejich
 použití. 
 
-Pro předgenerované soubory vektorových dat doporučujeme formát OGC GeoPackage,
-zejména pro kombinované datové sady, které obsahují rastrová i vektorová data;
+Pro předgenerované soubory vektorových dat doporučujeme, v dlohodobém horizontu
+formát OGC GeoPackage. V krátkodobém horizontu lze použít i formát ESRI
+Shapefile nebo OGC GML, z toho důvodu, že formát GeoPackage není zatím příliš
+rozšířen. 
 
-v mnoha případech je vhodné výše uvedený formát doplnit o data ve formátu Esri
-Shapefile, který je v současné době v oblasti výměny geodat nejrozšířenějším;
-
-pro publikování formou prohlížecích webových služeb (OGC WMS, WMTS) je vhodné
+Pro publikování formou prohlížecích webových služeb (OGC WMS, WMTS) je vhodné
 volit  v závislosti na charakteru dat formáty PNG a JPEG;
 
-v případě stahovacích služeb doporučujeme pro vektorová data formát OGC GML (ISO
+V případě stahovacích služeb doporučujeme pro vektorová data formát OGC GML (ISO
 19136) a pro rastrová data potom GeoTIFF či JPEG, podle jejich charakteru.  
 
 Distribuce otevřených geodat
@@ -308,7 +307,8 @@ Pro otevírání geografických dat se jako klíčové jeví tyto skupiny uživa
 
 * Uživatel mapového portálu
 * Běžný uživatel Geografického informačního systému (GIS)
-* Specialista GIS (“datař”, geoinformatik)
+* Specialista GIS (geoinformatik)
+* Datový analytik (mimo obor GIS)
 * Programátor/vývojář
 
 **Uživatel mapového portálu**
@@ -334,7 +334,7 @@ v aktuálním stavu z webové služby.
 
 Příkladem tohoto typu uživatele jsou studenti negeoinformatických oborů, vědci,
 tvůrci studií, odborníci vytvářející tematická data, plány či mapy (např. lesní
-plány nebo Územně analytické podklady), stavebníci, architekti, pracovníci
+plány), stavebníci, architekti, pracovníci
 ochrany přírody a další odborníci, kteří využívají GIS jako jeden z více
 pracovních nástrojů.
 
@@ -347,11 +347,11 @@ podporu novějších formátů.
 Pro rastrová data je pro tuto skupinu uživatelů ideální využívat data pomocí
 služeb Web Map Service (WMS), případně Web Map Tiled Service (WMTS). U
 vektorových dat je nejvhodnější stahování jednotlivých vrstev v nějakém
-rozšířeném souborovém formátu. Použití Web Feature Services (WFS) může být
-problematické, zejména pokud je nastaven limit na maximální počet prvků v jednom
-dotazu. Stránkování WFS, které tento problém řeší není ve všech klientech
-implementováno. Pro uživatel tohoto typu může být problematické také využití
-komplikovanějších dat ve formátu OGC GML. 
+rozšířeném souborovém formátu (např. Esri Shapefile či OGC GeoPackage).
+Použití Web Feature Services (WFS) je ideální cílový stav, ale může být
+problematické při větších objemech dat, který může uživatel (i když ne
+zcela vědomě) po serveru požadovat. Služba OGC WFS umožňuje odpověď "stránkovat", 
+což bohužel není na všech klientských programech běžně implementováno.
 
 **Specialista GIS (“datař”, geoinformatik)**
 
@@ -364,7 +364,8 @@ zkušené uživatele.
 
 Překážkou, se kterou se u GIS specialistů někdy setkáváme, je přílišná vazba na
 konkrétní software, se kterým pracují. Specialisté se vyhýbají použití nového,
-pro ně neznámého software.
+pro ně neznámého software a nebo jsou v situaci, že jim zaměstnavatel či
+pracovní podmínky či oborové zvyklosti neumožní alternativní software využívat.
 
 Obvykle si budují své databáze, ve kterých se snaží udržovat aktuální kopii
 celých datových sad, což umožňuje provádět rychlé a komplexní analýzy nad
@@ -396,12 +397,11 @@ přehled o novinkách a jsou schopni využít výhod nových a zatím nepříli�
 rozšířených forem přenosu dat i technologií. Ani komplikovanější formáty pro ně
 nemusí být problémem, pokud je dostupná kvalitní dokumentace.
 
-Je potřeba mít na paměti, že odborník na informační technologie obvykle pracuje
-s daty, aniž by byl dopodrobna seznámen s problematikou, kterou tato data
-popisují. Nemá proto schopnost domýšlet si význam atributů běžně používaných
-mezi GIS odborníky. Nezná všeobecně známé neoficiální zkratky a odborné termíny
-atd. Práci mu usnadní zejména formalizované popisy dat, jako jsou například XSD
-schémata, která se používají při  generování různých šablon, připojení dat apod.
+Odborník na informační technologie obvykle pracuje
+s daty a není dopodrobna seznámen s problematikou, kterou tato data
+popisují. Práci usnadní zejména formalizované popisy dat, jako jsou například XSD
+schémata, která se používají při  generování různých šablon pro dokumenty XML,
+připojení dat apod.
 
 Ideálním způsobem distribuce dat pro takto vymezenou skupinu uživatelů jsou
 proto bezesporu webové služby, pokud jsou ovšem stabilní, rychlé a vhodně
@@ -441,15 +441,17 @@ stavových dat (tj. dat platných k určitému datu), tak změnových vět formo
 předgenerovaných souborů. Režim výdeje je vhodné nastavit s ohledem na objem
 změn. Toto řešení často vede ke snížení zátěže na infrastrukturu poskytovatele.
 
-Specifickou oblastí u výdeje dat je poskytování dat agregovaných. Obvyklým
-důvodem bývá anonymizace či znepřesnění dat, která jsou nějakým způsobem citlivá
+Specifickou oblastí u výdeje dat je poskytování dat agregovaných (znepřesněných
+nebo bez některých atributů). Obvyklým důvodem agregace bývají citlivé údaje
 (osobní údaje, data vlastněná třetími stranami).
 
 Výdejní systém, má-li být efektivní a funkční, musí kopírovat charakter dat, nad
-kterými je postaven. Zároveň je vhodné si uvědomit, že se nejedná o nezávislou
-linku. Kvalitní řešení by mělo být organickou součástí řešení, jehož
-prostřednictvím probíhá správa poskytovaných dat tak, aby tato linka mohla
-“růst” společně s daty, nad kterými je vytvořená.
+kterými je postaven. Výdejní systém není správné vyvíjet nezávisle na datech,
+které má vydávat. Tento (výdejní) systém by měl ideálně "růst" spolu s daty, pro
+které je vytvářený.
+
+Implementační pravidla INSPIRE
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Jedním z osvědčených způsobů distribuce geodat v Evropské unii je využití
 prohlížecích, stahovacích služeb a vyhledávacích služeb podle směrnice INSPIRE,
@@ -460,15 +462,15 @@ technické dokumenty s ní svázané, lze považovat za “best-practice” svě
 implementačních pravidlech. Na publikaci vektorových a rastrových dat se
 vztahuje technický průvodce [ref28]_. 
 
-Technický průvodce pro implementaci INSPIRE Stahovací službyse dotýká právě
+Technický průvodce pro implementaci INSPIRE Stahovací služby se dotýká právě
 problematiky velkých datových sad. Nabízí dvě možnosti implementace této služby:
 
-Stahování předdefinovaných datových sad - bez možnosti jejich dotazování či
-výběru části dat. Typicky se jedná o předpřipravené datové soubory
-
-Datové sady s přímým přístupem - rozšiřuje funkce předdefinovaných datových sad
-o možnost kontrolovat proces výběru požadovaných dat. Data bývají uložena v
-databázi a jsou distribuována specializovaných softwarem (mapovým serverem)
+* Předgenerované soubory s datovou sadou a jejich distribuce prostřednictvím
+  dokuementu ve formátu ATOM -- ovšem bez možnosti jejich dotazování či
+  výběru části dat prostřednictvím serveru.
+* Webové služby OGC WFS a WCS (tak zvané *datové sady s přímým přístupem*). 
+  Ty rozšiřují možnosti předgenerovaných datových sad o možnost filtrovat
+  požadovaná data již na straně serveru. 
 
 V obou případech je k dispozici tzv. Get Download Service Metadata Request. V
 prvním případě seznam odkazů ve formátu Atom (viz kapitola Předgenerované
@@ -511,27 +513,27 @@ požadavků vytvoří a klientovi odešle. Klient musí specifikovat obsah obrá
 obrázku a další možné detaily. Server odešle opravdu “pouze” obrázek a nikoliv
 vlastní data. To lze s výhodou využít pro případ, že chce uživatelům zpřístupnit
 některé data pouze k nahlédnutí, ale nechce nebo nemůže zpřístupnit data jako
-taková. Standardním formátem obrázků bývá PNG nebo JPEG podle charakteru dat.
+taková. Standardním formátem výstupu je obrázek ve formátech PNG nebo JPEG podle charakteru dat.
 
 **OGC Web Map Tiled Service (OGC WMTS)**
 
 Pokud se data v čase příliš nemění (například letecké snímky, obecně podkladové
-mapy), lze si na straně serveru připravit tzv. “Keš” (anglicky cache) -
-předgenerované dlaždice (obrázky o pravidelné velikosti, většinou 256x256
-pixelů) pro určitá měřítka a v určitém rozsahu. Tyto dlaždice pak lze
-zpřístupnit podle standardu OGC WMTS [ref23]_. Výhodou je rychlé odbavení příchozího
+mapy), lze si na straně serveru připravit předgenerované dlaždice (obrázky o
+pravidelné velikosti, většinou 256x256 pixelů) do vyrovnávací paměti pro určitá
+měřítka a v určitém rozsahu (*cache*).  Tyto dlaždice pak lze zpřístupnit podle
+standardu OGC WMTS [ref23]_ (nebo i WMS). Výhodou je rychlé odbavení příchozího
 požadavku a nižší zátěž IT infrastruktury. Nevýhodou je, že dlaždice musí být
 omezeny pro určitá měřítka. Obsah je statický (v čase se nemění, datové vrstvy
-vykreslené v obrázku jsou stále stejné). “Keš” je potřeba udržovat, pravidelně
-aktualizovat a mít pro ni dostatečně velkou diskovou kapacitu. Formátem
-výstupních souborů bývá podle charakteru dat PNG či JPEG.
+vykreslené v obrázku jsou stále stejné). Takto vytvořenou databázi dlaždic je
+potřeba udržovat, pravidelně aktualizovat a mít pro ni dostatečně velkou
+diskovou kapacitu.  Standardním formátem výstupu je obrázek ve formátech PNG
+nebo JPEG podle charakteru dat.
 
 Jako vhodná sada měřítek spolu s výchozím “počátkem” dlaždic se ukazuje řada
-dlouhodobě používaná servery ČÚZK [ref24]_, který pro souřadnicový systém S-JTSK
-(EPSG:5514, dříve EPSG:2065 či ESRI:102067) vyvinul vlastní řadu měřítek. Pro
-globální souřadnicové systémy (jako je např. “Spherical Mercator” EPSG:3857) se
-doporučuje používat měřítkovou řadu vyvinutou firmou Google. Více viz kapitola
-Souřadnicové systémy.
+dlouhodobě používaná servery ČÚZK, který pro souřadnicový systém S-JTSK
+(EPSG:5514, dříve EPSG:2065 či ESRI:102067) vyvinul vlastní řadu měřítek
+[ref24]_. Pro globální souřadnicové systémy (jako je např. “Spherical Mercator”
+EPSG:3857) se doporučuje používat měřítkovou řadu vyvinutou firmou Google.
 
 **OGC Web Feature Service (OGC WFS)**
 
