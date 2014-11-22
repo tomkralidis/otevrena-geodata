@@ -30,24 +30,30 @@ Revize dokumentu
 |            |        |                               | IPR Praha.                |
 +------------+--------+-------------------------------+---------------------------+
 | 2014-11-03 | 2.1.0  | Jáchym Čepický                | Převod dokumentu do       |
-|            |        |                               | formátu reStructuredText  |
+|            |        |                               | formátu reStructuredText. |
 +------------+--------+-------------------------------+---------------------------+
 
 Licence
 =======
-Tento dokument podléhá licenci Creative Commons 4.0 BY-SA. Informace o
-podrobnostech licence najdete na adrese http://www.creativecommons.cz/.
+
+.. image:: imgs/cc-by-sa.png
+
+Tento dokument podléhá licenci *Creative Commons 4.0
+BY-SA*. Informace o podrobnostech licence najdete na adrese
+http://www.creativecommons.cz/.
 
 Anotace
 =======
-Tato případová studie shrnuje výsledky konzultací pro otevírání geografických
-dat, provedených ve prospěch Institutu plánování a rozvoje hlavního města Prahy
-(IPR Praha), který vznik dokumentu finančně podpořil. Zástupci IPR Praha měli
-velice kvalifikovaný a ucelený názor na celou problematiku. Konzultace byly
-zaměřeny na celkový koncept otevírání dat a na technické pasáže, kde byla
-potřeba většího detailu, doporučení vhodného postupu, případně navržení řešení.
-Tomu odpovídá i struktura dokumentu, která nemusí být vždy zcela přehledná a
-dostatečně obecná.
+
+Tato případová studie shrnuje výsledky konzultací pro otevírání
+geografických dat, provedených ve prospěch `Institutu plánování a
+rozvoje hlavního města Prahy <http://www.iprpraha.cz/>`_ (**IPR Praha**),
+který vznik dokumentu finančně podpořil. Zástupci IPR Praha měli
+velice kvalifikovaný a ucelený názor na celou problematiku. Konzultace
+byly zaměřeny na celkový koncept otevírání dat a na technické pasáže,
+kde byla potřeba většího detailu, doporučení vhodného postupu,
+případně navržení řešení.  Tomu odpovídá i struktura dokumentu, která
+nemusí být vždy zcela přehledná a dostatečně obecná.
 
 Na základě našich zkušeností z praxe nastiňuje případná technická úskalí a
 problémy, se kterými je třeba počítat, mají-li být publikovaná data dostupná co
@@ -78,12 +84,3 @@ Obsah
     priloha-d
     priloha-e
     priloha-f
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-

@@ -10,21 +10,24 @@ společnosti. Tento fakt začíná být po vzoru našich nejbližších sousedů
 především Německa, ale i Rakouska či Velké Británie reflektován i veřejnou
 správou v České republice v podobě postupného otevírání dat. 
 
-Právě ve Velké Británii vznikly dva celosvětově nejvýznamnější hnutí v otevírání
-dat. Prvním z nich je nezisková organizace Open Knowledge Foundation (OKFN),
-která se orientuje na propagaci otevřenosti ve znalostech a datech obecně. OKFN
-stojí mimo jiné za projektem katalogu CKAN [45]_ a tzv. Open Data Index (žebříček
-otevřenosti dat). Tento žebříček shrnuje úroveň států z pohledu otevřenosti a
-dostupnosti nejdůležitějších datových sad jako jsou např. jízdní řády, státní
-rozpočet, výsledky voleb, obchodní rejstřík a podobně. Základní zkušenosti s
-právními, sociálními a technickými aspekty OKFN shrnuje publikace Open Data
-Handbook [70]_, ze které částečně čerpá i tato analýza. Druhým z uvedených
-hybatelů je projekt OpenStreetMap (OSM), který byl založen v roce 2006 právě ve
-Velké Británii s cílem komunitního vytváření volně dostupných geografických dat
-a následně jejich vizualizace do podoby silniční mapy, uličního plánu měst a
-dalších výstupů. Vzhledem k tomu, že je od počátku založen na kolektivní
-spolupráci a na koncepci Open Source, se rychle rozšířil do celého světa. Data z
-projektu OSM jsou poskytována pod otevřenou licencí Open Database Licence. 
+Právě ve Velké Británii vznikly dva celosvětově nejvýznamnější hnutí v
+otevírání dat. Prvním z nich je nezisková organizace `Open Knowledge
+Foundation <http://cz.okfn.org/>`_ (OKFN), která se orientuje na
+propagaci otevřenosti ve znalostech a datech obecně. OKFN stojí mimo
+jiné za projektem katalogu CKAN [ref45]_ a tzv. Open Data Index (žebříček
+otevřenosti dat). Tento žebříček shrnuje úroveň států z pohledu
+otevřenosti a dostupnosti nejdůležitějších datových sad jako jsou
+např. jízdní řády, státní rozpočet, výsledky voleb, obchodní rejstřík
+a podobně. Základní zkušenosti s právními, sociálními a technickými
+aspekty OKFN shrnuje publikace Open Data Handbook [70]_, ze které
+částečně čerpá i tato analýza. Druhým z uvedených hybatelů je projekt
+OpenStreetMap (OSM), který byl založen v roce 2006 právě ve Velké
+Británii s cílem komunitního vytváření volně dostupných geografických
+dat a následně jejich vizualizace do podoby silniční mapy, uličního
+plánu měst a dalších výstupů. Vzhledem k tomu, že je od počátku
+založen na kolektivní spolupráci a na koncepci Open Source, se rychle
+rozšířil do celého světa. Data z projektu OSM jsou poskytována pod
+otevřenou licencí Open Database Licence.
 
 
 Veřejná správa vždy shromažďovala data potřebná pro výkon svých agend.
