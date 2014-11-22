@@ -5,16 +5,19 @@ dochází mimo jiné ke zvyšování jejich hodnoty. Je doložitelné, že stát
 veřejné instituce již pouhým vystavením dat na Internetu jejich původní hodnotu
 násobí [ref01]_.
 
-Dále se ukazuje, že s nejzajímavějšími případy využití dat přijdou spíše často
-komerční společnosti nebo jednotlivci než instituce, které data původně
-vytvořily anebo zadaly jejich vytvoření. Tento efekt byl znatelný například na
-akci “První Pražský GeoData Hackathon” [ref02]_. Během jednoho víkendu vzniklo nad
-vybranými datovými sadami publikovanými Institutem plánování a rozvoje hl. m.
-Prahy šest zcela nových aplikací a analýz [ref03]_ a to i přes počáteční technické
-problémy související s formou zpřístupnění geodat pomocí proprietárního rozhraní
-XML-RPC. Jako příklad ze zahraničí lze uvést například město Londýn, které
-otevřelo data spojená s přepravním systémem. Na základě těchto dat následně
-vyrostla řada aplikací pro plánování cesty či domlouvání spolujízd a další. 
+Dále se ukazuje, že s nejzajímavějšími případy využití dat přijdou
+spíše často komerční společnosti nebo jednotlivci než instituce, které
+data původně vytvořily anebo zadaly jejich vytvoření. Tento efekt byl
+znatelný například na akci *“První Pražský GeoData Hackathon”*
+[ref02]_. Během jednoho víkendu vzniklo nad vybranými datovými sadami
+publikovanými *Institutem plánování a rozvoje hlavního města Prahy*
+šest zcela nových aplikací a analýz [ref03]_ a to i přes počáteční
+technické problémy související s formou zpřístupnění geodat pomocí
+proprietárního rozhraní `XML-RPC
+<http://cs.wikipedia.org/wiki/XML-RPC>`_. Jako příklad ze zahraničí
+lze uvést například město Londýn, které otevřelo data spojená s
+přepravním systémem. Na základě těchto dat následně vyrostla řada
+aplikací pro plánování cesty či domlouvání spolujízd a další.
 
 Otevírání dat má v obecné rovině hned několik pozitivních efektů, zejména: 
 
