@@ -192,10 +192,10 @@ latex_elements = {
 
 # Additional stuff for the LaTeX preamble.
     'preamble': "".join((
-        '\\usepackage{amsfonts}',
-        '\DeclareUnicodeCharacter{2605}{$\star$}',
-        '\DeclareUnicodeCharacter{2611}{$\checkmark$}',  
-        '\DeclareUnicodeCharacter{2612}{$\times$}',  
+        '\\usepackage{pifont}',
+        '\DeclareUnicodeCharacter{2605}{\ding{72}}',
+        '\DeclareUnicodeCharacter{2611}{\ding{51}}',  
+        '\DeclareUnicodeCharacter{2612}{\ding{55}}',  
     )),
 #    'fontenc' : '\\usepackage[T1]{fontenc}',
 #    'inputenc' : '\\usepackage[utf8x]{inputenc}',

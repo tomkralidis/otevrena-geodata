@@ -33,31 +33,31 @@ http://www.creativecommons.cz/.
 
 .. rubric:: Revize dokumentu
 
-.. table::
-
-   +------------+--------+-------------------------------+---------------------------+
-   | Datum      | Revize | Editoři                       | Popis                     |
-   +============+========+===============================+===========================+
-   | 2014-09-30 | 1.0.0  | Jáchym Čepický, Martin Landa, | První verze dokumentu     |
-   |            |        | Radek Augustýn, Jan Cibulka,  |                           |
-   |            |        | Jan Michálek                  |                           |
-   +------------+--------+-------------------------------+---------------------------+
-   | 2014-10-03 | 1.0.1  | Radek Augustnýn               | Drobné revize formátování |
-   +------------+--------+-------------------------------+---------------------------+
-   | 2014-10-05 | 1.0.2  | Jáchym Čepický, Martin Landa, | Jazyková korektura textu. |
-   |            |        | Radek Augustýn, Jan Michálek  |                           |
-   +------------+--------+-------------------------------+---------------------------+
-   | 2014-11-03 | 2.0.0  | Jáchym Čepický, Martin Landa, | Druhá verze dokumentu.    |
-   |            |        | Radek Augustýn, Jan Michálek  | Zapracování připomínek    |
-   |            |        |                               | IPR Praha.                |
-   +------------+--------+-------------------------------+---------------------------+
-   | 2014-11-03 | 2.1.0  | Jáchym Čepický                | Převod dokumentu do       |
-   |            |        |                               | formátu reStructuredText. |
-   +------------+--------+-------------------------------+---------------------------+
-   | 2014-11-22 | 2.2.0  | Jáchym Čepický, Martin Landa  | Revize textu po převodu   |
-   |            |        |                               | do formátu                |
-   |            |        |                               | reStructuredText.         |
-   +------------+--------+-------------------------------+---------------------------+
+.. tabularcolumns:: |p{2cm}|p{1.5cm}|p{4cm}|p{6.5cm}|
+         
++------------+--------+-------------------------------+---------------------------+
+| Datum      | Revize | Editoři                       | Popis                     |
++============+========+===============================+===========================+
+| 2014-09-30 | 1.0.0  | Jáchym Čepický, Martin Landa, | První verze dokumentu     |
+|            |        | Radek Augustýn, Jan Cibulka,  |                           |
+|            |        | Jan Michálek                  |                           |
++------------+--------+-------------------------------+---------------------------+
+| 2014-10-03 | 1.0.1  | Radek Augustnýn               | Drobné revize formátování |
++------------+--------+-------------------------------+---------------------------+
+| 2014-10-05 | 1.0.2  | Jáchym Čepický, Martin Landa, | Jazyková korektura textu. |
+|            |        | Radek Augustýn, Jan Michálek  |                           |
++------------+--------+-------------------------------+---------------------------+
+| 2014-11-03 | 2.0.0  | Jáchym Čepický, Martin Landa, | Druhá verze dokumentu.    |
+|            |        | Radek Augustýn, Jan Michálek  | Zapracování připomínek    |
+|            |        |                               | IPR Praha.                |
++------------+--------+-------------------------------+---------------------------+
+| 2014-11-03 | 2.1.0  | Jáchym Čepický                | Převod dokumentu do       |
+|            |        |                               | formátu reStructuredText. |
++------------+--------+-------------------------------+---------------------------+
+| 2014-11-22 | 2.2.0  | Jáchym Čepický, Martin Landa  | Revize textu po převodu   |
+|            |        |                               | do formátu                |
+|            |        |                               | reStructuredText.         |
++------------+--------+-------------------------------+---------------------------+
 
 .. toctree::
     :maxdepth: 2
