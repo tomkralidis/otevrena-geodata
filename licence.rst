@@ -38,8 +38,8 @@ Celní správa.
 Doporučení
 ----------
 Pro účely vymezené v začátku tohoto oddílu se jeví jako vhodná licence Creative
-Commons BY-SA 4.0 [47]_, případně Open Data Commons Attribution License (ODC-By)
-[48]_. Výhodou první je její obecná známost (i napříč veřejnou správou), druhá je
+Commons BY-SA 4.0 [ref47]_, případně Open Data Commons Attribution License (ODC-By)
+[ref48]_. Výhodou první je její obecná známost (i napříč veřejnou správou), druhá je
 lépe přizpůsobena pro využití v oblasti geodat.
 
 Třetí možností je vytvořit licenci na míru danému projektu, a to případně i

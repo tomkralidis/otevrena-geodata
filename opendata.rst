@@ -54,13 +54,13 @@ CAD a uživatelé Směrnice INSPIRE jako současného legislativního a technick
 rámce pro některý z geografických informačních systémů (GIS).
 
 Kromě souvisejících zákonů a nařízení je pro otevírání geodat relevantní zejména
-evropská směrnice INSPIRE [26]_ ze dne 25. dubna 2007, která vstoupila v platnost
+evropská směrnice INSPIRE [ref26]_ ze dne 25. dubna 2007, která vstoupila v platnost
 15. května 2007. Tato směrnice tvoří evropský legislativní rámec potřebný k
 vybudování evropské infrastruktury prostorových informací zejména k podpoře
 environmentálních politik a politik, které životní prostředí ovlivňují.
 Hlavním cílem směrnice INSPIRE je poskytnout množství kvalitních a
 standardizovaných prostorových informací. Směrnice byla transponována do
-národní legislativy České republiky novelou zákona č. 380/2009 Sb. [27]_.  
+národní legislativy České republiky novelou zákona č. 380/2009 Sb. [ref27]_.  
 
 Formáty souborů pro distribuci otevřených geodat
 ------------------------------------------------
@@ -74,7 +74,7 @@ Rastrová data
 
 **GeoTIFF**
 
-Formát GeoTIFF [16]_ je typickým a nejrozšířenějším otevřeným formátem pro
+Formát GeoTIFF [ref16]_ je typickým a nejrozšířenějším otevřeným formátem pro
 distribuci rastrových geografických dat. Tento formát umožňuje uložit nejen
 rastrová data, ale také všechny typy gridových dat. Informace o souřadnicovém
 systému, souřadnicovém umístění a další popisné informace jsou uloženy přímo v
@@ -83,7 +83,7 @@ komprese k nevratné ztrátě informace.
 
 **JPEG**
 
-Formát JPEG [17]_ je kompresní určený k uložení rastrových souborů. Jeho výhodou
+Formát JPEG [ref17]_ je kompresní určený k uložení rastrových souborů. Jeho výhodou
 je úspora místa a tudíž i menší nároky na datový přenos. Jeho nevýhodou je to,
 že komprese je ztrátová -- formát tedy není vhodný pro použití v GIS, neboť data
 jsou nenávratně poškozena a jsou tak pro další zpracování nepoužitelná. Na
@@ -95,7 +95,7 @@ souborem se souř. umístěním (koncovka .jpw).
 
 **PNG**
 
-Formát PNG [76]_ byl vytvářen jako nástupce formátu JPEG kvůli softwarovým
+Formát PNG [ref76]_ byl vytvářen jako nástupce formátu JPEG kvůli softwarovým
 patentům, použitým právě ve formátech JPEG a GIF. Některá data komprimuje lépe.
 Komprese nepoškozuje ostré hrany. Z tohoto důvodu se tento formát využívá pro
 topografické podkladové mapy v prohlížecích službách OGC WMS a WMTS. Komprese
@@ -129,7 +129,7 @@ Vektorová data
 **Esri Shapefile**
 
 Esri Shapefile (Shapefile, SHP) je v praxi již dlouhou dobu nejpoužívanějším
-formátem pro výměnu vektorových geodat [18]_. Přestože je technologicky
+formátem pro výměnu vektorových geodat [ref18]_. Přestože je technologicky
 zastaralý, je používán pro menší datové soubory a jednoduché datové sady bez
 komplikovaných vazeb mezi objekty a tabulkami.
 
@@ -150,7 +150,7 @@ Hlavní nevýhody:
 
 **OGC Geospatial Markup Language**
 
-OGC GML [19]_ jako otevřený standard je perspektivním formátem pro přenos
+OGC GML [ref19]_ jako otevřený standard je perspektivním formátem pro přenos
 vektorových dat. Jedná se o jednosouborový textový formát založený na
 značkovacím jazyce XML, je proto interpretovatelný i bez speciálního software.
 Kromě standardizace na úrovni OGC je definován technickou normou ISO 19136.
@@ -177,7 +177,7 @@ cca 3 lety tento formát populární, dnes je často nahrazován formátem GeoJS
 
 **GeoJSON**
 
-Populárním formátem se v poslední době stává formát GeoJSON [68]_, který je
+Populárním formátem se v poslední době stává formát GeoJSON [ref68]_, který je
 založen na formátu JSON. Své uplatnění má především mezi webovými technologiemi.
 Oproti formátům odvozených z XML (GML, KML) má kratší zápis, což  je výhodné při
 přenosech v prostředí Internetu. Stejně jako při využití formátů odvozených z
@@ -208,11 +208,11 @@ dat příliš nepoužívá.
 **Komplexní formát OGC GeoPackage**
 
 Moderním nástupcem výše zmiňovaných rastrových, ale především vektorových
-formátů je standard OGC GeoPackage [39]_. Tento formát umožňuje uložit libovolná
+formátů je standard OGC GeoPackage [ref39]_. Tento formát umožňuje uložit libovolná
 vektorová data spolu s daty rastrovými, ať už ve formě dlaždic, nebo souborů ve
 formátu GeoTIFF do prostředí databáze SQLite. Poskytuje tak jednoduché rozhraní
 jazyka SQL pro práci s daty. Vektorová data jsou uložena dle specifikace OGC
-Simple Features for SQL [40]_. Maximální velikost databázového souboru je 140 TB,
+Simple Features for SQL [ref40]_. Maximální velikost databázového souboru je 140 TB,
 což je pro praktické použití většinou dostačující. Data v jedné datové vrstvě,
 tedy  databázové tabulce, mohou mít různé typy geometrií. Řada GIS nástrojů již
 podporu pro OGC GeoPackage nabízí, včetně Open Source knihovny GDAL od verze
@@ -426,9 +426,9 @@ prohlížecích, stahovacích služeb a vyhledávacích služeb podle směrnice 
 která se opírá o standardy konsorcia OGC. O tom, že směrnici INSPIRE, resp.
 technické dokumenty s ní svázané, lze považovat za “best-practice” svědčí i to,
 že podobné postupy se prosazují i jinde ve světě, například na Novém Zélandu
-[46]_. Popis implementace jednotlivých částí směrnice je obsažen v tzv.
+[ref46]_. Popis implementace jednotlivých částí směrnice je obsažen v tzv.
 implementačních pravidlech. Na publikaci vektorových a rastrových dat se
-vztahuje technický průvodce [28]_. 
+vztahuje technický průvodce [ref28]_. 
 
 Technický průvodce pro implementaci INSPIRE Stahovací službyse dotýká právě
 problematiky velkých datových sad. Nabízí dvě možnosti implementace této služby:
@@ -474,7 +474,7 @@ většinu případů použití:
 
 **OGC Web Map Service (OGC WMS)**
 
-OGC Web Map Service [20]_ je standard, pomocí kterého může klient požádat o
+OGC Web Map Service [ref20]_ je standard, pomocí kterého může klient požádat o
 mapový obraz ve formě rastrového souboru. Server jej na základě klientských
 požadavků vytvoří a klientovi odešle. Klient musí specifikovat obsah obrázku
 (zobrazené vrstvy), souřadnicový systém, hraniční souřadnice, velikost, formát
@@ -489,7 +489,7 @@ Pokud se data v čase příliš nemění (například letecké snímky, obecně 
 mapy), lze si na straně serveru připravit tzv. “Keš” (anglicky cache) -
 předgenerované dlaždice (obrázky o pravidelné velikosti, většinou 256x256
 pixelů) pro určitá měřítka a v určitém rozsahu. Tyto dlaždice pak lze
-zpřístupnit podle standardu OGC WMTS [23]_. Výhodou je rychlé odbavení příchozího
+zpřístupnit podle standardu OGC WMTS [ref23]_. Výhodou je rychlé odbavení příchozího
 požadavku a nižší zátěž IT infrastruktury. Nevýhodou je, že dlaždice musí být
 omezeny pro určitá měřítka. Obsah je statický (v čase se nemění, datové vrstvy
 vykreslené v obrázku jsou stále stejné). “Keš” je potřeba udržovat, pravidelně
@@ -497,7 +497,7 @@ aktualizovat a mít pro ni dostatečně velkou diskovou kapacitu. Formátem
 výstupních souborů bývá podle charakteru dat PNG či JPEG.
 
 Jako vhodná sada měřítek spolu s výchozím “počátkem” dlaždic se ukazuje řada
-dlouhodobě používaná servery ČÚZK [24]_, který pro souřadnicový systém S-JTSK
+dlouhodobě používaná servery ČÚZK [ref24]_, který pro souřadnicový systém S-JTSK
 (EPSG:5514, dříve EPSG:2065 či ESRI:102067) vyvinul vlastní řadu měřítek. Pro
 globální souřadnicové systémy (jako je např. “Spherical Mercator” EPSG:3857) se
 doporučuje používat měřítkovou řadu vyvinutou firmou Google. Více viz kapitola
@@ -505,7 +505,7 @@ Souřadnicové systémy.
 
 **OGC Web Feature Service (OGC WFS)**
 
-OGC Web Feature Service [21]_ slouží k distribuci vektorových dat. Standard WFS
+OGC Web Feature Service [ref21]_ slouží k distribuci vektorových dat. Standard WFS
 2.0.0 umožňuje také spouštět některé analytické operace přímo na serveru,
 jsou-li na něm podporovány. WFS dále podporuje filtrování pouze požadovaných
 geoprvků (vzhledů jevů,  features), není tak potřeba stahovat celou datovou
@@ -516,14 +516,14 @@ pozadí (i Esri Shapefile, GeoJSON, …), standardní bývá formát OGC GML.
                                      
 **OGC Web Coverage Service (OGC WCS)**
 
-OGC Web Coverage Service [22]_ slouží k distribuci rastrových dat. Tento standard
+OGC Web Coverage Service [ref22]_ slouží k distribuci rastrových dat. Tento standard
 je vhodný zejména tam, kde chceme uživatelů nabídnout ke stažení velká rastrová
 data, která mohou být i multispektrální, či mohou obsahovat více rozměrů.
 Standardním formátem výstupních dat bývá GeoTIFF.
 
 **OGC Sensor Observation Service (OGC SOS)**
 
-Služba OGC Sensor Observation Service [72]_ je vhodná pro zpřístupnění měření ze
+Služba OGC Sensor Observation Service [ref72]_ je vhodná pro zpřístupnění měření ze
 senzorů a senzorových sítí, stejně jako pro jejich popis. Senzory většinou
 publikují několik měření k danému místu a v daném čase. Poloha senzoru může být
 statická, ale může se i v čase měnit. Senzory mohou měřit různé veličiny a v
@@ -535,8 +535,8 @@ Předgenerované soubory a formát Atom
 Pro datové sady větších objemů je vhodné předgenerovat jejich obsah do cílových
 vektorových formátů a postavit kolem nich architekturu, která v nich umožní
 efektivně vyhledávat. Jako jeden z vhodných nástrojů může být např. formát Atom
-[25]_. Tento formát je využíván i v dalších technologických standardech, jako je
-například OGC OWS Context [38]_. V principu jde o XML dokument, který obsahuje
+[ref25]_. Tento formát je využíván i v dalších technologických standardech, jako je
+například OGC OWS Context [ref38]_. V principu jde o XML dokument, který obsahuje
 odkazy a základní metadata na dostupné datové sady nebo soubory.
 
 Tento způsob se blíží populárnímu a velice jednoduchému přístupu “vystavit
@@ -547,14 +547,14 @@ souborům.
 Služby GitHub
 ~~~~~~~~~~~~~
 
-Služba GitHub [41]_ je webové rozhraní k systému pro správu verzí Git, který byl
+Služba GitHub [ref41]_ je webové rozhraní k systému pro správu verzí Git, který byl
 původně napsán za účelem správy a udržby zdrojového kódu jádra operačního
 systému GNU/Linux. Od  roku 2014 je možné do této služby nahrávat i geografická
 data v některých z podporovaných formátů GeoJSON a TopoJSON. Tyto soubory jsou
 přímo vizualizovány v jednoduché mapové aplikaci. Podle různých údajů se zdá, že
 limit pro velikost vstupního souboru, má-li být zobrazen v mapové prohlížečce,
 je v současnosti někde okolo 4.5 MB, záleží ale také na struktuře vstupního
-souboru  [42]_. U jednodušších struktur může být limit až někde u 10 MB
+souboru  [ref42]_. U jednodušších struktur může být limit až někde u 10 MB
 (maximální velikost souboru na serverech GitHub je cca 100 MB). Pokud je datový
 soubor příliš veliký, tak není zobrazen. Jeho praktickou dostupnost to
 samozřejmě nijak neovlivní.
@@ -570,7 +570,7 @@ veškeré historie. Vzhledem k tomu, že je systém pro správu verzí Git vyví
 jako Open Source, tak by bylo možné případný přechod na jinou formu distribuce
 ze služby GitHub realizovat bez větších problémů.
 
-Některé menší obce a samosprávy již se službou GitHub experimentují [43, 44].
+Některé menší obce a samosprávy již se službou GitHub experimentují [ref43, 44].
 Do prostředí GitHub lze nahrát i dlaždicovaná rastrová data a odkazovat se na ně
 formou zápisu identifikátoru URL podle standardu OGC Tile Map Service (TMS).
 Podle zkušeností uživatelů se jeví tato služba jako dostatečně rychlá. 
@@ -579,7 +579,7 @@ Tento přístup k publikování geodat je vhodnější pro menší města bez vl
 oddělení. Nicméně některé koncepty tohoto přístupu (správa verzí, distribuce,
 náhled, atd.) jsou aplikovatelné i na tuto případovou studii. Některá větší
 města již se službou GitHub experimentují, jak dokládá například účet města
-Chicago [57]_.
+Chicago [ref57]_.
 
 Doporučený způsob distribuce otevřených geodat
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -630,7 +630,7 @@ jsou uvedeny v příloze C.
 **OGC Web Feature Service**
 
 Standard OGC Web Feature Service (WFS) nemá přímou podporu pro časovou dimenzi.
-Standard odkazuje na OGC Filter Encoding Specification (FES) [49]_, pomocí
+Standard odkazuje na OGC Filter Encoding Specification (FES) [ref49]_, pomocí
 kterého lze filtrovat požadovaná data na základně požadavků ze strany klienta.
 Pomocí FES lze nastavit počáteční a koncový hraniční čas (startTime a endTime),
 mezi kterými klient požaduje stáhnout data. Verzovat lze také pomocí vlastních
@@ -642,7 +642,7 @@ okamžiku se lze dotazovat právě pomocí filtru dle standardu OGC FES 2.0.
 
 **OGC Web Coverage Service**
 
-OGC WCS podporuje ve své nejnovější verzi specifikace [50]_ časový rozsah
+OGC WCS podporuje ve své nejnovější verzi specifikace [ref50]_ časový rozsah
 požadovaných dat jako jeden z možných rozměrů. Syntaxe pro definici času sleduje
 stejně jako u výše zmíněných služeb technickou normu ISO 8601. Příklad je uveden
 v příloze D.
@@ -661,7 +661,7 @@ Verzování a časové řady u souborových formátů a jejich distribuce
 
 **OGC GeoPackage**
 
-Formát OGC GeoPackage [39]_ je postavený na souborové databázi SQLite (viz
+Formát OGC GeoPackage [ref39]_ je postavený na souborové databázi SQLite (viz
 kapitola OGC GeoPackage), což umožňuje v porovnání se stávajícími souborovými
 formáty pokročilejší funkce pro dotazování a manipulaci s daty pomocí jazyka
 SQL. Lze využít standardních datových typů TIME a DATETIME jako atributu daného
@@ -703,14 +703,14 @@ Metadata
 
 Veškerá publikovaná geodata a na ně navazující služby je potřeba opatřit
 příslušnými metadaty. V současné době je pro pořizování a uchovávání metadat v
-geodatové doméně klíčová  mezinárodní technická norma ISO 19115 [32]_. Tuto normu
+geodatové doméně klíčová  mezinárodní technická norma ISO 19115 [ref32]_. Tuto normu
 navíc vyžaduje i evropská směrnice INSPIRE ve svém nařízení komise o metadatech
-[33]_. Vlastní technickou implementací této normy se zabývají implementační
-pravidla směrnice INSPIRE pro metadata [34]_. Vlastní fyzické uložení metadat
+[ref33]_. Vlastní technickou implementací této normy se zabývají implementační
+pravidla směrnice INSPIRE pro metadata [ref34]_. Vlastní fyzické uložení metadat
 geografické datové sady nebo služby je definováno navazující technickou normou
-ISO 19139 (XML) [35]_. Obecně lze říci, že je vhodné držet se metadatového
-profilu České republiky [36]_, i když to v první fázi za vysloveně nutné
+ISO 19139 (XML) [ref35]_. Obecně lze říci, že je vhodné držet se metadatového
+profilu České republiky [ref36]_, i když to v první fázi za vysloveně nutné
 nepovažujeme. Důležité je, aby metadata byla dostupná přes rozhraní webové
-služby OGC Catalog Service for Web (CSW) [37]_. Zároveň doporučujeme tuto službu
+služby OGC Catalog Service for Web (CSW) [ref37]_. Zároveň doporučujeme tuto službu
 otestovat na dostupném software (Esri ArcGIS, QGIS a další) tak, aby byla
 ověřena její praktická funkčnost a dostupnost na různých platformách.

@@ -19,7 +19,7 @@ otevřenosti dat). Tento žebříček shrnuje úroveň států z pohledu
 otevřenosti a dostupnosti nejdůležitějších datových sad jako jsou
 např. jízdní řády, státní rozpočet, výsledky voleb, obchodní rejstřík
 a podobně. Základní zkušenosti s právními, sociálními a technickými
-aspekty OKFN shrnuje publikace Open Data Handbook [70]_, ze které
+aspekty OKFN shrnuje publikace Open Data Handbook [ref70]_, ze které
 částečně čerpá i tato analýza. Druhým z uvedených hybatelů je projekt
 OpenStreetMap (OSM), který byl založen v roce 2006 právě ve Velké
 Británii s cílem komunitního vytváření volně dostupných geografických
@@ -75,7 +75,7 @@ V současnosti těmito předpoklady myslíme zejména:
 * Legislativní a technické překážky pro využití dat jsou minimální.
 
 Otevírání dat přináší kromě nákladů na vlastní otevření a provoz také nemalé
-přínosy jak pro poskytovatele, tak pro uživatele. Tim Berners-Lee [15]_ sestavil
+přínosy jak pro poskytovatele, tak pro uživatele. Tim Berners-Lee [ref15]_ sestavil
 tzv. pětihvězdičkový systém hodnocení otevřenosti dat, jehož smyslem je umožnit
 jednoduchou orientaci ve stupni otevřenosti datových sad. Čím výše se datová
 sada dostane, tím větší je možnost jejího využití veřejností.
@@ -84,7 +84,7 @@ sada dostane, tím větší je možnost jejího využití veřejností.
    :scale: 100 %
    :alt: Pěti hvězdičkový systém otevřených dat
 
-   Pěti hvězdičkový systém otevřených dat podle Tim Berners-Lee [15]_
+   Pěti hvězdičkový systém otevřených dat podle Tim Berners-Lee [ref15]_
 
 **★ Dostupná data.** Data jsou zveřejněna na Internetu, nezáleží na formátu.
 Data, která jsou zveřejněna na síti Internet v jakémkoli  formátu, ale pod
@@ -110,7 +110,7 @@ v podobě adresy URL. Tím se zajistí, že uživatelé mohou daný prvek kdykol
 najít.
 
 **★★★★★ Data jsou provázaná.** Data jsou navzájem prolinkovaná, lze mezi nimi
-navigovat, “surfovat” [71].  Data jsou nejen identifikovatelná pomocí URI, ale
+navigovat, “surfovat” [ref71].  Data jsou nejen identifikovatelná pomocí URI, ale
 obsahují odkazy na další datové sady.  Stejně jako datové sady jsou pomocí
 odkazů provázány i jednotlivé prvky z datových sad. Data jsou dále opatřena
 popisnými informacemi (metadaty) tak, aby v nich bylo možno jednoduše

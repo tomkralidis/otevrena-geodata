@@ -3,14 +3,14 @@ Pozitivní aspekty otevírání geodat, best practices
 Otevřením dat, tj. jejich zpřístupněním široké veřejnosti bez dalších omezení,
 dochází mimo jiné ke zvyšování jejich hodnoty. Je doložitelné, že státní a
 veřejné instituce již pouhým vystavením dat na Internetu jejich původní hodnotu
-násobí [1].
+násobí [ref1].
 
 Dále se ukazuje, že s nejzajímavějšími případy využití dat přijdou spíše často
 komerční společnosti nebo jednotlivci než instituce, které data původně
 vytvořily anebo zadaly jejich vytvoření. Tento efekt byl znatelný například na
-akci “První Pražský GeoData Hackathon” [2]. Během jednoho víkendu vzniklo nad
+akci “První Pražský GeoData Hackathon” [ref2]. Během jednoho víkendu vzniklo nad
 vybranými datovými sadami publikovanými Institutem plánování a rozvoje hl. m.
-Prahy šest zcela nových aplikací a analýz [3] a to i přes počáteční technické
+Prahy šest zcela nových aplikací a analýz [ref3] a to i přes počáteční technické
 problémy související s formou zpřístupnění geodat pomocí proprietárního rozhraní
 XML-RPC. Jako příklad ze zahraničí lze uvést například město Londýn, které
 otevřelo data spojená s přepravním systémem. Na základě těchto dat následně
@@ -29,8 +29,8 @@ Otevírání dat má v obecné rovině hned několik pozitivních efektů, zejm�
 Kvalitnější služby, zvýšení informovanosti veřejnosti
 -----------------------------------------------------
 
-Projekty jako “Mapa kriminality” [4], různé cenové srovnávače (např. server
-http://www.heureka.cz/), “Váš majetek” [5] a další vedou k efektivnějšímu
+Projekty jako “Mapa kriminality” [ref4], různé cenové srovnávače (např. server
+http://www.heureka.cz/), “Váš majetek” [ref5] a další vedou k efektivnějšímu
 nakládání se soukromým a především veřejným majetkem. Soukromé osoby, ale i
 veřejné instituce dostávají k dispozici větší množství relevantních podkladů pro
 efektivnější rozhodování. Dochází tak i k propojení veřejných institucí s
@@ -41,13 +41,13 @@ aplikace “Mapa kriminality”.
 Obdobným příkladem je Datablog Hospodářských novin, který použil data z
 Pražského dopravního podniku a na základě nich vytvořil aplikaci zobrazující
 dostupnost jednotlivých městských částí prostřednictvím Pražské hromadné dopravy
-[10]_. Tato aplikace umožňuje například srovnat dostupnost městské hromadné
+[ref10]_. Tato aplikace umožňuje například srovnat dostupnost městské hromadné
 dopravy v Praze před a po velké změně jízdního řádu k 1.9.2012.
 
-Projekt “What’s the Plan” [13]_, který byl vytvořen v rámci projektu “EU
+Projekt “What’s the Plan” [ref13]_, který byl vytvořen v rámci projektu “EU
 Plan4Business”, kombinuje různé otevřené datové zdroje mimo jiné data z Registru
-Územní Identifikace, Adres a Nemovitostí (RÚIAN) [12]_ a z databází Ministerstva
-financí [7]. Jeho účelem je zobrazení přehledných informací vhodných zejména pro
+Územní Identifikace, Adres a Nemovitostí (RÚIAN) [ref12]_ a z databází Ministerstva
+financí [ref7]. Jeho účelem je zobrazení přehledných informací vhodných zejména pro
 potenciální investory, kteří hledají pro svůj investiční záměr v Evropě vhodnou
 lokalitu.
 
@@ -55,16 +55,16 @@ Zvýšení transparentnosti veřejné správy
 ---------------------------------------
 
 Přehledy hospodaření obcí v ČR jsou dostupné na webových stránkách “Rozpočet
-obce” [6]. Tato aplikace vznikla na základě dat, která v surové podobě publikuje
-Ministerstvo financí prostřednictvím registru ÚFIS [7]. Na základě analýz těchto
-dat již vznikají další akademické studie [8, 9].
+obce” [ref6]. Tato aplikace vznikla na základě dat, která v surové podobě publikuje
+Ministerstvo financí prostřednictvím registru ÚFIS [ref7]. Na základě analýz těchto
+dat již vznikají další akademické studie [ref8, 9].
 
 Některé politické strany zveřejňují své finanční zprávy na Internetu. Pomocí
-automatických nástrojů (např. [11]_) lze zpracovat a vizualizovat mimo jiné i
+automatických nástrojů (např. [ref11]_) lze zpracovat a vizualizovat mimo jiné i
 jejich aktuální finanční situaci.
 
 Jako další příklad lze uvést zveřejněňování územních plánů, kdy díky tomu
-dochází k většímu zapojení veřejnosti do diskuze o budoucnosti obce [14]_ a
+dochází k většímu zapojení veřejnosti do diskuze o budoucnosti obce [ref14]_ a
 podobně.
 
 Redukce administrativy a zátěže IT infrastruktury veřejné správy
@@ -94,7 +94,7 @@ Klíčové příklady otevřených geodat
 Úspěšných příkladů, ze kterých je možné čerpat je velké množství, zřejmě
 nejkompletnější  a nejlépe udržovaný přehled otevřených geografických datových
 sad v České republice je udržován na Wiki stránce české části projektu
-OpenStreetMap [52]_.
+OpenStreetMap [ref52]_.
 
 V této kapitole si představíme některé příklady otevírání geografických dat u nás i v zahraničí:
 
@@ -111,7 +111,7 @@ V této kapitole si představíme některé příklady otevírání geografický
 Londýn ★★★
 ~~~~~~~~~~
 Vedení města Londýn si dalo za cíl zveřejňovat co nejvíce dat, které sbírá a
-uchovává z titulu své funkce. Výsledkem je London Datastore [75]_, který slouží k
+uchovává z titulu své funkce. Výsledkem je London Datastore [ref75]_, který slouží k
 poskytování dat veřejnosti, výhradně zdarma. Na svých stránkách vybízí k
 používání těchto dat a k vytváření aplikací nad nimi. Metadata k datovým sadám
 jsou dostupná v jednoduchém formátu Comma Separated Values (CSV).
@@ -119,7 +119,7 @@ Na základě těchto dat následně vznikla řada aplikací, například pro pl�
 
 Chicago ★★★
 ~~~~~~~~~~~
-Město Chicago publikovalo některá svá geodata pomocí portálu GitHub [57]_ a
+Město Chicago publikovalo některá svá geodata pomocí portálu GitHub [ref57]_ a
 umožnilo tak uživatelům pohodlný přístup k jejich stažení. Vedle samotných dat
 město publikovalo i analytické skripty v jazyce R s tím, že je zájemci z řad
 veřejnosti mohou otestovat a případně navrhovat jejich zlepšení či opravit
@@ -185,7 +185,7 @@ začleňováním změnových souborů. Díky tomu vznikl kolem těchto dat velmi
 relativně bohatý ekosystém nástrojů a služeb. K úspěšnosti přispěla také
 kvalitní dokumentace publikovaná s předstihem před jejím samotným spuštěním.
 
-Z technického hlediska je formát VFR odvozen od standardu OGC GML [19]_, proto je
+Z technického hlediska je formát VFR odvozen od standardu OGC GML [ref19]_, proto je
 na straně aplikací poměrně snadno uchopitelný. To umožnilo rychlé začlenění
 podpory tohoto formátu do nejrozšířenějších Open Source a proprietárních GIS
 nástrojů.  Zároveň umožňuje vyjádřit vazby mezi jednotlivými prvky s ohledem na
@@ -194,7 +194,7 @@ strukturu datového modelu, ze kterého RÚIAN vychází.
 Ministerstvo zemědělství - systém LPIS ★★★
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Projekt Český LPIS [73]_ představuje novou filozofii v řešení geografického
+Projekt Český LPIS [ref73]_ představuje novou filozofii v řešení geografického
 informačního systému pro evidenci využití zemědělské půdy. Jeho základním cílem
 je umožnit bezproblémové zvládnutí administrace a kontroly žádostí o zemědělské
 dotace. LPIS poskytuje i mapové služby, které lze vyhledat v matadatovém

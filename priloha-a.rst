@@ -4,7 +4,7 @@ Příloha A: Vhodný Open Source software pro jednotlivé úlohy
 Geodatabáze PostGIS
 -------------------
 
-PostGIS [60]_ je nadstavba open source objektově-relační databáze PostgreSQL
+PostGIS [ref60]_ je nadstavba open source objektově-relační databáze PostgreSQL
 určená pro práci s geografickými daty. PostGIS lze ve světě Open Source bez
 nadsázky považovat za vedoucího hráče na poli geodatabází a jako přímou
 alternativu k proprietárnímu Oracle Spatial. Z hlediska správy geodat PostGIS
@@ -24,18 +24,18 @@ být “bezešvý”, je využití PostGIS idealním řešením.
 Mapový server MapServer
 -----------------------
 
-Program MapServer [66]_ je tradiční Open Source software pro distribuci geodat.
+Program MapServer [ref66]_ je tradiční Open Source software pro distribuci geodat.
 Podporuje relevantní standardy OGC, díky napojení na knihovnu GDAL umožňuje
 export do požadovaných formátů v rámci webových služeb, podporuje časovou složku
 u služby OGC WMS. Díky nadstavbě MapCache umožňuje generovat dlaždice a
 nabídnout je prostřednictvím OGC WMTS. Při porovnání jednotlivých dostupných
 implementací OGC WMS se ukázalo, že se jedná o nejrychlejší software ze všech
-zúčastněných [67]_.
+zúčastněných [ref67]_.
 
 Knihovna GDAL
 -------------
 
-Knihovna GDAL [59]_ je bezesporu základním kamenem Open Source GIS ekosystému.
+Knihovna GDAL [ref59]_ je bezesporu základním kamenem Open Source GIS ekosystému.
 Podporuje čtení a zápis více než 100 nejrůznějších rastrových a více než 80
 vektorových formátů včetně proprietárních formátů jako Esri File Geodatabase či
 specifických českých formátů VFK a VFR. Díky integrované knihovně Proj.4
@@ -50,7 +50,7 @@ testů validity a konzistence publikovaných geodat.
 PyCWS
 -----
 
-PyCWS [69]_ je serverová implementace standardu OGC CWS napsaná v jazyce Python.
+PyCWS [ref69]_ je serverová implementace standardu OGC CWS napsaná v jazyce Python.
 PyCWS umožňuje publikovat a vyhledávat v metadatech geografických datových sad.
 Pomocí tohoto serverového řešení lze postavit v rámci infrastruktury geodat
 (SDI) katalog metadat odpovídající v současnosti platné technické normě ISO,

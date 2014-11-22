@@ -7,7 +7,7 @@ to i proto, že existuje velice úzká souvislost mezi validitou dat a jejich
 jednoznačností. Jinak řečeno, validní data nemohou být po geometrické stránce
 dezinterpretována a budou v různých softwarech zobrazena vždy stejně. Za
 geometricky validní data považujeme taková data, která jsou v souladu se
-specifikací OGC Simple Features [51]_.
+specifikací OGC Simple Features [ref51]_.
 
 Obzvláště u prostorových dat exportovaných ze systémů, nesloužících primárně
 jako geografické informační systémy, jako je například CAD, můžeme nezřídka

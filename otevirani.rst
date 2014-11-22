@@ -32,7 +32,7 @@ Doporučený postup otevírání dat je znázorněn na následujícím schématu
 
    Doporučený postup otevírání dat
 
-Příprava datových sad pro zveřejnění by měla zahrnovat následující kroky [70]_:
+Příprava datových sad pro zveřejnění by měla zahrnovat následující kroky [ref70]_:
 
 1. Identifikace datových sad pro otevření,
 2. kontrola kvality vybraných datových sad - kompletnost, aktuálnost a přesnost,
