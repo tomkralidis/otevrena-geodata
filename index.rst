@@ -1,53 +1,8 @@
-.. Otevírání geografických dat documentation master file, created by
-   sphinx-quickstart on Thu Nov  6 08:55:16 2014.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+==============================================
+Otevírání geografických dat - Případová studie
+==============================================
 
-===========================
-Otevírání geografických dat
-===========================
-----------------
-Případová studie
-----------------
-
-
-Revize dokumentu
-================
-+------------+--------+-------------------------------+---------------------------+
-| Datum      | Revize | Editoři                       | Popis                     |
-+============+========+===============================+===========================+
-| 2014-09-30 | 1.0.0  | Jáchym Čepický, Martin Landa, | První verze dokumentu     |
-|            |        | Radek Augustýn, Jan Cibulka,  |                           |
-|            |        | Jan Michálek                  |                           |
-+------------+--------+-------------------------------+---------------------------+
-| 2014-10-03 | 1.0.1  | Radek Augustnýn               | Drobné revize formátování |
-+------------+--------+-------------------------------+---------------------------+
-| 2014-10-05 | 1.0.2  | Jáchym Čepický, Martin Landa, | Jazyková korektura textu. |
-|            |        | Radek Augustýn, Jan Michálek  |                           |
-+------------+--------+-------------------------------+---------------------------+
-| 2014-11-03 | 2.0.0  | Jáchym Čepický, Martin Landa, | Druhá verze dokumentu.    |
-|            |        | Radek Augustýn, Jan Michálek  | Zapracování připomínek    |
-|            |        |                               | IPR Praha.                |
-+------------+--------+-------------------------------+---------------------------+
-| 2014-11-03 | 2.1.0  | Jáchym Čepický                | Převod dokumentu do       |
-|            |        |                               | formátu reStructuredText. |
-+------------+--------+-------------------------------+---------------------------+
-| 2014-11-22 | 2.2.0  | Jáchym Čepický, Martin Landa  | Revize textu po převodu   |
-|            |        |                               | do formátu                |
-|            |        |                               | reStructuredText.         |
-+------------+--------+-------------------------------+---------------------------+
-
-Licence
-=======
-
-.. image:: imgs/cc-by-sa.png
-
-Tento dokument podléhá licenci *Creative Commons 4.0
-BY-SA*. Informace o podrobnostech licence najdete na adrese
-http://www.creativecommons.cz/.
-
-Anotace
-=======
+.. rubric:: Anotace
 
 Tato případová studie shrnuje výsledky konzultací pro otevírání
 geografických dat, provedených ve prospěch `Institutu plánování a
@@ -68,8 +23,41 @@ maximálně zúročit naše praktické zkušenosti s různě kvalitními geograf
 daty a informačními systémy pro jejich správu. Cílem bylo shromáždit a utřídit
 přehled témat, které usnadní navržení konkrétního řešení pro otevírání geodat.
 
-Obsah
-=====
+.. rubric:: Licence
+
+.. image:: imgs/cc-by-sa.png
+
+Tento dokument podléhá licenci *Creative Commons 4.0
+BY-SA*. Informace o podrobnostech licence najdete na adrese
+http://www.creativecommons.cz/.
+
+.. rubric:: Revize dokumentu
+
+.. table::
+
+   +------------+--------+-------------------------------+---------------------------+
+   | Datum      | Revize | Editoři                       | Popis                     |
+   +============+========+===============================+===========================+
+   | 2014-09-30 | 1.0.0  | Jáchym Čepický, Martin Landa, | První verze dokumentu     |
+   |            |        | Radek Augustýn, Jan Cibulka,  |                           |
+   |            |        | Jan Michálek                  |                           |
+   +------------+--------+-------------------------------+---------------------------+
+   | 2014-10-03 | 1.0.1  | Radek Augustnýn               | Drobné revize formátování |
+   +------------+--------+-------------------------------+---------------------------+
+   | 2014-10-05 | 1.0.2  | Jáchym Čepický, Martin Landa, | Jazyková korektura textu. |
+   |            |        | Radek Augustýn, Jan Michálek  |                           |
+   +------------+--------+-------------------------------+---------------------------+
+   | 2014-11-03 | 2.0.0  | Jáchym Čepický, Martin Landa, | Druhá verze dokumentu.    |
+   |            |        | Radek Augustýn, Jan Michálek  | Zapracování připomínek    |
+   |            |        |                               | IPR Praha.                |
+   +------------+--------+-------------------------------+---------------------------+
+   | 2014-11-03 | 2.1.0  | Jáchym Čepický                | Převod dokumentu do       |
+   |            |        |                               | formátu reStructuredText. |
+   +------------+--------+-------------------------------+---------------------------+
+   | 2014-11-22 | 2.2.0  | Jáchym Čepický, Martin Landa  | Revize textu po převodu   |
+   |            |        |                               | do formátu                |
+   |            |        |                               | reStructuredText.         |
+   +------------+--------+-------------------------------+---------------------------+
 
 .. toctree::
     :maxdepth: 2
@@ -88,3 +76,4 @@ Obsah
     priloha-d
     priloha-e
     priloha-f
+
