@@ -191,15 +191,22 @@ latex_elements = {
 #'pointsize': '10pt',
 
 # Additional stuff for the LaTeX preamble.
-#'preamble': '',
+    'preamble': "".join((
+        '\\usepackage{amsfonts}',
+        '\DeclareUnicodeCharacter{2605}{$\star$}',
+        '\DeclareUnicodeCharacter{2611}{$\checkmark$}',  
+        '\DeclareUnicodeCharacter{2612}{$\times$}',  
+    )),
+#    'fontenc' : '\\usepackage[T1]{fontenc}',
+#    'inputenc' : '\\usepackage[utf8x]{inputenc}',
 }
 
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'Otevrngeografickchdat.tex', u'Otevírání geografických dat Documentation',
-   u'OpenGeoLabs', 'manual'),
+  ('index', 'Otevirani-geografickych-dat.tex', u'Otevírání geografických dat',
+   u'OpenGeoLabs s.r.o.', u'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
