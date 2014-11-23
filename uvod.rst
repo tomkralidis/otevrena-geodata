@@ -3,7 +3,7 @@
     single: CKAN
     single: Open Data Handbook
     single: OpenStreetMap
-    single: 
+
 Úvod
 ====
 Je všeobecně uznávaným faktem, že sebelepší řešení není udržitelné, pokud není
@@ -155,6 +155,7 @@ Výhody ☑ a omezení ☒ – z hlediska uživatele
 -------------------------------------------
 
 .. tabularcolumns:: |p{.1\textwidth}|p{.8\textwidth}|
+
 +-------+---------------------------------------------------------------------------------+
 | ★     | ☑ Data lze prohlížet                                                            |
 +-------+---------------------------------------------------------------------------------+
@@ -201,6 +202,7 @@ Výhody ☑ a omezení ☒ – z hlediska poskytovatele
 -----------------------------------------------
 
 .. tabularcolumns:: |p{.1\textwidth}|p{.8\textwidth}|
+
 +--------+---------------------------------------------------------------------------------------+
 | ★      | ☑ Odpadá opakovaná činnost související s distribucí dat, uživatelé si je              |
 |        | mohou stáhnout z Internetu                                                            |

@@ -1,11 +1,39 @@
+.. index::
+    single: Formát
+    see: Formát souboru; Formát
+
 Otevřené formáty, webové služby a distribuce  otevřených geodat
 ===============================================================
+
 V této kapitole se zaměříme na vhodné datové formáty pro otevřená geodata.
 Zmíníme populární datové formáty, které jsou ale často pro tento účel nevhodné.
 Podrobněji zhodnotíme dostupné webové služby jako vhodný a široce využívaný
 způsob distribuce geodat.
 
-Formáty pro publikování geodat by měly být zejména otevřené - ať už
+**Formát** určuje význam dat v elektronickém souboru. Formát je způsob, jakým jsou
+data v souboru uložena. Formáty jsou často navrženy specificky pro
+určitý typ dat. V základu lze formáty rozdělit na binární (z pohledu člověka se
+jedná o souvislý tok hodnot 0 a 1) a textové (které jsou pro člověka poměrně jednoduše
+čitelné). Příkladem binárního formátu může být JPEG, speciálně navržený k
+ukládání obrazových dat. Příkladem textového formátu může být formát JSON či XML,
+určené k popisu a ukládání libovolných stromových datových struktur.
+
+**Webové služby** jsou softwarové systémy umožňující interakci dvou strojů na
+počítačové síti. Počítače mezi sebou komunikují pomocí srojově spracovatelného *formátu*
+zpráv. Webové služby ke své komunikaci využívají protokolu HTTP (Hypertext
+Transfare Protocol), o který je opřen World Wide Web (WWW -- odtud *webové
+služby*). Jeden z počítačů ve vzájemné komunikaci vždy
+vystupuje jako *klient* (požaduje po serveru splnění nějakého úkolu), druhý jako
+server (vyřizuje žádost a posílá klientovi odpověď). Výsledkem odpovědi může
+například být i obrázek v patřičném souborovém *formátu*, jako je JPEG.
+
+.. index:: 
+    single: Formáty
+    see: Otevřené formáty; Formáty
+
+Otevřené formáty
+----------------
+Formáty pro publikování otevřených geodat by měly být zejména *otevřené* -- ať už
 proprietární, tj. spravované konkrétní firmou anebo standardizované
 `konsorciem OGC <http://www.opengeospatial.org/>`_ či technickou
 normou ISO. Otevřený formát je takový formát, ke kterému existuje
@@ -14,10 +42,12 @@ využívání. V ideálním případě je vyvíjen nezávislou mezinárodní
 standardizační organizací a není navázán přímo na žádný privátní
 subjekt.
 
-Argument masového rozšíření uzavřeného formátu typu “všichni přece používají
-software XYZ” v tomto případě není relevantní, protože:
+Z dlouhodobého hlediska je výhodnější využívat formáty otevřené a
+standardizované, než proprietární (jakkoliv mohou být široce rozšířené mezi
+uživately a jimi používanými programy), zejména protože:
 
-* Stává se, že firma svůj formát změní, případné programové nástroje třetích stran
+* Stává se, že firma (autor proprietárního formátu a držitel licenčních práv k
+  němu) svůj formát změní, případné programové nástroje třetích stran
   pak reagují se zpožděním, pokud vůbec 
 * Uživatelé jsou nuceni používat konkrétní software, což nemusí být pro některé z
   nich z technických, licenčních nebo finančních důvodů akceptovatelné
@@ -29,6 +59,7 @@ Z pohledu výše zmíněné :ref:`pětihvězdičkové konvence
 vhodných datových formátů:
 
 .. tabularcolumns:: |p{.1\textwidth}|p{.8\textwidth}|
+
 +-------+--------------------------------------------------------------------------------+
 | ★     | Tisknutelná mapa je uložena ve formátu PDF nebo v rastrovém formátu jako       |
 |       | obrázek, například JPEG, GIF či PNG                                            |
@@ -254,24 +285,6 @@ mezi geoprvky.  Každý soubor `shp` umožňuje ukládat pouze jeden typ geometr
 (bod, linie, polygon) a neumožňuje uložit stromovou strukturu dat.
 
 
-Doporučení formátu souborů
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Nelze jednoduše doporučit jeden či dva formáty vhodné pro všechny uživatele a
-datové sady. Vždy je potřeba zvážit charakter dat a převládající způsob jejich
-použití. 
-
-Pro předgenerované soubory vektorových dat doporučujeme, v dlohodobém horizontu
-formát OGC GeoPackage. V krátkodobém horizontu lze použít i formát ESRI
-Shapefile nebo OGC GML, z toho důvodu, že formát GeoPackage není zatím příliš
-rozšířen. 
-
-Pro publikování formou prohlížecích webových služeb (OGC WMS, WMTS) je vhodné
-volit  v závislosti na charakteru dat formáty PNG a JPEG;
-
-V případě stahovacích služeb doporučujeme pro vektorová data formát OGC GML (ISO
-19136) a pro rastrová data potom GeoTIFF či JPEG, podle jejich charakteru.  
-
 Distribuce otevřených geodat
 ----------------------------
 
@@ -296,117 +309,6 @@ struktuře je nutné mít hlubší znalosti než pouhé přidání vrstvy do pro
 desktopovém GIS. Uživatel navíc může k takto publikovaným datům přistupovat
 různými způsoby.
 
-Typické skupiny uživatelů otevřených geodat
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Uživatele lze obecně dělit podle různých kritérií: na základě schopností,
-zkušeností, specializace, požadavků na data a dalších. Tato kritéria jsou
-vzájemně provázána, proto se nevyhneme zjednodušení na modelové skupiny
-uživatelů.
-
-Pro otevírání geografických dat se jako klíčové jeví tyto skupiny uživatelů:
-
-* Uživatel mapového portálu
-* Běžný uživatel Geografického informačního systému (GIS)
-* Specialista GIS (geoinformatik)
-* Datový analytik (mimo obor GIS)
-* Programátor/vývojář
-
-**Uživatel mapového portálu**
-
-Největší částí uživatelů geografických dat je laická veřejnost, která využívá
-některý z mapových portálů, případně specializované nástroje pro práci s mapou.
-Tato skupina uživatelů není přímo cílovou skupinou otevírání geografikcých dat,
-informace se k nim povětšinou dostanou zprostředkovaně právě pomocí portálu,
-který využívají. Potřeby a očekávání těchto uživatelů bereme v úvahu zejména při
-propagaci otevřených dat.
-
-**Běžný uživatel Geografického informačního systému (GIS)**
-
-Tento typ uživatele obvykle zvládá řešení základních, až středně obtížných úloh
-s využitím desktopového GIS, případně nástroje na tvorbu výkresů CAD (AutoCAD,
-Microstation apod). Je schopen pracovat s daty, která lze snadno připojit nebo
-jednoduše importovat v konkrétním programu, se kterým pracuje. S komplexnějšími
-formáty a datovými sadami si obvykle poradí pouze tehdy, pokud se dají otevřít
-nástrojem integrovaným do tohoto programu. Data, která sám nevytváří používá
-obvykle jako podkladová, případně pro provádění analýz, často jednorázově. Jeho
-zájmem jsou tedy spíše data platná k určitému datu, než data průběžně udržovaná
-v aktuálním stavu z webové služby.
-
-Příkladem tohoto typu uživatele jsou studenti negeoinformatických oborů, vědci,
-tvůrci studií, odborníci vytvářející tematická data, plány či mapy (např. lesní
-plány), stavebníci, architekti, pracovníci
-ochrany přírody a další odborníci, kteří využívají GIS jako jeden z více
-pracovních nástrojů.
-
-Obecně lze tuto skupinu uživatelů považovat za poměrně konzervativní, GIS není
-jejich primárním zaměřením, obvykle se jednorázově naučí základům problematiky a
-své znalosti dále příliš nerozvíjí. Dalším omezením, zejména pokud využívají
-proprietární software, může být využívání starých verzí, které ještě nemají
-podporu novějších formátů.
-
-Pro rastrová data je pro tuto skupinu uživatelů ideální využívat data pomocí
-služeb Web Map Service (WMS), případně Web Map Tiled Service (WMTS). U
-vektorových dat je nejvhodnější stahování jednotlivých vrstev v nějakém
-rozšířeném souborovém formátu (např. Esri Shapefile či OGC GeoPackage).
-Použití Web Feature Services (WFS) je ideální cílový stav, ale může být
-problematické při větších objemech dat, který může uživatel (i když ne
-zcela vědomě) po serveru požadovat. Služba OGC WFS umožňuje odpověď "stránkovat", 
-což bohužel není na všech klientských programech běžně implementováno.
-
-**Specialista GIS (“datař”, geoinformatik)**
-
-Specialista GIS je odborníkem pro práci s geografickými daty, který preferuje
-ucelenou datovou sadu včetně popisných informací, zajímá se o aktuálnost a
-přesnost dat. Nemá problém vybrat z nabídky tu, která nejvíce odpovídá jeho
-potřebám. Kromě pokročilých analýz a vizualizací připravuje datové sady pro
-použití v rámci organizace jak pro vnitřní informační systémy, tak pro méně
-zkušené uživatele.
-
-Překážkou, se kterou se u GIS specialistů někdy setkáváme, je přílišná vazba na
-konkrétní software, se kterým pracují. Specialisté se vyhýbají použití nového,
-pro ně neznámého software a nebo jsou v situaci, že jim zaměstnavatel či
-pracovní podmínky či oborové zvyklosti neumožní alternativní software využívat.
-
-Obvykle si budují své databáze, ve kterých se snaží udržovat aktuální kopii
-celých datových sad, což umožňuje provádět rychlé a komplexní analýzy nad
-velkými daty. Poskytují webové služby s vysokou dostupností dimenzované pro
-potřeby konkrétních aplikací. Pro udržování aktualizované datové sady je
-nejvýhodnějším způsobem distribuce poskytování stavových dat a změnových vět,
-ideálně opatřených kvalitními metadaty ve standardním formátu. V případě
-poskytování dat touto cestou je potřeba, aby bylo umožněno automatizované
-vytěžování dat, tedy umísťování souborů na odvoditelné adrese nebo předávání
-odkazy na soubory ke stažení.
-
-**Programátor/vývojář**
-
-Přestože skupina vývojářů není příliš početná, je velice důležitá. Vývojáři
-totiž zpřístupňují data pomocí aplikací, obvykle vyvinutých na míru specifickým
-cílům nebo tematickému okruhu uživatelů. Kvalita popisu  formátu a dostupnost
-knihoven pro jejich využití značně ovlivňuje náklady, se kterými tyto aplikace
-vznikají. Přestože sami jsou vývojáři často skalními zastánci různých
-technologií (.NET, C++, Java atd), geografická data jsou pro ně cizí a akceptují
-proto jakýkoli funkční a dobře popsaný standard, nejlépe přímo s knihovnou k
-jeho využívání. Důležitým faktorem pro tuto skupinu je také otevřená licenční
-politika, tedy možnost poskytnutá data přizpůsobovat konkrétním potřebám. Dále
-oceňují stabilitu poskytovaných služeb a dat, protože připravují služby určené k
-dlouhodobému využití. Je proto vhodné, aby  data byla poskytována dlouhodobě a
-bez zásadních změn.
-
-Vývojáři sledují trendy a vývoj v oboru Informačních technologií (IT), mají
-přehled o novinkách a jsou schopni využít výhod nových a zatím nepříliš
-rozšířených forem přenosu dat i technologií. Ani komplikovanější formáty pro ně
-nemusí být problémem, pokud je dostupná kvalitní dokumentace.
-
-Odborník na informační technologie obvykle pracuje
-s daty a není dopodrobna seznámen s problematikou, kterou tato data
-popisují. Práci usnadní zejména formalizované popisy dat, jako jsou například XSD
-schémata, která se používají při  generování různých šablon pro dokumenty XML,
-připojení dat apod.
-
-Ideálním způsobem distribuce dat pro takto vymezenou skupinu uživatelů jsou
-proto bezesporu webové služby, pokud jsou ovšem stabilní, rychlé a vhodně
-nastavené. S jejich využitím velice efektivně vytvoří aplikaci,  aniž by musel
-provozovat vlastní server a udržovat na něm aktuální data.
 
 Specifika distribuce geodat
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -612,6 +514,28 @@ oddělení. Nicméně některé koncepty tohoto přístupu (správa verzí, dist
 náhled, atd.) jsou aplikovatelné i na tuto případovou studii. Některá větší
 města již se službou GitHub experimentují, jak dokládá například účet města
 Chicago [ref57]_.
+
+Doporučení volby formátů a způsobů distribuce
+---------------------------------------------
+
+Doporučení formátu souborů
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Nelze jednoduše doporučit jeden či dva formáty vhodné pro všechny uživatele a
+datové sady. Vždy je potřeba zvážit charakter dat a převládající způsob jejich
+použití. 
+
+Pro předgenerované soubory vektorových dat doporučujeme, v dlohodobém horizontu
+formát OGC GeoPackage. V krátkodobém horizontu lze použít i formát ESRI
+Shapefile nebo OGC GML, z toho důvodu, že formát GeoPackage není zatím příliš
+rozšířen. 
+
+Pro publikování formou prohlížecích webových služeb (OGC WMS, WMTS) je vhodné
+volit  v závislosti na charakteru dat formáty PNG a JPEG;
+
+V případě stahovacích služeb doporučujeme pro vektorová data formát OGC GML (ISO
+19136) a pro rastrová data potom GeoTIFF či JPEG, podle jejich charakteru.  
+
 
 Doporučený způsob distribuce otevřených geodat
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
