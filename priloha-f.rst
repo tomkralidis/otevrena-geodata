@@ -3,7 +3,7 @@ Příloha F: Kódování češtiny
 
 Dříve poměrně rozšířeným nešvarem u dat vydávaných státní správou, který v
 současnosti naštěstí již téměř vymizel, bylo občas velmi svévolné nakládání s
-kódováním češtiny. Obvyklou příčinou bylo využívání typu nvarchar v databázi,
+kódováním češtiny. Obvyklou příčinou bylo využívání datového typu nvarchar v databázi,
 který umožňoval do jedné položky ukládat data v různých kódováních. Při
 kombinaci dat z historicky různých zdrojů zůstával tento problém zakonzervován
 přímo v databázi. Při výdejích dat ve formátech jako je DBF (v rámci formátu
