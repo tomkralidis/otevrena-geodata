@@ -284,6 +284,8 @@ maximálně 2GB.  Neumožňuje ukládat topologické informace o vzájemných vz
 mezi geoprvky.  Každý soubor `shp` umožňuje ukládat pouze jeden typ geometrie
 (bod, linie, polygon) a neumožňuje uložit stromovou strukturu dat.
 
+.. index::
+    single: Distribuce geodat
 
 Distribuce otevřených geodat
 ----------------------------
@@ -310,38 +312,41 @@ desktopovém GIS. Uživatel navíc může k takto publikovaným datům přistupo
 různými způsoby.
 
 
+.. index::
+    single: Distribuce geodat
+
 Specifika distribuce geodat
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 V současnosti je kladen velký důraz na webová řešení a mobilní aplikace, které
 mají specifické požadavky. Je zde velice důležitá rychlost přenosu dat. Zejména
 u dat využitelných pouze pro zobrazování je proto vhodné využívat metody
-modelové generalizace a posílat linkou mezi serverem a klientem co nejmenší
+modelové generalizace a posílat spojením mezi serverem a klientem co nejmenší
 množství dat.  Pro podporu těchto aplikací byly vyvinuty speciální formáty dat,
 založené na specifikacích JSON, jako jsou GeoJSON a TopoJSON, které jsou pro
 webové aplikace obzvlášť výhodné a v současné době velice populární. U mobilních
 aplikací se často pracuje s lokalizací pomocí Global Positioning System (GPS).
 Pro taková řešení je vhodné umožnit stahování dat přímo v souřadnicovém systému
-WGS84, případně Spherical Mercator.
+WGS84.
 
-Další cestou je distribuce prostřednictvím webových služeb. V tomto případě
-získává uživatel vždy nejaktuálnější data. Nevýhodou je ovšem zátěž na straně
-infrastruktury poskytovatele, kterou není možné vždy předvídat, konzument navíc
-očekává garanci jejich dostupnosti. Praxe ukazuje, že požadavky definované
-INSPIRE jsou orgány státní správy v tomto směru obtížně technicky a provozně
-realizovatelné. Je potřeba zátěž průběžně sledovat a adekvátně na ni reagovat. V
-tomto směru může být cestou pro distribuci otevřených geodat využití cloudového
-řešení na pronajatých sdílených serverech, kde je výkon dynamicky zvyšován podle
-potřeby a cena potom odpovídá využití. K tomu je však potřeba překonat určitou
-psychologickou bariéru, jelikož data a infrastruktura zdánlivě nejsou pod
-kontrolou jako v případě, že použijete řešení vlastní.
+Základním způsobem distribuce geodat by měly být *webové služby OGC*. V tomto
+případě získává uživatel vždy nejaktuálnější data. Nevýhodou je ovšem zátěž na
+straně infrastruktury poskytovatele, kterou není možné vždy předvídat, konzument
+navíc očekává garanci jejich dostupnosti. Zátěž serverů je potřeba průběžně
+sledovat a adekvátně na ni reagovat. V tomto směru může být cestou pro
+distribuci otevřených geodat využití cloudového řešení na pronajatých sdílených
+serverech, kde je výkon dynamicky zvyšován podle potřeby a cena potom odpovídá
+využití. K tomu je však potřeba překonat určitou psychologickou bariéru, jelikož
+data a infrastruktura zdánlivě nejsou pod kontrolou jako v případě, že použijete
+řešení vlastní.
 
-Pro uživatele je nejnáročnějším postupem tzv. strojové vytěžování (harvesting)
-poskytovaných dat a budování databáze na svém hardware. U dat, která jsou
-průběžně aktualizována, je v těchto případech nutné umožnit jak získávání
-stavových dat (tj. dat platných k určitému datu), tak změnových vět formou
-předgenerovaných souborů. Režim výdeje je vhodné nastavit s ohledem na objem
-změn. Toto řešení často vede ke snížení zátěže na infrastrukturu poskytovatele.
+Pro uživatele je nejnáročnějším postupem získání dat tzv. strojové vytěžování
+(harvesting) poskytovaných dat a budování databáze na svém hardware. U dat,
+která jsou průběžně aktualizována, je v těchto případech nutné umožnit jak
+získávání stavových dat (tj. dat platných k určitému datu), tak změnových vět
+formou předgenerovaných souborů. Režim výdeje je vhodné nastavit s ohledem na
+objem změn. Toto řešení často vede ke snížení zátěže na infrastrukturu
+poskytovatele.
 
 Specifickou oblastí u výdeje dat je poskytování dat agregovaných (znepřesněných
 nebo bez některých atributů). Obvyklým důvodem agregace bývají citlivé údaje
@@ -352,39 +357,43 @@ kterými je postaven. Výdejní systém není správné vyvíjet nezávisle na d
 které má vydávat. Tento (výdejní) systém by měl ideálně "růst" spolu s daty, pro
 které je vytvářený.
 
+.. index::
+    single: INSPIRE
+    single: Implementační pravidla INSPIRE
+    single: ATOM
+
 Implementační pravidla INSPIRE
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Jedním z osvědčených způsobů distribuce geodat v Evropské unii je využití
 prohlížecích, stahovacích služeb a vyhledávacích služeb podle směrnice INSPIRE,
-která se opírá o standardy konsorcia OGC. O tom, že směrnici INSPIRE, resp.
+která se také opírá o standardy konsorcia OGC. O tom, že směrnici INSPIRE, resp.
 technické dokumenty s ní svázané, lze považovat za “best-practice” svědčí i to,
 že podobné postupy se prosazují i jinde ve světě, například na Novém Zélandu
 [ref46]_. Popis implementace jednotlivých částí směrnice je obsažen v tzv.
 implementačních pravidlech. Na publikaci vektorových a rastrových dat se
 vztahuje technický průvodce [ref28]_. 
 
-Technický průvodce pro implementaci INSPIRE Stahovací služby se dotýká právě
+Technický průvodce pro implementaci *Stahovací služby INSPIRE* se dotýká právě
 problematiky velkých datových sad. Nabízí dvě možnosti implementace této služby:
 
-* Předgenerované soubory s datovou sadou a jejich distribuce prostřednictvím
-  dokuementu ve formátu ATOM -- ovšem bez možnosti jejich dotazování či
+* *Předgenerované soubory* s datovou sadou a jejich distribuce prostřednictvím
+  dokumentu ve formátu ATOM -- ovšem bez možnosti jejich dotazování či
   výběru části dat prostřednictvím serveru.
 * Webové služby OGC WFS a WCS (tak zvané *datové sady s přímým přístupem*). 
   Ty rozšiřují možnosti předgenerovaných datových sad o možnost filtrovat
   požadovaná data již na straně serveru. 
 
 V obou případech je k dispozici tzv. Get Download Service Metadata Request. V
-prvním případě seznam odkazů ve formátu Atom (viz kapitola Předgenerované
-soubory a formát Atom), v druhém případě pomocí WFS nebo WCS GetCapabilities.
+prvním případě seznam odkazů ve formátu Atom (viz kapitola :ref:`atom`), v
+druhém případě pomocí WFS nebo WCS GetCapabilities.
 
-Pro některé typy dat publikovaných IPR může být standard OGC WFS příliš velkou
-zátěží IT infrastruktury, přestože se k němu v obecné rovině přikláníme. V tomto
-směru je vhodné respektovat doporučení popsaná technickými průvodci INSPIRE,
-konkrétně exportovat zvolené datové sady do souborů a odkazovat se na ně
-prostřednictvím formátu Atom. Tento formát je založen na XML, je snadno
-zpracovatelný a podporovaný celou řadou softwarových nástrojů, přestože není
-příliš rozšířen právě v oblasti GIS.
+Implementační pravidla směrnice INSPIRE definují také požadavky na dostupnost
+služeb, jejich kapacitu a rychlost odezvy.  Praxe ukazuje, že požadavky
+definované v technických specifikacích INSPIRE jsou velice vágní, nedostatečně
+specifikované a v praxi dokonce podhodnocené (např. požadovaná dostupnost služby
+99% znamená, že služba může být nedostupná 3.65 dne v roce!). Jak bylo napsáno
+výše, zátěž je potřeba průběžně sledovat a adekvátně na ni reagovat.
 
 Otevřené webové služby - OGC OWS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -463,6 +472,12 @@ publikují několik měření k danému místu a v daném čase. Poloha senzoru 
 statická, ale může se i v čase měnit. Senzory mohou měřit různé veličiny a v
 různých časových úsecích.
 
+.. index::
+    single: Atom
+    single: FTP
+
+.. _atom:
+
 Předgenerované soubory a formát Atom
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -477,6 +492,10 @@ Tento způsob se blíží populárnímu a velice jednoduchému přístupu “vys
 soubory na FTP server”. To se s formátem Atom nevylučuje - Atom slouží pouze
 jako metadatový dokument, ze kterého lze rychle vyčíst referenci k cílovým
 souborům.
+
+
+.. index::
+    single: GitHub
 
 Služby GitHub
 ~~~~~~~~~~~~~
@@ -546,16 +565,19 @@ Jako primární doporučujeme využít standardy OGC OWS, zejména Web Map Servi
 Kde to z důvodu velikosti datových sad nebo pro technická omezení na straně
 poskytovatele není možné, doporučujeme předgenerovat datové soubory ve vhodném
 datovém formátu a poskytnout soubor ve formátu Atom s odkazy na takto vytvořené
-soubory.
+soubory, podobně jako se k tomu kloní implementační pravidla INSPIRE.
 
-Pro datové sady, které se mění v čase a jsou příliš velké na to, aby se s každou
+Pro datové sady, které se *mění v čase* a jsou příliš velké na to, aby se s každou
 změnou vydávala aktualizovaná verze celé sady, je vhodné publikovat jednou v
 pravidelných intervalech stavová data a současně k nim poskytovat v kratších
 časových intervalech změnové soubory. Toto řešení může výrazně snížit zatížení
 IT infrastruktury, neboť uživatele nemusí vždy stahovat celou datovou sadu ve
 formě stavových dat, ale pouze menší změnové soubory, které si sami aplikují na
 kopii datové sady tak, aby ji měli co možná nejaktuálnější. Více k tomuto tématu
-v kapitole Předgenerované soubory a formát Atom.
+v kapitole Předgenerované soubory a formát Atom. Více o časových řadách v části
+:ref:`casove_rady`.
+
+.. _casove_rady:
 
 Verzování dat a časové řady
 ---------------------------
