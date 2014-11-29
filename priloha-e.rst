@@ -11,10 +11,10 @@ specifikací OGC Simple Features [ref51]_.
 
 Obzvláště u prostorových dat exportovaných ze systémů, nesloužících primárně
 jako geografické informační systémy, jako je například CAD, můžeme nezřídka
-najít chybné geometrie. Nejčastější chybou bývají nesprávně “zaplochované”
-polygony, zdvojené hranice mezi dvěma polygony, “kličky” atd. Výsledkem bývá
-například chybný výpočet plochy, který  neodpovídá skutečné ploše popisovaného
-jevu.
+najít chybné geometrie. Nejčastější chybou bývají nesprávně "zaplochované"
+polygony, zdvojené hranice mezi dvěma polygony, překřížené hranice sousedících
+ploch a další chyby v topologii. Výsledkem bývá například chybný výpočet plochy,
+který  neodpovídá skutečné ploše popisovaného jevu.
 
 K tomuto problému můžeme přistupovat z různých pohledů. V ideálním případě
 pořizujeme data způsobem, který vylučuje jejich uložení v případě, že nejsou po

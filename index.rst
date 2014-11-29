@@ -31,6 +31,12 @@ Tento dokument podléhá licenci *Creative Commons 4.0
 BY-SA*. Informace o podrobnostech licence najdete na adrese
 http://www.creativecommons.cz/.
 
+.. rubric:: Spolupráce
+
+Tuto studii můžete stáhnout ze serveru `GitHub
+<https://github.com/OpenGeoLabs/otevrena-geodata/>`_ a dále rozšiřovat
+standardními postupy (*fork*, *pull request*).
+
 .. raw:: latex
     
          \clearpage
@@ -38,31 +44,31 @@ http://www.creativecommons.cz/.
 
 .. tabularcolumns:: |p{2cm}|p{1.5cm}|p{4cm}|p{6.5cm}|
          
-+------------+--------+-------------------------------+---------------------------+
-| Datum      | Revize | Editoři                       | Popis                     |
-+============+========+===============================+===========================+
-| 2014-09-30 | 1.0.0  | Jáchym Čepický, Martin Landa, | První verze dokumentu     |
-|            |        | Radek Augustýn, Jan Cibulka,  |                           |
-|            |        | Jan Michálek                  |                           |
-+------------+--------+-------------------------------+---------------------------+
-| 2014-10-03 | 1.0.1  | Radek Augustnýn               | Drobné revize formátování |
-+------------+--------+-------------------------------+---------------------------+
-| 2014-10-05 | 1.0.2  | Jáchym Čepický, Martin Landa, | Jazyková korektura textu. |
-|            |        | Radek Augustýn, Jan Michálek  |                           |
-+------------+--------+-------------------------------+---------------------------+
-| 2014-11-03 | 2.0.0  | Jáchym Čepický, Martin Landa, | Druhá verze dokumentu.    |
-|            |        | Radek Augustýn, Jan Michálek  | Zapracování připomínek    |
-|            |        |                               | IPR Praha.                |
-+------------+--------+-------------------------------+---------------------------+
-| 2014-11-03 | 2.1.0  | Jáchym Čepický                | Převod dokumentu do       |
-|            |        |                               | formátu reStructuredText. |
-+------------+--------+-------------------------------+---------------------------+
-| 2014-11-22 | 2.2.0  | Jáchym Čepický, Martin Landa  | Revize textu po převodu   |
-|            |        |                               | do formátu                |
-|            |        |                               | reStructuredText. Seznam  |
-|            |        |                               | zkratek, přeformátování   |
-|            |        |                               | struktury.                |
-+------------+--------+-------------------------------+---------------------------+
++------------+------------+-------------------------------+---------------------------+
+| **Datum**  | **Revize** | **Editoři**                   | **Popis**                 |
++============+============+===============================+===========================+
+| 2014-09-30 | 1.0.0      | Jáchym Čepický, Martin Landa, | První verze dokumentu     |
+|            |            | Radek Augustýn, Jan Cibulka,  |                           |
+|            |            | Jan Michálek                  |                           |
++------------+------------+-------------------------------+---------------------------+
+| 2014-10-03 | 1.0.1      | Radek Augustnýn               | Drobné revize formátování |
++------------+------------+-------------------------------+---------------------------+
+| 2014-10-05 | 1.0.2      | Jáchym Čepický, Martin Landa, | Jazyková korektura textu. |
+|            |            | Radek Augustýn, Jan Michálek  |                           |
++------------+------------+-------------------------------+---------------------------+
+| 2014-11-03 | 2.0.0      | Jáchym Čepický, Martin Landa, | Druhá verze dokumentu.    |
+|            |            | Radek Augustýn, Jan Michálek  | Zapracování připomínek    |
+|            |            |                               | IPR Praha.                |
++------------+------------+-------------------------------+---------------------------+
+| 2014-11-03 | 2.1.0      | Jáchym Čepický                | Převod dokumentu do       |
+|            |            |                               | formátu reStructuredText. |
++------------+------------+-------------------------------+---------------------------+
+| 2014-12-01 | 2.2.0      | Jáchym Čepický, Martin Landa  | Revize textu po převodu   |
+|            |            |                               | do formátu                |
+|            |            |                               | reStructuredText. Seznam  |
+|            |            |                               | zkratek, přeformátování   |
+|            |            |                               | struktury.                |
++------------+------------+-------------------------------+---------------------------+
 
 .. raw:: latex
     
@@ -77,7 +83,9 @@ http://www.creativecommons.cz/.
 +------------+-----------------------------------------------------------------+
 | **Zkratka**| **Význam**                                                      |
 +============+=================================================================+
-| ATOM       |                                                                 |
+| ATOM       | Atom Syndication Format) je webový standard pro publikování     |
+|            | syndikovaného obsahu (obsahu, kterému byly zpětně dodán aktuální|
+|            | informace)                                                      |
 +------------+-----------------------------------------------------------------+
 | CSV        |                                                                 |
 +------------+-----------------------------------------------------------------+
@@ -85,7 +93,9 @@ http://www.creativecommons.cz/.
 +------------+-----------------------------------------------------------------+
 | ČSN        |                                                                 |
 +------------+-----------------------------------------------------------------+
-| EPSG       |                                                                 |
+| EPSG       | European Petroleum Survey Group. Jedná se o široce využívanou   |
+|            | databázi zemských elipsoidů, geodetických dat, zeměpisných a    |
+|            | kartografických souřadnicových systémů, měrných jednotek, atd.  |
 +------------+-----------------------------------------------------------------+
 | GeoTIFF    |                                                                 |
 +------------+-----------------------------------------------------------------+
@@ -205,4 +215,5 @@ http://www.creativecommons.cz/.
     priloha-d
     priloha-e
     priloha-f
+    priloha-g
 

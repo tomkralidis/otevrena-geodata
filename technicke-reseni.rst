@@ -1,3 +1,6 @@
+.. index::
+    single: Technické řešení
+
 Technické řešení infrastruktury otevřených dat
 ==============================================
 
@@ -5,33 +8,24 @@ Při návrhu a budování infrastruktury otevřených dat je vhodné dodržovat 
 základních pravidel, která zabezpečí maximální efektivitu, rozšiřitelnost a
 odolnost celého řešení.
 
-Vnitřní infrastrukturu je nutné logicky, ne nutně fyzicky, oddělit od
-infrastruktury pro poskytování otevřených dat
-
-Softwarová řešení většinou nejdříve podporují využívání dat v souladu se
-standardy a teprve později na jejich plnohodnotnou implementaci. Je tedy
-pravděpodobná nutnost rozšíření spektra využívaného software o další komponenty,
-které nebyly potřeba ke splnění stávajících potřeb. Často je vhodnou volbou Open
-Source software, protože kromě nulové pořizovací ceny je většinou postaven na
-principu implementace standardů, mívá minimální nároky na hardware a je
-připraven k fungování v rámci hybridních řešení
-
-Pokud to licenční podmínky umožní, je vhodné v maximální míře využít stávajících
-technologií tak, aby se zbytečně nerozšiřovalo spektrum provozovaného software a
-tím i složitost celého řešení. To znamená, že optimální je vnitřní
-infrastrukturu geografických dat a infrastrukturu dat otevřených provozovat na
-stejné platformě, doplněné o případné nutné další technologie tam, kde fyzicky
-stávající technologie nedostačuje.
-
-Klíčovým prvkem infrastruktury je validace dat před jejich publikováním.
-Validaci je nutné provádět zásadně na jiné softwarové platformě než byla data
-vytvořena, lépe na širším spektru. V některých případech je možné využít online
-validátor příslušného standardu. Validaci samotnou je nutné svěřit jiné části
-týmu, případně externistům, aby byly nalezeny i nepopsané vlastnosti, které
-"přeci každý ví"
-
-Provoz dynamických služeb je vhodné delegovat na externí infrastrukturu, která
-umožní zabezpečit její škálovatelnost a dostupnost podle aktuálního zatížení
+* Vnitřní infrastrukturu je nutné logicky, ne nutně fyzicky, oddělit od
+  infrastruktury pro poskytování otevřených dat
+* Data jsou publikována v souladu s platnými standardy. Je možné, že stávající
+  softwarové vybavení nebude tuto podmínku splňovat. Softwarové řešení může být
+  hybridní (open source vs. propritary), každopádně takové, aby plnilo daný
+  účel.
+* Pokud to licenční podmínky umožní, je vhodné v maximální míře využít
+  stávajících technologií tak, aby se zbytečně nerozšiřovalo spektrum
+  provozovaného software a tím i složitost celého řešení. To znamená, že
+  optimální je vnitřní infrastrukturu geografických dat a infrastrukturu dat
+  otevřených provozovat na stejné platformě, doplněné o případné nutné další
+  technologie tam, kde fyzicky stávající technologie nedostačuje.
+* Klíčovým prvkem infrastruktury je validace dat před jejich publikováním.
+  validátor příslušného standardu. Validaci samotnou je nutné svěřit jiné části
+  týmu, případně externistům, aby byly nalezeny i nepopsané vlastnosti, sdílené
+  pouze vnitřními pracovníky.
+* Provoz dynamických služeb je vhodné delegovat na externí infrastrukturu, která
+  umožní zabezpečit její škálovatelnost a dostupnost podle aktuálního zatížení
 
 .. figure:: imgs/technicke-reseni.png
    :scale: 100 %
@@ -45,9 +39,10 @@ umožní zabezpečit její škálovatelnost a dostupnost podle aktuálního zat�
 Nasazené řešení je vhodné testovat na co možná nejširší škále běžně používaných
 nástrojů z oblasti desktopových GIS aplikací, geodatabází, katalogů a pod. Výběr
 referenčního softwaru je vždy ovlivněn osobní preferencí administrátora,
-objektivními vlastnostmi, znalostí určitého technologického okruhu. Seznam se
-nesnaží o kompletní nabídku software k dané problematice. Zmiňuje pouze
-nástroje, které považujeme pro daný typ úlohy za nejlepší.
+objektivními vlastnostmi, znalostí určitého technologického okruhu. 
+
+.. index::
+    single: Validace
 
 Doporučení k validaci
 ---------------------

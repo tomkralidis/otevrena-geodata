@@ -2,8 +2,8 @@
     single: Formát
     see: Formát souboru; Formát
 
-Otevřené formáty, webové služby a distribuce  otevřených geodat
-===============================================================
+Otevřené formáty, webové služby a distribuce otevřených geodat
+==============================================================
 
 V této kapitole se zaměříme na vhodné datové formáty pro otevřená geodata.
 Zmíníme populární datové formáty, které jsou ale často pro tento účel nevhodné.
@@ -277,7 +277,7 @@ poskytuje jistotu kompatibility mezi různými softwarovými platformami.
 Mezi slabá místa formátu patří zejména to, že data nejsou uložena v jednom
 souboru, ale hned ve trojici (shp+shx+dbf), různé softwarové produkty si navíc
 přidávají vlastní metadatové soubory, které nejsou součástí specifikace tohoto
-formátu[#shp]_. Názvy atributů jsou omezeny pouze na deset znaků. Data
+formátu [#shp]_. Názvy atributů jsou omezeny pouze na deset znaků. Data
 neobsahují informaci o znakové sadě, což vede k problémům při automatické
 konverzi dat a používání na více operačních systémech. Velikost souborů je
 maximálně 2GB.  Neumožňuje ukládat topologické informace o vzájemných vztazích
@@ -310,6 +310,10 @@ aniž by došlo k jejich nevratné degradaci. K využití dat v komplexnější
 struktuře je nutné mít hlubší znalosti než pouhé přidání vrstvy do projektu v
 desktopovém GIS. Uživatel navíc může k takto publikovaným datům přistupovat
 různými způsoby.
+
+V této kapitloe rozebíráme vhodné způsoby distribuce otevřených geodat, zejména
+pomocí webových *služeb OGC* a také pomocí publikačního standardu *Atom*.
+Nakonec se zmíníme o alternativní možnosti publikace geodat pomocí služby *Github*.
 
 
 .. index::
@@ -349,13 +353,14 @@ objem změn. Toto řešení často vede ke snížení zátěže na infrastruktur
 poskytovatele.
 
 Specifickou oblastí u výdeje dat je poskytování dat agregovaných (znepřesněných
-nebo bez některých atributů). Obvyklým důvodem agregace bývají citlivé údaje
+nebo bez některých atributů). Obvyklým důvodem agregace[#agregace]_ bývají citlivé údaje
 (osobní údaje, data vlastněná třetími stranami).
 
 Výdejní systém, má-li být efektivní a funkční, musí kopírovat charakter dat, nad
 kterými je postaven. Výdejní systém není správné vyvíjet nezávisle na datech,
 které má vydávat. Tento (výdejní) systém by měl ideálně "růst" spolu s daty, pro
 které je vytvářený.
+
 
 .. index::
     single: INSPIRE
@@ -488,10 +493,23 @@ efektivně vyhledávat. Jako jeden z vhodných nástrojů může být např. for
 například OGC OWS Context [ref38]_. V principu jde o XML dokument, který obsahuje
 odkazy a základní metadata na dostupné datové sady nebo soubory.
 
-Tento způsob se blíží populárnímu a velice jednoduchému přístupu “vystavit
-soubory na FTP server”. To se s formátem Atom nevylučuje - Atom slouží pouze
+Tento způsob se blíží populárnímu a velice jednoduchému přístupu "vystavit
+soubory na FTP server". To se s formátem Atom nevylučuje - Atom slouží pouze
 jako metadatový dokument, ze kterého lze rychle vyčíst referenci k cílovým
 souborům.
+
+Soubor ve formátu Atom je webový standard pro publikování syndikovaného obsahu.
+Syndikovaný obsah je takový obsah, který na webu již může být publikován,
+souborem Atom se mu ale zpětně přidají některá metadata a tím se jednodušeni
+popíše pro automatické zpracování. Atom má nahradit starší (proprietární a
+stále populární formát RSS) a je původně určen pro webové stránky. Nicméně jeho
+využít pro data se nabízí.
+
+Soubor Atom jednak obsahuje hlavičku, která identifikuje vlastní zdroj a autora
+a jednak seznam "záznamů", také s jednoznačnou identifikací a hlavně s vlastním
+obsahem nebo odkazem na tento obsah.
+
+Příklad formátu atom je uveden v :ref:`atom-priloha`.
 
 
 .. index::
@@ -673,14 +691,34 @@ obsáhlých verzích, v některých případech je dokonce možné volit general
 hranice. Data jsou nabízena buď pro celé území České republiky, anebo po
 jednolivých obcích. To umožňuje při poměrně malé zátěži na straně serveru
 efektivně obsloužit velké množství klientů. Práce s aktualizací dat se přesouvá
-ze strany serveru ke klientům. Změnové věty lze opět šířit pomocí zpráv ve
-formátu Atom, což umožní jejich automatické strojové zpracování.
+ze strany serveru ke klientům.
+
+V jedné věci se však RÚIAN nechová ideálně: Jednotlivé soubory a změnové věty
+mají sice pevnou a strojově předvídatelnou strukturu, chybí jim však centrální
+strojově zpracovatelný zdroj. Tím by mohl být například zmiňovaný formát Atom
+(viz :ref:`atom`). Podle ústního sdělení bude Atom v nejbližší době doplněn [#cuzk-atom]_.
+
+.. index::
+    single: Metadata
+    single: ISO 19115
+    single: ISO 19139
+    pair OGC CSW, CSW
 
 Metadata
 --------
+Veškerá publikovaná geodata a na ně navazující webové služby je potřeba opatřit
+příslušnými metadaty.  Metadata jsou strukturovaná data o datech. Metadata
+popisují data a služby ve strojově zpracovatelném formátu tak, aby bylo možné v
+jich automaticky vyhledávat a to i na základě jejich relevance a aktuálnosti.
+Pro metadata existuje množstí standardů a doporučení, ale zdaleka ne všechny
+jsou vhodné pro oblast geodat.
 
-Veškerá publikovaná geodata a na ně navazující služby je potřeba opatřit
-příslušnými metadaty. V současné době je pro pořizování a uchovávání metadat v
+Vlastní metadata mohou (měly by) mít jak vlastní datové sady (kdo je vytvořil,
+kdy, s jakou přesností, co přibližně obsahují, z jaké oblasti přibližně data
+jsou atd.), tak i webové služby tyto datové sady publikující (kdo provozuje
+danou službu, jaké datasety služba publikuje, atd.).
+
+V současné době je pro pořizování a uchovávání metadat v
 geodatové doméně klíčová  mezinárodní technická norma ISO 19115 [ref32]_. Tuto normu
 navíc vyžaduje i evropská směrnice INSPIRE ve svém nařízení komise o metadatech
 [ref33]_. Vlastní technickou implementací této normy se zabývají implementační
@@ -693,7 +731,21 @@ služby OGC Catalog Service for Web (CSW) [ref37]_. Zároveň doporučujeme tuto
 otestovat na dostupném software (Esri ArcGIS, QGIS a další) tak, aby byla
 ověřena její praktická funkčnost a dostupnost na různých platformách.
 
+Pro úplnost je potřeba dodat, že postupně do domény geografických informačních
+systémů a geodat pronikají vznikající standardy pro obecná otevřená data a to se
+týká i metadat. Otevřená provázaná data (open linked data) mají vlastní
+metadatové standardy, které jsou již v souladu s INSPIRE mapovatelné tak, aby
+bylo v těchto datových souborech možné vyhledávat pomocí OGC CSW a obráceně,
+linkovaná geodata je možné publikovat na portálech s otevřenými daty.
+
 .. rubric:: Poznámky pod čarou
 
 .. [#shp] Shoda napříč programy panuje alespoň na souboru s příponou .prj, který
     obsahuje informace o souřadnicovém systému.
+
+.. [#agregace] *Agregace* je seskupení vybrané části určitých entit za účelem
+    vytvoření nové entity -- seskupení datových prvků do větších skupin.  Tím
+    dochází k odstranění některých detailů z dat. Agregace se může použít např.
+    pro znepřesnění nebo anonymizaci citlivých dat.
+
+.. [#cuzk-atom] Ústní sdělení, konference "Inspirujme se ...", 2014

@@ -1,5 +1,37 @@
-Příloha A: Vhodný Open Source software pro jednotlivé úlohy
-===========================================================
+.. index:: 
+    single: Open source software
+
+Příloha A: Open Source software pro jednotlivé úlohy
+====================================================
+Pro jednotlivé úlohy spojené s publikováním otevřených prostorových dat (převod
+na správný formát, publikace pomocí služeb nebo statických souborů, validace,
+...), je potřeba software. Vždy doporučujeme využít maximálně stávající
+technické (software i hardware) vybavení v organizaci dostupné, může se ale
+stát, že se ukáže, že stávající platforma je z nějakého důvodu (kapacitní,
+licenční, zastaralost, ...) nevhodná.
+
+Zde představené programy jsou mezi uživateli rozšířené a představují obvyklé
+řešení při budování geografického informačního systému postaveného na open
+source software.  Vývojáři open source software se primárně snaží o maximální
+implementaci stávajících standardů (často se jedná o referenční implementace) a
+maximální operabilitu. Také proto jsou tyto systémy vhodné i v hybridních systémech
+kombinujících software s otevřeným i uzavřeným zdrojovým kódem. 
+
+Je iluzorní automaticky předpokládat, že použitím open source software musí
+nutně dojít k významnému ušetření finančních prostředků v dané organizaci.
+Především záleží na kvalitě pracovníků, kteří se mohou, ale nemusejí spolehnout
+na vlastní síly při údržbě celého systému a od toho se následně odvíjí i cena
+celého řešení. V konečné sumě ale odpadají nutné náklady na pořízení software a na
+udržování licencí. Open source lze nasadit okamžitě podle potřeb, lze s ním
+okamžitě experimentovat a vybudovat potřebné řešení, bez nutnosti vypořádávat
+předem licenční otázky.
+
+Seznam zdaleka není kompletní a pro další alternativy doporučujeme navštívit
+stránku http://osgeo.org (Open Source Geospatial Foundation), která většinu
+programů s otevřeným zdrojovým kódem zaštiťuje.
+
+.. index::
+    single: PostGIS
 
 Geodatabáze PostGIS
 -------------------
@@ -21,6 +53,9 @@ Další zjevnou výhodou nasazení PostGIS je jeho provázanost s celým ekosyst
 Open Source, ale i proprietárního softwaru. Pokud tedy budujeme systém, který má
 být “bezešvý”, je využití PostGIS idealním řešením.
 
+.. index::
+    single: MapServer
+
 Mapový server MapServer
 -----------------------
 
@@ -31,6 +66,24 @@ u služby OGC WMS. Díky nadstavbě MapCache umožňuje generovat dlaždice a
 nabídnout je prostřednictvím OGC WMTS. Při porovnání jednotlivých dostupných
 implementací OGC WMS se ukázalo, že se jedná o nejrychlejší software ze všech
 zúčastněných [ref67]_.
+
+.. index::
+    single: GeoServer
+
+Mapový server GeoServer
+-----------------------
+
+Program GeoServer (http://geoserver.org) je tradiční Open Source software pro
+distribuci geodat.  Primárně se zaměřuje na implementaci standardů OGC, obsahuje
+nadstavby na tvorby rastrových cachí, processingové služby a další. 
+
+GeoServer ja naprogramovaný v jazyce Java a množství práce v něm obstarává
+knihovna GeoTools. Na rozdíl od MapServeru disponuje webovým uživatelským
+rozhraním, které je pro většinu uživatelů relativně rychle pochopitelné.
+
+.. index::
+    single: GDAL
+    single: OGR
 
 Knihovna GDAL
 -------------
@@ -47,6 +100,9 @@ implementované v Open Source frameworku. Kromě generování souborů či integ
 mapovým serverem MapServer je možné knihovnu GDAL použít i pro implementaci sady
 testů validity a konzistence publikovaných geodat.
 
+.. index::
+    single: PyCSW
+
 PyCWS
 -----
 
@@ -56,3 +112,17 @@ Pomocí tohoto serverového řešení lze postavit v rámci infrastruktury geoda
 (SDI) katalog metadat odpovídající v současnosti platné technické normě ISO,
 evropské směrnici INSPIRE  a souvisejícím národním profilům. PyCWS je
 certifikovaný OGC software.
+
+.. index::
+    single: GeoNetwork
+
+GeoNetwork
+-----------
+
+GeoNetwork (http://geonetwork-opensource.org) je serverová implementace
+standardu OGC CWS napsaná v jazyce Java.  GeoNetwork umožňuje publikovat a
+vyhledávat v metadatech geografických datových sad.  Pomocí tohoto serverového
+řešení lze postavit v rámci infrastruktury geodat (SDI) katalog metadat
+odpovídající v současnosti platné technické normě ISO, evropské směrnici INSPIRE
+a souvisejícím národním profilům. GeoNewtork je velice oblíbení právě v
+organizacích implementujících směrnici INSPIRE.

@@ -12,17 +12,18 @@ co se bude uvolňovat. Rizikem je vyčerpání energie na datové sady, které n
 uživateli příliš využívané a naopak nepokrytí těch, které by byly pro veřejnost
 více atraktivní.
 
-V souladu úspěšným postupem ČÚZK je vhodné nejdříve zabezpečit systém
+Pro cílový stav doporučujeme, aby otevřená data byla publikována jako *webové
+služby OGC OWS*. Tam, kde se to ukáže jako problematické (např. z důvodu
+přílišné zátěže na stávající technickou infrastrukturu), doporučujeme
 poskytování statických datových sad, tj. těch, které se vygenerují, připraví na
-server včetně vyhledávací infrastruktury. Zátěž infrastruktury při využívání
-těchto druhů dat je minimální. Teprve ve druhém kroku, s využitím zkušeností při
-otevírání statických dat, je vhodné přistoupit k otevírání dat dynamických,
-měnících s v čase. Každý krok je rozdělen na pilotní fázi, ve které jsou
-otevřeny vhodně vybrané datové sady, u kterých předpokládáme velký zájem
-uživatelů, a fázi implementační, ve které jsou aplikovány zkušenosti z pilotní
-fáze do přípravy rutinního provozu a systémového otevírání dat. Otevírání
-dalších datových sad pokračuje postupně tak, aby byla neustále zabezpečena
-kvalita poskytovaných dat a služeb.
+server včetně vyhledávací infrastruktury s využitím *formátu Atom*.  V druhém
+kroku, s využitím zkušeností při otevírání statických dat, je vhodné přistoupit
+k otevírání dat dynamických, měnících s v čase. Každý krok je rozdělen na
+pilotní fázi, ve které jsou otevřeny vhodně vybrané datové sady, u kterých
+předpokládáme velký zájem uživatelů, a fázi implementační, ve které jsou
+aplikovány zkušenosti z pilotní fáze do přípravy rutinního provozu a systémového
+otevírání dat.  Otevírání dalších datových sad pokračuje postupně tak, aby byla
+neustále zabezpečena kvalita poskytovaných dat a služeb.
 
 Doporučený postup otevírání dat je znázorněn na následujícím schématu:
 
