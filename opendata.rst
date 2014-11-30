@@ -252,7 +252,7 @@ Moderním nástupcem výše zmiňovaných rastrových, ale především vektorov
 formátů je standard OGC GeoPackage [ref39]_. Tento formát umožňuje uložit libovolná
 vektorová data spolu s daty rastrovými, ať už ve formě dlaždic, nebo souborů ve
 formátu GeoTIFF do prostředí databáze SQLite. Poskytuje tak jednoduché rozhraní
-jazyka SQL pro práci s daty. Vektorová data jsou uložena dle specifikace OGC
+jazyka SQL pro práci s daty [#geopackage]_. Vektorová data jsou uložena dle specifikace OGC
 Simple Features for SQL [ref40]_. Maximální velikost databázového souboru je 140 TB,
 což je pro praktické použití většinou dostačující. Data v jedné datové vrstvě,
 tedy  databázové tabulce, mohou mít různé typy geometrií. Řada GIS nástrojů již
@@ -749,3 +749,8 @@ linkovaná geodata je možné publikovat na portálech s otevřenými daty.
     pro znepřesnění nebo anonymizaci citlivých dat.
 
 .. [#cuzk-atom] Ústní sdělení, konference "Inspirujme se ...", 2014
+
+.. [#geopackage] Formát OGC GeoPackage byl navržen primárně jako
+                 výměnný formát. Nejedná se o alternativu ke geodatabázím
+                 jako je např. SpatiaLite, které nabízejí podporu pro
+                 pokročilé prostorové SQL dotazy *(spatial SQL queries)*.
