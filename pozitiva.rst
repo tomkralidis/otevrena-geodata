@@ -156,7 +156,9 @@ publikovaná pomocí proprietárního `REST rozhraní
 <http://cs.wikipedia.org/wiki/Representational_State_Transfer>`_, kde
 pro přenos dat využívá formáty `XML
 <http://cs.wikipedia.org/wiki/Extensible_Markup_Language>`_ a `JSON
-<http://cs.wikipedia.org/wiki/JavaScript_Object_Notation>`_.
+<http://cs.wikipedia.org/wiki/JavaScript_Object_Notation>`_. Město
+Berlín dále nabízí WFS službu a ATOM na webové portálu územního plánování
+http://www.stadtentwicklung.berlin.de/geoinformation/geodateninfrastruktur/index.shtml.
 
 .. index::
     single: Vídeň
