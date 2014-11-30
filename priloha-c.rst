@@ -3,7 +3,7 @@ Příloha C: OGC WMTS a dimenze a časové řady
 Příklad OGC WTMS Capabilities response s časovou řadou
 ------------------------------------------------------
 
-::
+.. code-block:: xml
 
     ...
     <Layer>
@@ -26,6 +26,7 @@ WMTS požadavek s parametrem TIME
 
 Kódování Key-Value-Pairs (KVP)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 ::
 
     ...&TIME=1996-01-02&...
@@ -34,7 +35,8 @@ Kódování REST
 ~~~~~~~~~~~~~
 **Šablona**::
 
-    http://foo/wmts/{Product}/{Style}/{Time}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg 
+  http://foo/wmts/{Product}/{Style}/{Time}/{TileMatrixSet}/{TileMatrix}/
+  {TileRow}/{TileCol}.jpg 
 
 **Konkrétní příklad**
 

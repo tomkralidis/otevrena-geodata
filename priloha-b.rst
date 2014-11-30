@@ -3,7 +3,7 @@ Příloha B: OGC WMS a dimenze a časové řady
 Příklad OGC WMS Capabilities response s časovou řadou
 -----------------------------------------------------
 
-::
+.. code-block:: xml
 
     ...
     <Layer>
@@ -34,6 +34,7 @@ Různý způsob vyjádření obsahu elementu Dimension
 
 WMS GetMap požadavek s parametrem TIME
 --------------------------------------
+
 ::
 
     ...&TIME=1996-01-02&...

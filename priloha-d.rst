@@ -4,6 +4,7 @@ Níže uvedené příklady předpokládají, že čas je vedle souřadnic X,Y ve
 
 Příklad požadavku WCS s časovým omezením - Key Value Pairs
 ----------------------------------------------------------
+
 ::
 
     http://www.myserver.org:port/path?service=WCS&version=2.0&request=GetCoverage
@@ -15,18 +16,18 @@ Příklad požadavku WCS s časovým omezením - Key Value Pairs
 Příklad požadavku WCS s časovým omezením - XML POST
 ---------------------------------------------------
 
-::
+.. code-block:: xml
 
     <gmlcov:GridCoverage ... gml:id="C0001"> 
        <gml:boundedBy>
-            <gml:Envelope srsName=" http://www.opengis.net/def/crs-compound?
-                                              1=http://www.opengis.net/def/crs/EPSG/0/4326&
-                                       2=http://www.opengis.net/def/crs/OGC/0/Days“ 
-                axisLabels="Lat Long Time" uomLabels="deg deg day" srsDimension=“3">
-                <gml:lowerCorner>1 1 2012-03-10</gml:lowerCorner>
-                <gml:upperCorner>3 10 2012-03-10 </gml:upperCorner>
+            <gml:Envelope srsName="http://www.opengis.net/def/crs-compound?
+                                   1=http://www.opengis.net/def/crs/EPSG/0/4326&
+                                   2=http://www.opengis.net/def/crs/OGC/0/Days“ 
+            axisLabels="Lat Long Time" uomLabels="deg deg day" srsDimension=“3">
+               <gml:lowerCorner>1 1 2012-03-10</gml:lowerCorner>
+               <gml:upperCorner>3 10 2012-03-10 </gml:upperCorner>
             </gml:Envelope>
         </gml:boundedBy>
         ...
-    </gmlcov:GridCoverage >
+    </gmlcov:GridCoverage>
 

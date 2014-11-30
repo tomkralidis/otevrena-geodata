@@ -37,7 +37,10 @@ položky, a to vrstvenice s přesností 1, 2 a 5 metrů.
         <link href="http://geoportalpraha.cz/data/vrstevnice_1m.gpkg"/>
         <id>CZ-URM-MAP.MAP_vrstevnice_1m_l</id>
         <updated>2010-12-16</updated>
-        <summary>Vrstevnice jsou vygenerované z Digitálního modelu terénu 2010. Vrstevnicový plán odpovídá obsahem a přesností úrovni map 1:5000. Přesnost cca 1m.</summary>
+        <summary>Vrstevnice jsou vygenerované z Digitálního modelu terénu 2010.
+                 Vrstevnicový plán odpovídá obsahem a přesností úrovni map 1:5000.
+                 Přesnost cca 1m.
+        </summary>
       </entry>
 
       <entry>
@@ -45,7 +48,10 @@ položky, a to vrstvenice s přesností 1, 2 a 5 metrů.
         <link href="http://geoportalpraha.cz/data/vrstevnice_2m.gpkg"/>
         <id>CZ-URM-MAP.MAP_vrstevnice_2m_l</id>
         <updated>2010-12-16</updated>
-        <summary>Vrstevnice jsou vygenerované z Digitálního modelu terénu 2010. Vrstevnicový plán odpovídá obsahem a přesností úrovni map 1:5000. Přesnost cca 2m.</summary>
+        <summary>Vrstevnice jsou vygenerované z Digitálního modelu terénu 2010.
+                 Vrstevnicový plán odpovídá obsahem a přesností úrovni map 1:5000.
+                 Přesnost cca 2m.
+        </summary>
       </entry>
       
       <entry>
@@ -53,10 +59,13 @@ položky, a to vrstvenice s přesností 1, 2 a 5 metrů.
         <link href="http://geoportalpraha.cz/data/vrstevnice_5m.gpkg"/>
         <id>CZ-URM-MAP.MAP_vrstevnice_5m_l</id>
         <updated>2010-12-16</updated>
-        <summary>Vrstevnice jsou vygenerované z Digitálního modelu terénu 2010. Vrstevnicový plán odpovídá obsahem a přesností úrovni map 1:5000. Přesnost cca 5m.</summary>
+        <summary>Vrstevnice jsou vygenerované z Digitálního modelu terénu 2010.
+                 Vrstevnicový plán odpovídá obsahem a přesností úrovni map 1:5000.
+                 Přesnost cca 5m.
+        </summary>
       </entry>
 
-      <!-- ... Další záznamy ... -- />
+      <!-- ... Další záznamy ... -->
     </feed>
 
 
