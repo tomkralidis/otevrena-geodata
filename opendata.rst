@@ -353,7 +353,7 @@ objem změn. Toto řešení často vede ke snížení zátěže na infrastruktur
 poskytovatele.
 
 Specifickou oblastí u výdeje dat je poskytování dat agregovaných (znepřesněných
-nebo bez některých atributů). Obvyklým důvodem agregace[#agregace]_ bývají citlivé údaje
+nebo bez některých atributů). Obvyklým důvodem agregace [#agregace]_ bývají citlivé údaje
 (osobní údaje, data vlastněná třetími stranami).
 
 Výdejní systém, má-li být efektivní a funkční, musí kopírovat charakter dat, nad

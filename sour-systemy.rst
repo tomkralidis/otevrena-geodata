@@ -29,11 +29,11 @@ pozdějšímu přistoupení k NATO se začal místo souřadnicového systému S-
 používat systém UTM/WGS-84 (zóny 33 - EPSG 32633 [#32633]_ a 34 - EPSG 32634 [#32634]_). Evropská
 směrnice INSPIRE [ref26]_ zejména pak ve specifikaci věnované souřadnicovým systémům
 ([ref29]_, str. VII) dále pro měřítka větší než 1:500 000 mezi podporované systémy
-přidává ETRS89-TM (EPSG 3035[#3035]_). Praxe si vynutila použití souřadnicového systému
-Spherical Mercator (EPSG 3857[#3857]_), zavedeného firmou Google pro jejich mapové
+přidává ETRS89-TM (EPSG 3035 [#3035]_). Praxe si vynutila použití souřadnicového systému
+Spherical Mercator (EPSG 3857 [#3857]_), zavedeného firmou Google pro jejich mapové
 produkty.
 
-.. note:: Dříve používané zápisy S-JTSK, jako EPSG:2065[#2065]_, ESRI/ESPG:102067[#102067]_
+.. note:: Dříve používané zápisy S-JTSK, jako EPSG:2065 [#2065]_, ESRI/ESPG:102067 [#102067]_
     vznikly díky tomu, že v databázi EPSG nebyl přítomný kód pro Křovákovo zobrazení
     s "otočenými osami" (a zápornými hodnotami souřadnic), tzv. "S-JTSK/Krovak
     East North". To dnes již není potřeba a všechny systémy by měly nadále
@@ -59,7 +59,7 @@ několika desítek metrů. Více informací k tomuto tématu lze najít napřík
 Portálu FreeGIS [ref31]_.
 
 Vedle S-JTSK doporučujeme nabízet data v souřadnicovém systému WGS84 (EPSG
-4326[#4326]_). Zejména zahraniční uživatelé či uživatelé kombinující data z různých
+4326 [#4326]_). Zejména zahraniční uživatelé či uživatelé kombinující data z různých
 datových zdrojů tento souřadnicový systém využijí. Kromě toho se používá v
 navigacích a GPS zařízeních.
 
@@ -131,5 +131,6 @@ cílového systému.
 .. [#32634] http://epsg.io/32634
 .. [#4326] http://epsg.io/4326
 .. [#3857] http://epsg.io/3857
+.. [#3035] http://epsg.io/3035
 .. [#3835] http://epsg.io/3835
 
