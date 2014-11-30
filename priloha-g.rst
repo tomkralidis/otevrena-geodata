@@ -15,7 +15,7 @@ mohou být přímo součástí kanálu, to ovšem pro geodata není z pochopitel
 důvodů vhodné a proto je lepší uvézt odkaz (`link`) na datovou sadu.
 
 Níže uvádíme *hypotetický* příklad kanálu ve formátu Atom, který obsahuje 3
-položky, a to vrstvenice s přesností 1, 2 a 5 metrů.
+položky, a to vrstevnice s přesností 1, 2 a 5 metrů.
 
 .. code-block:: xml
 

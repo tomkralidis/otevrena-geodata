@@ -186,18 +186,16 @@ standardními postupy (*fork*, *pull request*).
 | XSLT       |                                                                 |
 +------------+-----------------------------------------------------------------+
 
+.. only:: html
+
+    .. rubric:: Obsah
 
 .. toctree::
     :maxdepth: 2
 
     uvod
-    pozitiva
-    uzivatele
-    licence
     opendata
-    sour-systemy
     otevirani
-    technicke-reseni
     bib
 
 .. raw:: latex

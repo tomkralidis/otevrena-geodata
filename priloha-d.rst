@@ -1,3 +1,5 @@
+.. _priloha-d:
+
 Příloha D: Čas a standard WCS 2.0.0
 ===================================
 Níže uvedené příklady předpokládají, že čas je vedle souřadnic X,Y veden jako další rozměr dat. Čas je zadáván v souladu s technickou normou ISO 8601.
