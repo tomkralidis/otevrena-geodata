@@ -25,15 +25,16 @@ přehled témat, které usnadní navržení konkrétního řešení pro otevír�
 
 .. rubric:: Licence
 
-.. image:: imgs/cc-by-sa.png
-
+..
+            .. image:: imgs/cc-by-sa.png
+           
 Tento dokument podléhá licenci *Creative Commons 4.0
 BY-SA*. Informace o podrobnostech licence najdete na adrese
 http://www.creativecommons.cz/.
 
 .. rubric:: Spolupráce
 
-Tuto studii můžete stáhnout ze serveru `GitHub
+Text studie můžete stáhnout ze serveru `GitHub
 <https://github.com/OpenGeoLabs/otevrena-geodata/>`_ a dále rozšiřovat
 standardními postupy (*fork*, *pull request*).
 
