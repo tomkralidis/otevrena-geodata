@@ -1,3 +1,10 @@
+.. index::
+    single: WMTS
+    single: Časové řady
+    single: Verzování
+
+.. _wmts-cas:
+
 Příloha C: OGC WMTS a dimenze a časové řady
 ===========================================
 Příklad OGC WTMS Capabilities response s časovou řadou

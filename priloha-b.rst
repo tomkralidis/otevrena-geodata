@@ -1,3 +1,9 @@
+.. index::
+    single: WMS
+    single: Časové řady
+
+.. _wms-cas:
+
 Příloha B: OGC WMS a dimenze a časové řady
 ==========================================
 Příklad OGC WMS Capabilities response s časovou řadou

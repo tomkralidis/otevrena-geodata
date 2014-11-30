@@ -65,7 +65,8 @@ standardními postupy (*fork*, *pull request*).
 |            |            |                               | formátu reStructuredTex a jeho  |
 |            |            |                               | publikování na serveru          |
 |            |            |                               | Git\-Hub.                       |
-|            |            |                               | Revize textu dle připomínek     |
++------------+------------+-------------------------------+---------------------------------+
+| 2014-12-01 | 2.2.0      | Jáchym Čepický, Martin Landa  | Revize textu dle připomínek     |
 |            |            |                               | zástupců IPR Praha, seznam      |
 |            |            |                               | zkratek, přeformátování         |
 |            |            |                               | struktury.                      |
