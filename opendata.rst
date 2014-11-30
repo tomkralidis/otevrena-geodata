@@ -169,6 +169,7 @@ něj být přítomen metadatový soubor .gfw.
     tripple: JSON; GeoJSON; TopoJSON
     single: SpatiaLite
     single: GeoPackage
+    single: CityGML
 
 Vektorová data
 ~~~~~~~~~~~~~~
@@ -186,6 +187,21 @@ GML se používá jako univerzální formát pro data, která mohou mít i
 komplikovanější stromovou strukturu. Díky tomu, že je postaven na XML, je jeho
 strojové zpracování jednoduché i běžnými systémy, například pomocí transformace
 XSLT.
+
+.. _citygml:
+
+**OGC City GML**
+
+Formát CityGML [ref79]_ je formát založený na XML, určený k reprezentaci souborů
+městských objektů ve 3D. Pomocí tohoto formátu je možné reprezentovat třídy,
+jejich vazby a vztahy jevíce relevantních topografických objektů ve městech a
+respektovat přitom jejich geometrické, topologické a semantické vlastnosti.
+Pomocí tohoto formátu lze dosáhnout také určité generalizace, popsat
+hierarchické vazby mezi objekty, agragace a podobně. 
+
+CityGML je odvozený od formátu GML verze 3 a je vhodný zejména tam, kde
+chce provádět nějakou další analýzu nad daty v městském prostředí, simulace,
+správa budov a podobně.
 
 **OGC Keyhole Markup Language**
 
@@ -697,6 +713,40 @@ V jedné věci se však RÚIAN nechová ideálně: Jednotlivé soubory a změnov
 mají sice pevnou a strojově předvídatelnou strukturu, chybí jim však centrální
 strojově zpracovatelný zdroj. Tím by mohl být například zmiňovaný formát Atom
 (viz :ref:`atom`). Podle ústního sdělení bude Atom v nejbližší době doplněn [#cuzk-atom]_.
+
+.. index::
+    single: 3D data
+
+3D Data
+-------
+3D data obsahují kromě svého umístění v prostoru i informaci o hloubce. To se
+týká jak rastrových tak vektorových dat.
+
+3D rastrová data
+~~~~~~~~~~~~~~~~
+Nejtypičtějším příkladem 3D rastrových dat bývá digitální model reliéfu. V tomto
+případ se ale nejedná o plnohodnotná 3D data. V rastrové matici je pouze uložena
+výška povrchu, ale už ne informace o tom, co se děje pod ní. Hovoříme tak o 2.5D
+datech. 
+
+Samozřejmě je možné uložit i plnohodnotná 3D rastrová data, obsahující např.
+informaci o půdním profilu, srážkovou mapu a podobně. Většina specializovaných
+GIS má pro podobná data vlastní formát. Pro technologicky neutrální distribuci
+prostorových dat však můžeme využít např. formát GeoTIFF, a jednotlivé vrstvy
+uložit jako "pásma" rastrového snímku.
+
+3D Vektorová data
+~~~~~~~~~~~~~~~~~
+Prakticky všechny formáty vektorových dat dnes umožňují uložení souřadnice `z` k
+lomovým bodům. Některé formáty obsahují i speciální 3D vektorové objekty
+(ekvivalent polygonu `face`, či ekvivalent 2D centroidu pro 3D objekt `kernel`).
+
+Pro distribuci otevřených prostorových dat ve 3D by pro většinu aplikací měl
+dostačovat běžný formát (GeoPackage, Esri Shapefile, GeoJSON, GML, ...).
+
+Pro speciální aplikce je vhodné zvážit, zda by bylo možné data převézt na formát
+:ref:`citygml`. Tento formát umožňuje popsat nejen geometrický tvar tělesa, ale
+i vztahy mezi objekty (bloky budov, čtvrtě), vnitřní strukturu budov a podobně.
 
 .. index::
     single: Metadata
