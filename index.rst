@@ -61,7 +61,7 @@ standardními postupy (*fork*, *pull request*).
 |            |            | Radek Augustýn, Jan Michálek  | Zapracování připomínek          |
 |            |            |                               | IPR Praha.                      |
 +------------+------------+-------------------------------+---------------------------------+
-| 2014-12-01 | 2.1.0      | Jáchym Čepický, Martin Landa  | Převod dokumentu do             |
+| 2014-11-06 | 2.1.0      | Jáchym Čepický                | Převod dokumentu do             |
 |            |            |                               | formátu reStructuredTex a jeho  |
 |            |            |                               | publikování na serveru          |
 |            |            |                               | Git\-Hub.                       |
