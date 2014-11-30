@@ -491,7 +491,8 @@ Služba OGC Sensor Observation Service [ref72]_ je vhodná pro zpřístupnění 
 senzorů a senzorových sítí, stejně jako pro jejich popis. Senzory většinou
 publikují několik měření k danému místu a v daném čase. Poloha senzoru může být
 statická, ale může se i v čase měnit. Senzory mohou měřit různé veličiny a v
-různých časových úsecích.
+různých časových úsecích. Nemění se celý dataset, ale získáváme časovou řadu
+měření.
 
 .. index::
     single: Atom
@@ -622,6 +623,15 @@ tak vektorová). Mohou být ale i n-dimenzionální (v případě pásem družic
 snímků). V případě časoprostorových dat je dalším rozměrem, který je potřeba
 zohlednit, čas. Potom mluvíme o 4D datech.
 
+Na časovou složku v datech se můžeme dívat minimálně ze dvou pohledů: Dataset
+může obsahovat "časovou řadu" nějakého fenoménu (např. vývoj teploty na daném
+území, pohyb senzorů v prostoru a čase, vývoj jejich hodnot) nebo změna verze
+celého datasetu (nové přesnější zaměření budov, stav k nějakému datu a podobně). 
+
+Z hlediska distribuce a formátů dat se k oběma typům přistupuje stejně. Tam, kde
+je některá služba nebo formát vhodnější na některý z typů časové složky na to
+upozorníme.
+
 Časové řady prohlížecích služeb
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -630,14 +640,14 @@ data. Nejčastější formou použití je právě čas, ale může to být např
 výška, teplota, atd. či případně i jejich kombinace. V metadatech služby lze
 uvést buď přesnou časovou specifikaci výčtem časových okamžiků nebo počáteční
 čas a velikost časového kroku mezi jednotlivými datovými vrstvami. Příklady jsou
-uvedeny v příloze B.
+uvedeny v :ref:`wms-cas`.
 
 Standard OGC WMTS navíc umožňuje definovat různé dimenze k předgenerovaným
 datovým sadám. Princip je podobný jako u zmíněného standardu OGC WMS, příklady
-jsou uvedeny v příloze C.
+jsou uvedeny v :ref:`wmts-cas`.
 
-Časové řady stahovacích služeb
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Časové řady a verzování stahovacích služeb
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **OGC Web Feature Service**
 
@@ -646,7 +656,7 @@ Standard odkazuje na OGC Filter Encoding Specification (FES) [ref49]_, pomocí
 kterého lze filtrovat požadovaná data na základně požadavků ze strany klienta.
 Pomocí FES lze nastavit počáteční a koncový hraniční čas (startTime a endTime),
 mezi kterými klient požaduje stáhnout data. Verzovat lze také pomocí vlastních
-klíčových slov (např. “1.2.3” a podobně).
+klíčových slov (např. číslem revize "1.2.3" nebo datumem "2014-01-20" a podobně).
 
 Z uvedeného vyplývá, že WFS slouží jako rozhraní k datové sadě, která obsahuje
 data v různých časových intervalech. Na data vztažená k určitému časovému
