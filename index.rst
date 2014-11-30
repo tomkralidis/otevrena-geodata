@@ -63,8 +63,8 @@ standardními postupy (*fork*, *pull request*).
 +------------+------------+-------------------------------+---------------------------------+
 | 2014-12-01 | 2.1.0      | Jáchym Čepický, Martin Landa  | Převod dokumentu do             |
 |            |            |                               | formátu reStructuredTex a jeho  |
-|            |            |                               | publikování na serveru~         |
-|            |            |                               | GitHub.                         |
+|            |            |                               | publikování na serveru          |
+|            |            |                               | Git\-Hub.                       |
 |            |            |                               | Revize textu dle připomínek     |
 |            |            |                               | zástupců IPR Praha, seznam      |
 |            |            |                               | zkratek, přeformátování         |
