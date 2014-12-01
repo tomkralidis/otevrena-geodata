@@ -1,12 +1,12 @@
-#############
-Otevírání dat
-#############
+###########################
+Otevírání geografických dat
+###########################
 
-*******************************
-Doporučený postup otevírání dat
-*******************************
+*********************************************
+Doporučený postup otevírání geografických dat
+*********************************************
 
-K otevření dat je vhodné postupovat v jednoznačně oddělených fázích, které na
+K otevření geodat je vhodné postupovat v jednoznačně oddělených fázích, které na
 sebe navazují, což umožní využít získané zkušenosti a aplikovat požadavky
 uživatelů, které při provozu otevřených dat získáme.
 
@@ -24,8 +24,8 @@ poskytování statických datových sad, tj. těch, které se vygenerují, přip
 server včetně vyhledávací infrastruktury s využitím *formátu Atom*.  V druhém
 kroku, s využitím zkušeností při otevírání statických dat, je vhodné přistoupit
 k otevírání dat dynamických, měnících s v čase. Každý krok je rozdělen na
-pilotní fázi, ve které jsou otevřeny vhodně vybrané datové sady, u kterých
-předpokládáme velký zájem uživatelů, a fázi implementační, ve které jsou
+*pilotní fázi*, ve které jsou otevřeny vhodně vybrané datové sady, u kterých
+předpokládáme velký zájem uživatelů, a *fázi implementační*, ve které jsou
 aplikovány zkušenosti z pilotní fáze do přípravy rutinního provozu a systémového
 otevírání dat.  Otevírání dalších datových sad pokračuje postupně tak, aby byla
 neustále zabezpečena kvalita poskytovaných dat a služeb.
@@ -33,7 +33,7 @@ neustále zabezpečena kvalita poskytovaných dat a služeb.
 Doporučený postup otevírání dat je znázorněn na následujícím schématu:
 
 .. figure:: imgs/postup.png
-   :scale: 100 %
+   :scale: 80 %
    :alt: Schéma doporučeného postupu otevírání dat
    :align: center
    
@@ -85,10 +85,10 @@ základních pravidel, která zabezpečí maximální efektivitu, rozšiřitelno
 odolnost celého řešení.
 
 * Vnitřní infrastrukturu je nutné logicky, ne nutně fyzicky, oddělit od
-  infrastruktury pro poskytování otevřených dat
+  infrastruktury pro poskytování otevřených dat.
 * Data jsou publikována v souladu s platnými standardy. Je možné, že stávající
   softwarové vybavení nebude tuto podmínku splňovat. Softwarové řešení může být
-  hybridní (open source vs. propritary), každopádně takové, aby plnilo daný
+  hybridní (Open Source vs. propritarní), každopádně takové, aby plnilo daný
   účel.
 * Pokud to licenční podmínky umožní, je vhodné v maximální míře využít
   stávajících technologií tak, aby se zbytečně nerozšiřovalo spektrum
@@ -96,15 +96,15 @@ odolnost celého řešení.
   optimální je vnitřní infrastrukturu geografických dat a infrastrukturu dat
   otevřených provozovat na stejné platformě, doplněné o případné nutné další
   technologie tam, kde fyzicky stávající technologie nedostačuje.
-* Klíčovým prvkem infrastruktury je validace dat před jejich publikováním.
-  validátor příslušného standardu. Validaci samotnou je nutné svěřit jiné části
+* Klíčovým prvkem infrastruktury je validace dat před jejich publikováním
+  validátorem příslušného standardu. Validaci samotnou je nutné svěřit jiné části
   týmu, případně externistům, aby byly nalezeny i nepopsané vlastnosti, sdílené
   pouze vnitřními pracovníky.
 * Provoz dynamických služeb je vhodné delegovat na externí infrastrukturu, která
-  umožní zabezpečit její škálovatelnost a dostupnost podle aktuálního zatížení
+  umožní zabezpečit její škálovatelnost a dostupnost podle aktuálního zatížení.
 
 .. figure:: imgs/technicke-reseni.png
-   :scale: 100 %
+   :scale: 80 %
    :alt: Schéma technické infrastruktury
    :align: center
    
@@ -150,8 +150,8 @@ geodatabáze, jakou jsou například objemnější data v relační nebo stromov
 struktuře, případně soubory se změnovými větami, je na místě tuto migraci
 otestovat. Pakliže se zaměříme na Open Source řešení, tak se jako nejvhodnější
 referenční geodatabáze jeví PostGIS [ref60]_. Zde je třeba počítat s tím, že postup
-nebude triviální a není od věci jej publikovat, například na stránkách IPR. 
+nebude triviální a není od věci jej publikovat, například na stránkách IPR Praha. 
 
 Pro ověření funkčnosti a dostupnosti webových služeb, ale i předgenerovaných
 rastrových dlaždic prostřednictvím služby OGC WMTS, je vhodné využít i webové
-aplikace, např. pomocí knihoven Leaflet [ref64]_ nebo OpenLayers [ref65]_.
+aplikace, např. pomocí knihoven Leaf\-let~ [ref64]_ nebo OpenLayers [ref65]_. Více v :doc:`priloha-a`.

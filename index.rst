@@ -34,7 +34,7 @@ http://www.creativecommons.cz/.
 
 .. rubric:: Spolupráce
 
-Text studie můžete stáhnout ze serveru GitHub [#github]_ a dále rozšiřovat
+Text studie můžete stáhnout ze serveru GitHub [#github-url]_ a dále rozšiřovat
 standardními postupy (*fork*, *pull request*).
 
 .. raw:: latex
@@ -245,6 +245,8 @@ standardními postupy (*fork*, *pull request*).
     priloha-f
     priloha-g
 
-.. rubric:: Poznámky pod čarou
+.. only:: html
 
-.. [#github] https://github.com/OpenGeoLabs/otevrena-geodata/
+	  .. rubric:: Poznámky pod čarou
+
+.. [#github-url] https://github.com/OpenGeoLabs/otevrena-geodata/

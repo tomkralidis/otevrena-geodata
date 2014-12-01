@@ -1,5 +1,5 @@
-Příloha E: Geometrická validita prvků
-=====================================
+Příloha E: Geometrická validita geoprvků
+========================================
 
 U dat poskytovaných veřejnou správou se obvykle předpokládá určitá míra jejich
 návaznosti. Proto je nezbytné, aby data byla po geometrické stránce validní, a

@@ -82,3 +82,5 @@
 .. [ref77]      *Geografická informace – Značkovací jazyk geografie (GML)*, Česká technická norma, ČSN EN ISO 19136, 
 .. [ref78]      Capgemini Consulting: *The Open Data Economy: Unlocking Economic Value by Opening Government and Public Data*, http://www.capgemini-consulting.com/resource-file-access/resource/pdf/opendata_pov_6feb.pdf [cit 2014-11-22]
 .. [ref79]      Gerhard Gröger (editor) a kol.: *OGC City Geography Markup Language (CityGML) Encoding Standard*,  OGC 12-019, Verze 2.0.0, Open Geospatial Consoritum, Inc. 2012, http://www.opengeospatial.org/standards/citygml, [cit 2014-11-30]
+.. [ref80]	Kolektiv autorů: *GeoServer*, http://geoserver.org [cit. 2014-12-01]
+.. [ref81]	Kolektiv autorů: *GeoNetwork*, http://geonetwork-opensource.org [cit. 2014-12-01]

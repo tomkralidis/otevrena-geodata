@@ -3,32 +3,32 @@
 
 Příloha A: Open Source software pro jednotlivé úlohy
 ====================================================
-Pro jednotlivé úlohy spojené s publikováním otevřených prostorových dat (převod
-na správný formát, publikace pomocí služeb nebo statických souborů, validace,
+Pro jednotlivé úlohy spojené s publikováním otevřených geografických dat (převod
+do správného formátu, publikace pomocí služeb nebo statických souborů, validace,
 ...), je potřeba software. Vždy doporučujeme využít maximálně stávající
 technické (software i hardware) vybavení v organizaci dostupné, může se ale
 stát, že se ukáže, že stávající platforma je z nějakého důvodu (kapacitní,
 licenční, zastaralost, ...) nevhodná.
 
 Zde představené programy jsou mezi uživateli rozšířené a představují obvyklé
-řešení při budování geografického informačního systému postaveného na open
-source software.  Vývojáři open source software se primárně snaží o maximální
+řešení při budování geografického informačního systému postaveného na Open
+Source software.  Vývojáři Open Source software se primárně snaží o maximální
 implementaci stávajících standardů (často se jedná o referenční implementace) a
 maximální operabilitu. Také proto jsou tyto systémy vhodné i v hybridních systémech
 kombinujících software s otevřeným i uzavřeným zdrojovým kódem. 
 
-Je iluzorní automaticky předpokládat, že použitím open source software musí
-nutně dojít k významnému ušetření finančních prostředků v dané organizaci.
+Je iluzorní automaticky předpokládat, že použitím Open Source software musí
+nutně dojít v dané organizaci k významnému ušetření finančních prostředků.
 Především záleží na kvalitě pracovníků, kteří se mohou, ale nemusejí spolehnout
 na vlastní síly při údržbě celého systému a od toho se následně odvíjí i cena
 celého řešení. V konečné sumě ale odpadají nutné náklady na pořízení software a na
-udržování licencí. Open source lze nasadit okamžitě podle potřeb, lze s ním
+udržování licencí. Open Source lze nasadit okamžitě podle potřeb, lze s ním
 okamžitě experimentovat a vybudovat potřebné řešení, bez nutnosti vypořádávat
 předem licenční otázky.
 
-Seznam zdaleka není kompletní a pro další alternativy doporučujeme navštívit
-stránku http://osgeo.org (Open Source Geospatial Foundation), která většinu
-programů s otevřeným zdrojovým kódem zaštiťuje.
+.. note:: Seznam zdaleka není kompletní a pro další alternativy doporučujeme navštívit
+	  stránku http://osgeo.org (Open Source Geospatial Foundation), která většinu
+	  programů s otevřeným zdrojovým kódem zaštiťuje.
 
 .. index::
     single: PostGIS
@@ -36,8 +36,8 @@ programů s otevřeným zdrojovým kódem zaštiťuje.
 Geodatabáze PostGIS
 -------------------
 
-PostGIS [ref60]_ je nadstavba open source objektově-relační databáze PostgreSQL
-určená pro práci s geografickými daty. PostGIS lze ve světě Open Source bez
+PostGIS [ref60]_ je nadstavba Open Source objektově-relační databáze PostgreSQL
+určená pro práci s~geografickými daty. PostGIS lze ve světě Open Source bez
 nadsázky považovat za vedoucího hráče na poli geodatabází a jako přímou
 alternativu k proprietárnímu Oracle Spatial. Z hlediska správy geodat PostGIS
 nabízí mnohem více než jen úložiště dat, ale také mocné dotazovací prostředí,
@@ -73,9 +73,9 @@ zúčastněných [ref67]_.
 Mapový server GeoServer
 -----------------------
 
-Program GeoServer (http://geoserver.org) je tradiční Open Source software pro
+Program GeoServer [ref80]_ je tradiční Open Source software pro
 distribuci geodat.  Primárně se zaměřuje na implementaci standardů OGC, obsahuje
-nadstavby na tvorby rastrových cachí, processingové služby a další. 
+nadstavby na tvorby rastrových dlaždic, geoprocessingové služby a další. 
 
 GeoServer ja naprogramovaný v jazyce Java a množství práce v něm obstarává
 knihovna GeoTools. Na rozdíl od MapServeru disponuje webovým uživatelským
@@ -119,10 +119,10 @@ certifikovaný OGC software.
 GeoNetwork
 -----------
 
-GeoNetwork (http://geonetwork-opensource.org) je serverová implementace
-standardu OGC CWS napsaná v jazyce Java.  GeoNetwork umožňuje publikovat a
+GeoNetwork [ref81]_ je serverová implementace
+standardu OGC CWS napsaná v jazyce Java umožňující publikovat a
 vyhledávat v metadatech geografických datových sad.  Pomocí tohoto serverového
 řešení lze postavit v rámci infrastruktury geodat (SDI) katalog metadat
 odpovídající v současnosti platné technické normě ISO, evropské směrnici INSPIRE
-a souvisejícím národním profilům. GeoNewtork je velice oblíbení právě v
+a souvisejícím národním profilům. GeoNetwork je velice oblíbený právě v
 organizacích implementujících směrnici INSPIRE.

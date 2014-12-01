@@ -4,7 +4,7 @@
 
 .. _wms-cas:
 
-Příloha B: OGC WMS a dimenze a časové řady
+Příloha B: OGC WMS -- dimenze a~časové řady
 ==========================================
 Příklad OGC WMS Capabilities response s časovou řadou
 -----------------------------------------------------

@@ -22,26 +22,25 @@ Právě ve Velké Británii vznikly dva celosvětově nejvýznamnější hnutí 
 otevírání dat. Prvním z nich je nezisková organizace `Open Knowledge
 Foundation <http://cz.okfn.org/>`_ (OKFN), která se orientuje na
 propagaci otevřenosti ve znalostech a datech obecně. OKFN stojí mimo
-jiné za projektem katalogu CKAN [ref45]_ a tzv. `Open Data Index
-<http://global.census.okfn.org/>`_ (žebříček otevřenosti dat). Tento
+jiné za projektem katalogu CKAN [ref45]_ a tzv. Open Data Index
+(žebříček otevřenosti dat). Tento
 žebříček shrnuje úroveň států z pohledu otevřenosti a dostupnosti
 nejdůležitějších datových sad jako jsou např. jízdní řády, státní
 rozpočet, výsledky voleb, obchodní rejstřík a podobně. Základní
 zkušenosti s právními, sociálními a technickými aspekty OKFN shrnuje
 publikace *Open Data Handbook* [ref70]_, ze které částečně čerpá i tato
-analýza. Druhým z uvedených hybatelů je projekt `OpenStreetMap
+studie. Druhým z uvedených hybatelů je projekt `OpenStreetMap
 <http://www.openstreetmap.org/about>`_ (OSM), který byl založen v
 roce 2006 právě ve Velké Británii s cílem komunitního vytváření volně
 dostupných geografických dat a následně jejich vizualizace do podoby
 silniční mapy, uličního plánu měst a dalších výstupů. Vzhledem k tomu,
 že je od počátku založen na kolektivní spolupráci a na koncepci Open
 Source, se rychle rozšířil do celého světa. Data z projektu OSM jsou
-poskytována pod otevřenou licencí `Open Database Licence
-<http://opendatacommons.org/licenses/odbl/>`_.
+poskytována pod otevřenou licencí Open Database Licence.
 
 Veřejná správa vždy shromažďovala data potřebná pro výkon svých agend.
 Zpřístupnění těchto dat umožní veřejnosti nejen využít informace v nich
-obsažené, ale především řádově znásobit jejich hodnotu tím, že kdokoliv nad nimi
+obsažené, ale především *řádově znásobit jejich hodnotu* tím, že kdokoliv nad nimi
 bude moci bez jakéhokoliv omezení postavit vlastní aplikaci či službu, anebo je
 podrobit nezávislé analýze. Právě proto je důležité, aby co nejvíce dat
 vytvářených veřejnou správou bylo publikováno a volně poskytováno široké
@@ -53,13 +52,13 @@ záležitostí se jedná především o licenční politiku, která v ideálním
 umožní vývojářům navazujících aplikací data předávat dál a vytvářet nad nimi
 další odvozená díla, která nebudou zatěžována žádnými restrikcemi či omezeními.
 
-Obsahem této analýzy jsou zejména geografická data (tzv. *geodata*), která se ve
+Obsahem této studie jsou zejména geografická data (tzv. geodata), která se ve
 velké míře řídí na rozdíl od ostatních typů dat vlastními zvyklostmi, standardy
 či technickými normami. Proces standardizace je v oblasti geoinformačních
 technologií, na rozdíl od jiných technologických oblastí, podporován již delší
 dobu, což výrazně ulehčuje tvorbu dalších doporučení. V současnosti drtivá
 většina výrobců softwarových produktů (proprietárních i otevřených), ale např. i
-Evropská komise skrze směrnici `INSPIRE <http://inspire.gov.cz/>`_ navazuje na
+Evropská komise skrze směrnici INSPIRE navazuje na
 existující standardy v oblasti, které pomáhá dále rozvíjet. Ty jsou vytvářeny
 mezinárodní standardizační organizací `Open Geospatial Consortium
 <http://www.opengeospatial.org/>`_ (OGC) a technickou komisí `ISO TC 211
@@ -99,47 +98,46 @@ sada dostane, tím větší je možnost jejího využití veřejností.
 
 .. figure:: imgs/opendata.png
    :scale: 100 %
-   :alt: Pěti hvězdičkový systém otevřených dat
+   :alt: Pětihvězdičkový systém otevřených dat
    :align: center
    
-   *Pěti hvězdičkový systém otevřených dat podle Tim Berners-Lee* [ref15]_
+   *Pětihvězdičkový systém otevřených dat podle Tim Berners-Lee* [ref15]_
+
+.. raw:: latex
+
+   \newpage
 
 **★ Dostupná data**
 
     Data jsou zveřejněna na Internetu, nezáleží na formátu.
-    Data, která jsou zveřejněna na síti Internet v jakémkoli  formátu, ale pod
+    Data, která jsou zveřejněna na síti Internet v jakémkoli formátu, ale pod
     otevřenou licencí pro jejich využití. Existují tedy určitá technická omezení pro
     jejich využití, nicméně legislativní omezení jsou odstraněna. Příkladem může být
-    mapové dílo ve formátu `PDF <http://cs.wikipedia.org/wiki/Portable_Document_Format>`_.
+    mapové dílo ve formátu PDF.
 
 **★★ Strukturovaná data**
 
     Data jsou zveřejněna ve strojově čitelném formátu.  Data jsou
     zveřejněna ve strojově zpracovatelném formátu, který není
-    otevřený.  Příkladem mohou být data ve formátu `Microsoft Excel
-    <http://cs.wikipedia.org/wiki/Microsoft_Excel>`_ nebo data uložená
-    v `Esri GeoDatabase
-    <http://cs.wikipedia.org/wiki/Geodatab%C3%A1ze#Souborov.C3.A1_geodatab.C3.A1ze_.28File_geodatabase.29>`_.
+    otevřený.  Příkladem mohou být data ve formátu Microsoft Excel nebo data uložená
+    v Esri GeoDatabase.
 
 **★★★ Data v otevřeném formátu**
 
     Data jsou zveřejněna v otevřeném formátu.  Strojový formát, ve
     kterém jsou data zveřejněna, je otevřený, tj. veřejně publikovaný
     s licencí umožňující jeho využití. Příkladem jsou například
-    formáty `Geospatial Markup Language
-    <http://www.opengeospatial.org/standards/gml>`_ (GML), `OGC
-    GeoPackage <http://www.opengeospatial.org/standards/geopackage>`_
-    nebo `Esri Shapefile <http://cs.wikipedia.org/wiki/Shapefile>`_.
+    formáty Geospatial Markup Language (GML), OGC
+    GeoPackage 
+    nebo Esri Shapefile
 
 **★★★★ Data s identifikátorem**
 
     Data jsou dohledatelná, mají unikátní identifikátor. Data jsou
-    opatřena identifikátorem `Uniform Resource Identifier
-    <http://cs.wikipedia.org/wiki/Uniform_Resource_Identifier>`_
+    opatřena identifikátorem Uniform Resource Identifier
     (URI), unikátním v rámci celé sítě Internet. Jednotlivé prvky
     datové sady by měly být identifikované pomocí URI ve tvaru
-    použitelném pro protokol `HTTP
-    <http://cs.wikipedia.org/wiki/Hypertext_Transfer_Protocol>`_,
+    použitelném pro protokol HTTP
     tzn. v podobě adresy URL. Tím se zajistí, že uživatelé mohou daný
     prvek kdykoli najít.
 
@@ -156,103 +154,86 @@ Výhody a omezení otevírání dat
 ==============================
 Je potřeba zdůraznit, že proces otevírání dat je oproti stávajícímu stavu navíc
 vynaložená práce. Ta je požadována zejména po poskytovateli dat, který, chce-li
-se dostat na určitou úroveň otevřenosti dostat, musí do stávajících datových sad
+se na určitou úroveň otevřenosti dat dostat, musí do stávajících datových sad
 dodat požadované chybějící informace.
 
-V této části rozebereme pozitiva ale i požadavky kladené na poskytovatele
-otevřených dat, ale i jejich uživatele.
+V této části textu rozebereme pozitiva otevírání dat, požadavky
+kladené na poskytovatele otevřených dat, ale i jejich uživatele.
 
 Výhody ☑ a omezení ☒ – z hlediska uživatele
 -------------------------------------------
 
-.. tabularcolumns:: |p{.1\textwidth}|p{.8\textwidth}|
+.. tabularcolumns:: p{.1\textwidth}p{.8\textwidth}
 
 +-------+---------------------------------------------------------------------------------+
-| ★     | ☑ Data lze prohlížet                                                            |
+| ★     | | ☑ Data lze prohlížet                                                          |
+|       | | ☑ Data lze tisknout                                                           |
+|       | | ☑ Data lze uložit na lokální disk                                             |
+|       | | ☑ Data lze vložit do dalšího systému nebo databáze                            |
+|       | | ☑ Data lze podle potřeby a možností použitého formátu měnit, doplňovat či     |
+|       | | odvozovat další produkty                                                      |
+|       | | ☑ Data je možné sdílet s dalšími uživateli                                    |
 +-------+---------------------------------------------------------------------------------+
-|       | ☑ Data lze tisknout                                                             |
+| ★★    | | ☑ Data lze automaticky zpracovávat pomocí proprietárního software             |
+|       | | ☑ Data lze vyexportovat do jiného formátu                                     |
 +-------+---------------------------------------------------------------------------------+
-|       | ☑ Data lze uložit na lokální disk                                               |
+| ★★★   | | ☑ Uživatel může manipulovat s daty, aniž by byl závislý na vlastnictví        |
+|       | | konkrétního, většinou proprietárního software                                 |
 +-------+---------------------------------------------------------------------------------+
-|       | ☑ Data lze vložit do dalšího systému nebo databáze                              |
+| ★★★★  | | ☑ Uživatel může na data odkazovat z kteréhokoli jiného místa na webu          |
+|       | | ☑ Lze pořizovat trvalé odkazy na data                                         |
+|       | | ☑ Lze znovu použít část dat, aniž by se musela vytvářet jejich fyzická kopie  |
+|       | | ☑ Lze kombinovat datové sady mezi sebou, protože použité URI jsou vždy        |
+|       | | unikátní                                                                      |
+|       | | ☒ Porozumění struktuře takto publikovaných otevřených dat je                  |
+|       | | komplikovanější, než pochopení jednoduché tabelární nebo stromové struktury   |
 +-------+---------------------------------------------------------------------------------+
-|       | ☑ Data lze podle potřeby a možností použitého formátu měnit, doplňovat          |
-|       | či odvozovat další produkty                                                     |
-+-------+---------------------------------------------------------------------------------+
-|       | ☑ Data je možné sdílet s dalšími uživateli                                      |
-+-------+---------------------------------------------------------------------------------+
-| ★★    | ☑ Data lze automaticky zpracovávat pomocí proprietárního software               |
-+-------+---------------------------------------------------------------------------------+
-|       | ☑ Data lze vyexportovat do jiného formátu                                       |
-+-------+---------------------------------------------------------------------------------+
-| ★★★   | ☑ Uživatel může manipulovat s daty, aniž by byl závislý na vlastnictví          |
-|       | konkrétního, většinou proprietárního software                                   |
-+-------+---------------------------------------------------------------------------------+
-| ★★★★  | ☑ Uživatel může na data odkazovat z kteréhokoli jiného místa na webu            |
-+-------+---------------------------------------------------------------------------------+
-|       | ☑ Lze pořizovat trvalé odkazy na data                                           |
-+-------+---------------------------------------------------------------------------------+
-|       | ☑ Lze znovu použít část dat, aniž by se musela vytvářet jejich fyzická kopie    |
-+-------+---------------------------------------------------------------------------------+
-|       | ☑ Lze kombinovat datové sady mezi sebou, protože použité URI jsou vždy unikátní |
-+-------+---------------------------------------------------------------------------------+
-|       | ☒ Porozumění struktuře takto publikovaných otevřených dat je                    |
-|       | komplikovanější, než pochopení jednoduché tabelární nebo stromové struktury     |
-+-------+---------------------------------------------------------------------------------+
-| ★★★★★ | ☑ Lze najít další datové sady při procházení té současné                        |
-+-------+---------------------------------------------------------------------------------+
-|       | ☑ Datové sady jsou publikovány v jasně definovaném schématu                     |
-+-------+---------------------------------------------------------------------------------+
-|       | ☒ Možnost výskytu neexistujících cílů, které je potřeba ošetřit,                |
-|       | podobně jako když na webovém serveru neexistuje požadovaná adresa               |
-+-------+---------------------------------------------------------------------------------+
-|       | ☒ Prezentace dat z externích zdrojů jako ověřený fakt je riskantní              |
+| ★★★★★ | | ☑ Lze najít další datové sady při procházení té současné                      |
+|       | | ☑ Datové sady jsou publikovány v jasně definovaném schématu                   |
+|       | | ☒ Možnost výskytu neexistujících cílů, které je potřeba ošetřit,              |
+|       | | podobně jako když na webovém serveru neexistuje požadovaná adresa             |
+|       | | ☒ Prezentace dat z externích zdrojů jako ověřený fakt je riskantní            |
 +-------+---------------------------------------------------------------------------------+
 
 Výhody ☑ a omezení ☒ – z hlediska poskytovatele
 -----------------------------------------------
 
-.. tabularcolumns:: |p{.1\textwidth}|p{.8\textwidth}|
+.. tabularcolumns:: p{.1\textwidth}p{.8\textwidth}
 
 +--------+---------------------------------------------------------------------------------------+
-| ★      | ☑ Odpadá opakovaná činnost související s distribucí dat, uživatelé si je              |
-|        | mohou stáhnout z Internetu                                                            |
+| ★      | | ☑ Odpadá opakovaná činnost související s distribucí dat, uživatelé si je            |
+|        | | mohou stáhnout z Internetu                                                          |
+|        | | ☑ Vlastní otevření je většinou snadné a s minimálními náklady                       |
 +--------+---------------------------------------------------------------------------------------+
-|        | ☑ Vlastní otevření je většinou snadné a s minimálními náklady                         |
+| ★★     | | ☑ Otevření dat i uživatelům, kteří mají zájem kromě jejich prohlížení               |
+|        | | také o jejich zpracování. Tím se výrazně zvětšuje velikost skupiny uživatelů,       |
+|        | | kteří budou takto publikovaná data využívat                                         |
+|        | | ☑ Vlastní otevření je většinou snadné a s minimálními náklady                       |
 +--------+---------------------------------------------------------------------------------------+
-| ★★     | ☑ Otevření dat i uživatelům, kteří mají zájem kromě jejich prohlížení                 |
-|        | také o jejich zpracování. Tím se výrazně zvětšuje velikost skupiny uživatelů,         |
-|        | kteří budou takto publikovaná data využívat                                           |
+| ★★★    | | ☑ Další rozšíření skupiny potenciálních uživatelů o ty, kteří                       |
+|        | | nepoužívají programové vybavení kompatibilní s vybavením poskytovatele              |
+|        | | ☒ Náklady na  konverzi a uložení dat do zvolených formátů. Tyto náklady nemusí      |
+|        | | být v konečném důsledku příliš vysoké, protože konverze mezi jednotlivými           |
+|        | | formáty je poměrně běžná a dobře zvládnutá. Je však třeba s nimi počítat.           |
 +--------+---------------------------------------------------------------------------------------+
-|        | ☑ Vlastní otevření je většinou snadné a s minimálními náklady                         |
+| ★★★★   | | ☑ Uživatel má velice dobrou kontrolu členění dat a může optimalizovat přístup       |
+|        | | k nim                                                                               | 
+|        | | ☑ Jiní poskytovatelé se mohou na data navázat a tím je zlepšit na úroveň  ★★★★★     |
+|        | | ☒ Většinou je nutný zásah do struktury dat                                          |
+|        | | ☒ Poskytovatel musí přiřadit URI k datům a zabezpečit jejich prezentaci             |
+|        | | ☒ Poskytovatel musí najít existující postupy nebo vytvořit své vlastní              |
 +--------+---------------------------------------------------------------------------------------+
-| ★★★    | ☑ Další rozšíření skupiny potenciálních uživatelů o ty, kteří                         |
-|        | nepoužívají programové vybavení kompatibilní s vybavením poskytovatele                |
+| ★★★★★  | | ☑ Data jsou dohledatelná a prohledatelná, čímž se výrazně zvyšuje jejich hodnota    |
+|        | | ☑ Poskytovatel může profitovat ze vzájemného provázání dat, podobně jako uživatelé  |
+|        | | ☒ Poskytoval musí investovat do propojení vlastních dat s dalšími datovými sadami   |
+|        | | ☒ Poskytoval musí udržovat tato propojení aktuální, pokud možno odstraňovat         |
+|        | | propojení vedoucí na již neexistující cíle (např. pokud je nějaká webová stránka    |
+|        | | odstraněna.                                                                         |
 +--------+---------------------------------------------------------------------------------------+
-|        | ☒ Náklady na  konverzi a uložení dat do zvolených formátů. Tyto náklady nemusí být v  |
-|        | konečném důsledku příliš vysoké, protože konverze mezi jednotlivými formáty je poměrně|
-|        | běžná a dobře zvládnutá. Je však třeba s nimi počítat.                                |
-+--------+---------------------------------------------------------------------------------------+
-| ★★★★   | ☑ Uživatel má velice dobrou kontrolu členění dat a může optimalizovat přístup k nim   |
-+--------+---------------------------------------------------------------------------------------+
-|        | ☑ Jiní poskytovatelé se mohou na data navázat a tím je zlepšit na úroveň  ★★★★★       |
-+--------+---------------------------------------------------------------------------------------+
-|        | ☒ Většinou je nutný zásah do struktury dat                                            |
-+--------+---------------------------------------------------------------------------------------+
-|        | ☒ Poskytovatel musí přiřadit URI k datům a zabezpečit jejich prezentaci               |
-+--------+---------------------------------------------------------------------------------------+
-|        | ☒ Poskytovatel musí najít existující postupy nebo vytvořit své vlastní                |
-+--------+---------------------------------------------------------------------------------------+
-| ★★★★★  | ☑ Data jsou dohledatelná a prohledatelná, čímž se výrazně zvyšuje jejich hodnota      |
-+--------+---------------------------------------------------------------------------------------+
-|        | ☑ Poskytovatel může profitovat ze vzájemného provázání dat, podobně jako uživatelé    |
-+--------+---------------------------------------------------------------------------------------+
-|        | ☒ Poskytoval musí investovat do propojení vlastních dat s dalšími datovými sadami     |
-+--------+---------------------------------------------------------------------------------------+
-|        | ☒ Poskytoval musí udržovat tato propojení aktuální, pokud možno                       |
-|        | odstraňovat propojení vedoucí na již neexistující cíle (např. pokud je nějaká         |
-|        | webová stránka odstraněna.                                                            |
-+--------+---------------------------------------------------------------------------------------+
+
+.. raw:: latex
+
+   \newpage
 
 .. index::
     single: Best practices
@@ -262,7 +243,7 @@ Pozitivní aspekty otevírání geodat, best practices
 ==================================================
 Otevřením dat, tj. jejich zpřístupněním široké veřejnosti bez dalších omezení,
 dochází mimo jiné ke zvyšování jejich hodnoty. Většina autorů se shoduje na tom,
-že, státní a veřejné instituce již pouhým vystavením dat na Internetu jejich
+že státní a veřejné instituce již pouhým vystavením dat na Internetu jejich
 původní hodnotu násobí (např. [ref01]_ str. 19, [ref78]_).
 
 Dále se ukazuje, že s nejzajímavějšími případy využití dat přijdou
@@ -270,22 +251,21 @@ spíše často komerční společnosti nebo jednotlivci než instituce, které
 data původně vytvořily anebo zadaly jejich vytvoření. Tento efekt byl
 znatelný například na akci *“První Pražský GeoData Hackathon”*
 [ref02]_. Během jednoho víkendu vzniklo nad vybranými datovými sadami
-publikovanými *Institutem plánování a rozvoje hlavního města Prahy*
+publikovanými Institutem plánování a rozvoje hlavního města Prahy
 šest zcela nových aplikací a analýz [ref03]_ a to i přes počáteční
 technické problémy související s formou zpřístupnění geodat pomocí
-proprietárního rozhraní `XML-RPC
-<http://cs.wikipedia.org/wiki/XML-RPC>`_. Jako příklad ze zahraničí
+proprietárního rozhraní XML-RPC. Jako příklad ze zahraničí
 lze uvést například město Londýn, které otevřelo data spojená s
 přepravním systémem. Na základě těchto dat následně vyrostla řada
 aplikací pro plánování cesty či domlouvání spolujízd a další.
 
-Otevírání dat má v obecné rovině hned několik pozitivních efektů, zejména: 
+Otevírání dat má v obecné rovině hned několik pozitivních efektů, a to zejména: 
 
 * Kvalitnější služby pro občany
 * Zvýšení informovanosti obyvatelstva
 * Podpora občanské společnosti
 * Zvýšení ekonomického potenciálu
-* Zvýšení transparentnosti veřejné správy
+* Zlepšení transparentnosti veřejné správy
 * Efektivnější veřejná správa
 * Redukce administrativy a zátěže IT infrastruktury veřejné správy
 
@@ -309,8 +289,8 @@ dopravy v Praze před a po velké změně jízdního řádu k 1.9.2012.
 
 Projekt *“What’s the Plan”* [ref13]_, který byl vytvořen v rámci
 projektu *“EU Plan4Business”*, kombinuje různé otevřené datové zdroje
-mimo jiné data z `Registru Územní Identifikace, Adres a Nemovitostí
-<http://www.cuzk.cz/ruian>`_ (RÚIAN) [ref12]_ a z databází
+mimo jiné data z Registru Územní Identifikace, Adres a Nemovitostí
+(RÚIAN) [ref12]_ a z databází
 Ministerstva financí [ref07]_. Jeho účelem je zobrazení přehledných
 informací vhodných zejména pro potenciální investory, kteří hledají
 pro svůj investiční záměr v Evropě vhodnou lokalitu.
@@ -354,12 +334,14 @@ vektorových služeb.
 Klíčové příklady otevřených geodat
 ==================================
 
-Úspěšných příkladů, ze kterých je možné čerpat je velké množství, zřejmě
+Úspěšných příkladů, ze kterých je možné čerpat, je velké množství. Zřejmě
 nejkompletnější  a nejlépe udržovaný přehled otevřených geografických datových
 sad v České republice je udržován na Wiki stránce české části projektu
 OpenStreetMap [ref52]_.
 
-V této kapitole si představíme některé příklady otevírání geografických dat u nás i v zahraničí:
+V této kapitole si představíme některé příklady otevírání
+geografických dat u nás i v zahraničí (v závorce uveden stupeň
+otevřenosti dat dle pětihvězdičkového systému):
 
 * Londýn
 * Chicago
@@ -382,8 +364,7 @@ sbírá a uchovává z titulu své funkce. Výsledkem je London Datastore
 [ref75]_, který slouží k poskytování dat veřejnosti, výhradně
 zdarma. Na svých stránkách vybízí k používání těchto dat a k vytváření
 aplikací nad nimi. Metadata k datovým sadám jsou dostupná v
-jednoduchém formátu `Comma Separated Values
-<http://cs.wikipedia.org/wiki/CSV>`_ (CSV).  Na základě těchto dat
+jednoduchém formátu Comma Separated Values (CSV).  Na základě těchto dat
 následně vznikla řada aplikací, například pro plánování cesty či
 domlouvání spolujízd. Přehled aplikací vzniklých v Londýně, a to nejen
 nad dopravními daty, je k dispozici na adrese
@@ -395,9 +376,12 @@ http://data.london.gov.uk/datastore/inspirational-uses.
 Chicago ★★★
 -----------
 
+.. |_| unicode:: 0xA0 
+   :trim:
+
 Město Chicago publikovalo některá svá geodata pomocí portálu GitHub [ref57]_ a
 umožnilo tak uživatelům pohodlný přístup k jejich stažení. Vedle samotných dat
-město publikovalo i analytické skripty v jazyce R s tím, že je zájemci z řad
+město publikovalo i analytické skripty v~jazyce R s tím, že je zájemci z řad
 veřejnosti mohou otestovat a případně navrhovat jejich zlepšení či opravit
 chyby.
 
@@ -409,12 +393,9 @@ Berlín ★★★
 
 Město Berlín publikuje na adrese http://daten.berlin.de volně dostupné
 datové sady vesměs pod licencí Creative Commons [ref47]_. Geodata jsou
-publikovaná pomocí proprietárního `REST rozhraní
-<http://cs.wikipedia.org/wiki/Representational_State_Transfer>`_, kde
-pro přenos dat využívá formáty `XML
-<http://cs.wikipedia.org/wiki/Extensible_Markup_Language>`_ a `JSON
-<http://cs.wikipedia.org/wiki/JavaScript_Object_Notation>`_. Město
-Berlín dále nabízí WFS službu a ATOM na webové portálu územního plánování
+publikovaná pomocí proprietárního REST rozhraní, kde
+pro přenos dat využívá formáty XML a JSON. Město
+Berlín dále nabízí WFS službu a Atom na webové portálu územního plánování
 http://www.stadtentwicklung.berlin.de/geoinformation/geodateninfrastruktur/index.shtml.
 
 .. index::
@@ -426,8 +407,7 @@ Vídeň ★★★
 Město Vídeň publikuje svá otevřená data na adrese
 https://open.wien.at. Geodata jsou poskytována pomocí webových služeb
 Open Geospatial Consortium (OGC). Pro tabelární data je používán
-jednoduchý formát `Comma Separated Values
-<http://cs.wikipedia.org/wiki/CSV>`_ (CSV).
+jednoduchý formát Comma Separated Values (CSV).
 
 .. index::
     single: Děčín
@@ -440,12 +420,11 @@ otevřená data jako první v České republice otevřelo svá data. Data
 jsou zveřejněna na webových stránkách statutárního města Děčín na
 adrese http://www.mmdecin.cz/dokumenty/cat_view/238-otevrena-data a
 označená jako *"otevřená data"*. Uživateli je povoleno data dále šířit
-a komerčně využívat, za podmínky uvedení zdroje. Data publikovaná ve
+a komerčně využívat za podmínky uvedení zdroje. Data publikovaná ve
 skupině geografických a mapových dat jsou dostupná ke stažení ve
-formátu `Esri Shapefile <http://cs.wikipedia.org/wiki/Shapefile>`_
+formátu Esri Shapefile
 (SHP). Licence těchto dat není nikde na stránkách města zmíněná, lze tedy
-soudit, že se jedná o tzv. `Public domain
-<http://cs.wikipedia.org/wiki/Voln%C3%A9_d%C3%ADlo>`_ dílo -- dílo, které je
+soudit, že se jedná o tzv. *public domain* -- veřejné dílo, které je
 volně k použití bez specifické licence.
 
 .. index::
@@ -470,24 +449,21 @@ data z výsledků voleb v otevřených formátech, zároveň s textovým
 popisem obsahu zveřejněných dat na adrese
 http://www.czso.cz/csu/redakce.nsf/i/otevrena_data.  Dále zveřejňuje
 data ze Sčítání lidu domů a bytů 2011, která jsou k dispozici ve
-formátech `CSV <http://cs.wikipedia.org/wiki/CSV>`_, `DBF
-<http://cs.wikipedia.org/wiki/DBase>`_ a `XML
-<http://cs.wikipedia.org/wiki/Extensible_Markup_Language>`_.
+formátech CSV, DBF a XML.
 
 .. index::
     pair: Český úřad zeměměřický a katastrální; ČÚZK
-    single: RUIAN
+    single: RÚIAN
     single: VFR
-    single: RUIAN
     single: GML
 
 Český úřad zeměměřický a katastrální ★★★
 ----------------------------------------
 
-K příkladům *“best practice”* přístupům při otevírání geodat zcela jistě patří
-aplikace *Veřejného dálkového přístupu* (VDP) k datům RÚIAN (*Registr Územní
-Identifikace, Adres a Nemovitostí*) provozovaná Českým úřadem zeměměřickým a
-katastrálním (ČÚZK) na adrese http://vdp.cuzk.cz/. Jedná se o projekt v českém
+K příkladům *“best practice”* přístupů pro otevírání geodat zcela jistě patří
+aplikace *Veřejného dálkového přístupu* (VDP) k datům RÚIAN (Registr Územní
+Identifikace, Adres a Nemovitostí) provozovaná Českým úřadem zeměměřickým a
+katastrálním (ČÚZK) na adrese http://vdp.cuzk.cz/. Jedná se o projekt v~českém
 kontextu jedinečný jak svým rozsahem, tak především objemem a kvalitou
 vydávaných geodat, tak i mírou jeho využívání veřejností.
 
@@ -506,7 +482,7 @@ začleňováním změnových souborů. Díky tomu vznikl kolem těchto dat velmi
 relativně bohatý ekosystém nástrojů a služeb. K úspěšnosti přispěla také
 kvalitní dokumentace publikovaná s předstihem před jejím samotným spuštěním.
 
-Z technického hlediska je formát VFR odvozen od standardu OGC GML [ref19]_, proto je
+Z technického hlediska je formát VFR odvozen ze standardu OGC GML [ref19]_, proto je
 na straně aplikací poměrně snadno uchopitelný. To umožnilo rychlé začlenění
 podpory tohoto formátu do nejrozšířenějších Open Source a proprietárních GIS
 nástrojů. Zároveň umožňuje vyjádřit vazby mezi jednotlivými prvky s ohledem na
@@ -541,7 +517,7 @@ uživatelů.
 Pro otevírání geografických dat se jako klíčové jeví tyto skupiny uživatelů:
 
 * Uživatel mapového portálu
-* Běžný uživatel Geografického informačního systému (GIS)
+* Běžný uživatel geografického informačního systému (GIS)
 * Specialista GIS (geoinformatik)
 * Datový analytik (mimo obor GIS)
 * Programátor/vývojář
@@ -556,12 +532,12 @@ informace se k nim povětšinou dostanou zprostředkovaně právě pomocí port�
 který využívají. Potřeby a očekávání těchto uživatelů bereme v úvahu zejména při
 propagaci otevřených dat.
 
-Běžný uživatel Geografického informačního systému (GIS)
+Běžný uživatel geografického informačního systému (GIS)
 =======================================================
 
 Tento typ uživatele obvykle zvládá řešení základních, až středně obtížných úloh
 s využitím desktopového GIS, případně nástroje na tvorbu výkresů CAD (AutoCAD,
-Microstation apod). Je schopen pracovat s daty, která lze snadno připojit nebo
+Microstation apod). Je schopen pracovat s~daty, která lze snadno připojit nebo
 jednoduše importovat v konkrétním programu, se kterým pracuje. S komplexnějšími
 formáty a datovými sadami si obvykle poradí pouze tehdy, pokud se dají otevřít
 nástrojem integrovaným do tohoto programu. Data, která sám nevytváří používá
@@ -584,14 +560,14 @@ podporu novějších formátů.
 Pro rastrová data je pro tuto skupinu uživatelů ideální využívat data pomocí
 služeb Web Map Service (WMS), případně Web Map Tiled Service (WMTS). U
 vektorových dat je nejvhodnější stahování jednotlivých vrstev v nějakém
-rozšířeném souborovém formátu (např. Esri Shapefile či OGC GeoPackage).
+rozšířeném souborovém formátu (např. Esri Shapefile).
 Použití Web Feature Services (WFS) je ideální cílový stav, ale může být
 problematické při větších objemech dat, který může uživatel (i když ne
 zcela vědomě) po serveru požadovat. Služba OGC WFS umožňuje odpověď "stránkovat", 
 což bohužel není na všech klientských programech běžně implementováno.
 
-Specialista GIS (“datař”, geoinformatik)
-========================================
+Specialista GIS (geoinformatik)
+===============================
 
 Specialista GIS je odborníkem pro práci s geografickými daty, který preferuje
 ucelenou datovou sadu včetně popisných informací, zajímá se o aktuálnost a
@@ -602,7 +578,7 @@ zkušené uživatele.
 
 Překážkou, se kterou se u GIS specialistů někdy setkáváme, je přílišná vazba na
 konkrétní software, se kterým pracují. Specialisté se vyhýbají použití nového,
-pro ně neznámého software a nebo jsou v situaci, že jim zaměstnavatel či
+pro ně neznámého software a nebo jsou v~situaci, že jim zaměstnavatel či
 pracovní podmínky či oborové zvyklosti neumožní alternativní software využívat.
 
 Obvykle si budují své databáze, ve kterých se snaží udržovat aktuální kopii
@@ -621,7 +597,7 @@ Datový analytik
 Další skupinou uživatelů je odborník na analýzu dat bez zázemí GIS. Jelikož
 nezná běžně se vyskytující datové formáty ani pravděpodobně nemá k dispozici
 potřebný software, bývá odkázán na vlastní nástroje (nejčastěji databáze a
-statistické softwary), pomocí nichž data zkoumá.
+statistický software), pomocí nichž data zkoumá.
 
 Datový analytik tedy potřebuje formát otevřený, ideálně textový, dobře
 dokumentovaný. Práci usnadní zejména formalizované popisy dat, jako jsou například XSD
@@ -629,7 +605,7 @@ schémata, která se používají při  generování různých šablon pro dokum
 připojení dat apod.
 
 Ideálním způsobem distribuce jsou pro něj předgenerované soubory v textovém
-strukturovaném formátu (JSON, XML, ...), ale je schopen, pokud je dostupná
+strukturovaném formátu (JSON, XML, ...). Je ale schopen, pokud je dostupná
 uživatelská dokumentace, využít i webové služby.
 
 
@@ -650,7 +626,7 @@ dlouhodobému využití. Je proto vhodné, aby  data byla poskytována dlouhodob
 bez zásadních změn.
 
 Vývojáři sledují trendy a vývoj v oboru Informačních technologií (IT), mají
-přehled o novinkách a jsou schopni využít výhod nových a zatím nepříliš
+přehled o novinkách a~jsou schopni využít výhod nových a zatím nepříliš
 rozšířených forem přenosu dat i technologií. Ani komplikovanější formáty pro ně
 nemusí být problémem, pokud je dostupná kvalitní dokumentace.
 

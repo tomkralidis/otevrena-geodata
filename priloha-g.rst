@@ -5,6 +5,7 @@
 
 Příloha G: Formát Atom
 ======================
+
 Atom (Atom Syndication Format) je webový standard pro publikování
 syndikovaného obsahu. Je nástupcem
 populárního formátu RSS (který nikdy zcela nevytlačil).
@@ -15,7 +16,7 @@ mohou být přímo součástí kanálu, to ovšem pro geodata není z pochopitel
 důvodů vhodné a proto je lepší uvézt odkaz (`link`) na datovou sadu.
 
 Níže uvádíme *hypotetický* příklad kanálu ve formátu Atom, který obsahuje 3
-položky, a to vrstevnice s přesností 1, 2 a 5 metrů.
+položky, a to vrstevnice s~přesností 1, 2 a 5 metrů.
 
 .. code-block:: xml
 

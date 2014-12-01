@@ -5,7 +5,7 @@
 
 .. _wmts-cas:
 
-Příloha C: OGC WMTS a dimenze a časové řady
+Příloha C: OGC WMTS -- dimenze a~časové řady
 ===========================================
 Příklad OGC WTMS Capabilities response s časovou řadou
 ------------------------------------------------------
@@ -40,10 +40,17 @@ Kódování Key-Value-Pairs (KVP)
 
 Kódování REST
 ~~~~~~~~~~~~~
-**Šablona**::
+
+**Šablona**
+
+::
 
   http://foo/wmts/{Product}/{Style}/{Time}/{TileMatrixSet}/{TileMatrix}/
   {TileRow}/{TileCol}.jpg 
+
+.. raw:: latex
+
+   \newpage
 
 **Konkrétní příklad**
 
