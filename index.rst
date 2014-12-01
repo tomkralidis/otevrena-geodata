@@ -82,10 +82,11 @@ standardními postupy (*fork*, *pull request*).
 +------------+-----------------------------------------------------------------+
 | **Zkratka**| **Význam**                                                      |
 +============+=================================================================+
+| AOPK       | Agentura ochrany přírody a krajiny ČR                           |
++------------+-----------------------------------------------------------------+
 | ATOM       | Atom Syndication Format je webový standard pro publikování      |
 |            | syndikovaného obsahu (obsahu, kterému byly zpětně dodány        |
 |            | aktuální informace)                                             |
-+------------+-----------------------------------------------------------------+
 | DBF        | dBase byl první masověji rozšířený systém řízení báze dat       |
 +------------+-----------------------------------------------------------------+
 | CSV        | Comma-separated values (hodnoty oddělené čárkami) je jednoduchý |
@@ -112,6 +113,8 @@ standardními postupy (*fork*, *pull request*).
 +------------+-----------------------------------------------------------------+
 | GML        | Geography Markup Language je na XML založený formát pro         |
 |            | vektorová geografická data, OGC specifikace                     |
++------------+-----------------------------------------------------------------+
+| GPS        | Global Positioning System, česky Globální polohovací systém     |
 +------------+-----------------------------------------------------------------+
 | INSPIRE    | INfrastructure for SPatial InfoRmation in Europe je iniciativou |
 |            | Evropské komise pro vybudování evropské                         |
@@ -149,6 +152,8 @@ standardními postupy (*fork*, *pull request*).
 +------------+-----------------------------------------------------------------+
 | SHP        | Formát vektorových dat Esri Shapefile                           |
 +------------+-----------------------------------------------------------------+
+| SDI        | Spatial Data Infrastructure                                     |
++------------+-----------------------------------------------------------------+
 | S-JTSK     | Jednotná trigonometrická síť katastrální (JTSK, někdy S–JTSK)   |
 |            | je pravoúhlá souřadnicová síť používaná v geo\-dézii na území   |
 |            | České republiky a Slovenska                                     |
@@ -179,6 +184,8 @@ standardními postupy (*fork*, *pull request*).
 | VDP        | Veřejný dálkový přístup (viz RÚIAN)                             |
 +------------+-----------------------------------------------------------------+
 | VFR        | Výměnný formát RÚIAN                                            |
++------------+-----------------------------------------------------------------+
+| VFK        | Výměnný formát katastru nemovitostí                             |
 +------------+-----------------------------------------------------------------+
 | WCS        | Web Coveradge Service, standard OGC OWS (otevřené webové služby |
 |            | podle  OGC), umožňující klientovi požadovat po serveru obrazová |
@@ -212,6 +219,8 @@ standardními postupy (*fork*, *pull request*).
 | XSLT       | Transformace XSLT (eXtensible Stylesheet Language               |
 |            | Transformations) slouží k převodům zdrojových dat ve formátu XML|
 |            | do libovolného jiného požadovaného formátu                      |
++------------+-----------------------------------------------------------------+
+| ZCHÚ       | Zvláště chráněná území                                          |
 +------------+-----------------------------------------------------------------+
 
 .. only:: html
