@@ -4,7 +4,7 @@ Otevírání geografických dat - Případová studie
 
 .. rubric:: Anotace
 
-Tato případová studie shrnuje výsledky konzultací pro otevírání
+Tato případová studie shrnuje výsledky konzultací v oblasti otevírání
 geografických dat, provedených ve prospěch `Institutu plánování a
 rozvoje hlavního města Prahy <http://www.iprpraha.cz/>`_ (*IPR Praha*),
 který vznik dokumentu finančně podpořil. Zástupci IPR Praha měli
@@ -18,24 +18,23 @@ Na základě našich zkušeností z praxe nastiňuje případná technická úsk
 problémy, se kterými je třeba počítat, mají-li být publikovaná data dostupná co
 nejširšímu okruhu uživatelů. Spíše než jednotlivými nástroji, které jsou v mnoha
 ohledech věcí osobních preferencí, jsme se zabývali obecnými principy, které je
-v souvislosti s otevíráním geodat potřeba respektovat. V textu jsme se snažili
+v souvislosti s otevíráním geografických dat potřeba respektovat. V textu jsme se snažili
 maximálně zúročit naše praktické zkušenosti s různě kvalitními geografickými
 daty a informačními systémy pro jejich správu. Cílem bylo shromáždit a utřídit
-přehled témat, které usnadní navržení konkrétního řešení pro otevírání geodat.
+přehled témat, které usnadní navržení konkrétního řešení pro otevírání geografických dat.
 
 .. rubric:: Licence
 
 ..
             .. image:: imgs/cc-by-sa.png
            
-Tento dokument podléhá licenci *Creative Commons 4.0
+Dokument podléhá licenci *Creative Commons 4.0
 BY-SA*. Informace o podrobnostech licence najdete na adrese
 http://www.creativecommons.cz/.
 
 .. rubric:: Spolupráce
 
-Text studie můžete stáhnout ze serveru `GitHub
-<https://github.com/OpenGeoLabs/otevrena-geodata/>`_ a dále rozšiřovat
+Text studie můžete stáhnout ze serveru GitHub [#github]_ a dále rozšiřovat
 standardními postupy (*fork*, *pull request*).
 
 .. raw:: latex
@@ -48,11 +47,11 @@ standardními postupy (*fork*, *pull request*).
 +------------+------------+-------------------------------+---------------------------------+
 | **Datum**  | **Revize** | **Editoři**                   | **Popis**                       |
 +============+============+===============================+=================================+
-| 2014-09-30 | 1.0.0      | Jáchym Čepický, Martin Landa, | První verze dokumentu           |
+| 2014-09-30 | 1.0.0      | Jáchym Čepický, Martin Landa, | První verze dokumentu.          |
 |            |            | Radek Augustýn, Jan Cibulka,  |                                 |
 |            |            | Jan Michálek                  |                                 |
 +------------+------------+-------------------------------+---------------------------------+
-| 2014-10-03 | 1.0.1      | Radek Augustnýn               | Drobné revize formátování       |
+| 2014-10-03 | 1.0.1      | Radek Augustnýn               | Drobné revize formátování.      |
 +------------+------------+-------------------------------+---------------------------------+
 | 2014-10-05 | 1.0.2      | Jáchym Čepický, Martin Landa, | Jazyková korektura textu.       |
 |            |            | Radek Augustýn, Jan Michálek  |                                 |
@@ -80,110 +79,139 @@ standardními postupy (*fork*, *pull request*).
 
 .. todo:: Doplnit zkratky
 
-.. tabularcolumns:: |p{5cm}|p{9cm}|
+.. tabularcolumns:: p{5cm}p{9cm}
          
 +------------+-----------------------------------------------------------------+
 | **Zkratka**| **Význam**                                                      |
 +============+=================================================================+
-| ATOM       | Atom Syndication Format) je webový standard pro publikování     |
-|            | syndikovaného obsahu (obsahu, kterému byly zpětně dodán aktuální|
-|            | informace)                                                      |
+| ATOM       | Atom Syndication Format je webový standard pro publikování      |
+|            | syndikovaného obsahu (obsahu, kterému byly zpětně dodány        |
+|            | aktuální informace)                                             |
 +------------+-----------------------------------------------------------------+
-| CSV        |                                                                 |
+| DBF        | dBase byl první masověji rozšířený systém řízení báze dat       |
 +------------+-----------------------------------------------------------------+
-| CSW        |                                                                 |
+| CSV        | Comma-separated values (hodnoty oddělené čárkami) je jednoduchý |
+|            | souborový formát určený pro výměnu tabulkových dat.             |
 +------------+-----------------------------------------------------------------+
-| ČSN        |                                                                 |
+| CSW        | Catalogue Service for Web (přístup k informacím katalogu), OGC  |
+|            | specifikace                                                     |
++------------+-----------------------------------------------------------------+
+| ČSN        | Chráněné označení českých technických norem                     |
 +------------+-----------------------------------------------------------------+
 | EPSG       | European Petroleum Survey Group. Jedná se o široce využívanou   |
 |            | databázi zemských elipsoidů, geodetických dat, zeměpisných a    |
 |            | kartografických souřadnicových systémů, měrných jednotek, atd.  |
 +------------+-----------------------------------------------------------------+
-| GeoTIFF    |                                                                 |
+| GeoTIFF    | Rastrový formát pro geografická data postavený na formátu TIFF  |
 +------------+-----------------------------------------------------------------+
-| GeoJSON    |                                                                 |
+| GeoJSON    | Vektorový formát pro geografická data využívaný především v     |
+|            | prostředí webových aplikací                                     |
 +------------+-----------------------------------------------------------------+
-| GIF        | Graphics Interchange Format, formát souboru určený pro rastrovou|
-|            | grafiku                                                         |
+| GIF        | Graphics Interchange Format, souborový formát určený pro        |
+|            | rastrovou grafiku                                               |
 +------------+-----------------------------------------------------------------+
-| GIS        |                                                                 |
+| GIS        | Geografický informační systém                                   |
 +------------+-----------------------------------------------------------------+
-| GML        |                                                                 |
+| GML        | Geography Markup Language je na XML založený formát pro         |
+|            | vektorová geografická data, OGC specifikace                     |
 +------------+-----------------------------------------------------------------+
-| INSPIRE    |                                                                 |
+| INSPIRE    | INfrastructure for SPatial InfoRmation in Europe je iniciativou |
+|            | Evropské komise pro vybudování evropské                         |
+|            | infrastruktury prostorových informací.                          |
 +------------+-----------------------------------------------------------------+
-| ISO        |                                                                 |
+| ISO        | Mezinárodní organizace pro normalizaci                          |
 +------------+-----------------------------------------------------------------+
-| JSON       |                                                                 |
+| JSON       | JavaScript Object Notation (JavaScriptový objektový zápis,      |
+|            | JSON) je datový formát určený pro přenos dat                    |
 +------------+-----------------------------------------------------------------+
 | JPEG       | Metoda ztrátové komprese používané pro ukládání počítačových    |
-|            | obrázků ve fotorealistické kvalitě. Též formát souboru          |
-|            | obsahující data (obrázek) pomocí této metody komprimovaná.      |
+|            | obrázků ve fotorealistické kvalitě.                             |
 +------------+-----------------------------------------------------------------+
-| KML        |                                                                 |
+| KML        | Keyhole Markup Language (KML) je aplikací metajazyka XML pro    |
+|            | publikaci, distribuci geografických dat                         |
 +------------+-----------------------------------------------------------------+
-| LPIS       |                                                                 |
+| LPIS       | Veřejný registr půdy                                            |
 +------------+-----------------------------------------------------------------+
 | OGC        | Open Geospatial Consortium,  mezinárodní standardizační         |
 |            | organizace pro oblast GIS a geoprostorových dat                 |
 +------------+-----------------------------------------------------------------+
-| OSM        |                                                                 |
+| OSM        | OpenStreetMap je projekt, jehož cílem je tvorba volně           |
+|            | dostupných geografických dat                                    |
 +------------+-----------------------------------------------------------------+
 | OWS        | Open Web Services, skupina otevřených webových služeb podle     |
 |            | standardů OGC                                                   |
 +------------+-----------------------------------------------------------------+
-| PNG        |                                                                 |
+| PNG        | PNG (Portable Network Graphics) je grafický formát určený pro   |
+|            | bezeztrátovou kompresi rastrové grafiky                         |
 +------------+-----------------------------------------------------------------+
-| RUIAN      |                                                                 |
+| RÚIAN      | Registr územní identifikace, adres a nemovitostí (RÚIAN)        |
+|            | je jedním ze základních registrů ČR                             |
 +------------+-----------------------------------------------------------------+
 | SHP        | Formát vektorových dat Esri Shapefile                           |
 +------------+-----------------------------------------------------------------+
-| S-JTSK     |                                                                 |
+| S-JTSK     | Jednotná trigonometrická síť katastrální (JTSK, někdy S–JTSK)   |
+|            | je pravoúhlá souřadnicová síť používaná v geo\-dézii na území   |
+|            | České republiky a Slovenska                                     |
 +------------+-----------------------------------------------------------------+
 | SOS        | Sensor Observation Service, standard OGC OWS (otevřené webové   |
 |            | služby podle OGC). SOS umožňuje klientům získat ze serverů různá|
 |            | sensorová data a údaje o pozorování z nich.                     |
 +------------+-----------------------------------------------------------------+
-| SQL        |                                                                 |
+| SQL        | Structured Query Language (SQL) je standardizovaný dotazovací   |
+|            | jazyk používaný pro práci s daty v relačních databázích.        |
 +------------+-----------------------------------------------------------------+
-| TIFF       |                                                                 |
+| TIFF       | TIFF (Tag Image File Format) je jeden ze souborových formátů    |
+|            | pro ukládání rastrové počítačové grafiky.                       |
 +------------+-----------------------------------------------------------------+
-| TMS        |                                                                 |
+| TMS        | Tile Map Service, OGC specifikace                               |
 +------------+-----------------------------------------------------------------+
-| TopoJSON   |                                                                 |
+| TopoJSON   | TopoJSON je extenze pro GeoJSON umožňující uložení vektorových  |
+|            | dat v topologické formě                                         |
 +------------+-----------------------------------------------------------------+
-| URI        |                                                                 |
+| URI        | URI (Uniform Resource Identifier -- jednotný identifikátor      |
+|            | zdroje) je textový řetězec s definovanou strukturou, který      |
+|            | slouží k přesné specifikaci zdroje informací na Internetu       |
 +------------+-----------------------------------------------------------------+
-| URL        |                                                                 |
+| URL        | URL (Uniform Resource Locator -- jednotná adresa zdroje) je     |
+|            | řetězec znaků s definovanou strukturou, který slouží k přesné   |
+|            | specifikaci umístění zdrojů informací na Internetu              |
 +------------+-----------------------------------------------------------------+
-| VDP        |                                                                 |
+| VDP        | Veřejný dálkový přístup (viz RÚIAN)                             |
 +------------+-----------------------------------------------------------------+
-| VFR        |                                                                 |
+| VFR        | Výměnný formát RÚIAN                                            |
 +------------+-----------------------------------------------------------------+
 | WCS        | Web Coveradge Service, standard OGC OWS (otevřené webové služby |
 |            | podle  OGC), umožňující klientovi požadovat po serveru obrazová |
 |            | (rastrová) data                                                 |
 +------------+-----------------------------------------------------------------+
 | WFS        | Web Feature Service, standard OGC OWS (otevřené webové služby   |
-|            | podle  OGC), umožňující klientovi požadovat po serveru vektorová|
-|            | data                                                            |
+|            | podle  OGC), umožňující klientovi požadovat po serveru          |
+|            | vektorová data                                                  |
 +------------+-----------------------------------------------------------------+
-| WGS        |                                                                 |
+| WGS        | World Geodetic System 1984 (zkratka WGS 84), česky Světový      |
+|            | geodetický systém 1984                                          |
 +------------+-----------------------------------------------------------------+
 | WMS        | Web Map Service, standard OGC OWS (otevřené webové služby podle |
 |            | OGC), umožňující klientovi požadovat po serveru vyrenderované   |
 |            | obrázky mapových kompozic                                       |
 +------------+-----------------------------------------------------------------+
-| WMTS       |                                                                 |
+| WMTS       | Web Map Tile Service, OGC specifikace                           |
 +------------+-----------------------------------------------------------------+
 | WWW        | World Wide Web, soustava propojených hypertextových (na sebe    |
-|            | navzájem odkazujících dokumentů                                 |
+|            | navzájem odkazujících) dokumentů                                |
 +------------+-----------------------------------------------------------------+
-| XML        |                                                                 |
+| XML        | Extensible Markup Language (rozšiřitelný značkovací jazyk) je   |
+|            | obecný značkovací jazyk, který byl vyvinut a standardizován     |
+|            | konsorciem W3C                                                  |
 +------------+-----------------------------------------------------------------+
-| XSD        |                                                                 |
+| XML-RPC    | XML-RPC je protokol, s jehož pomocí lze velice jednoduše        |
+|            | provádět vzdálené volání procedur.                              |
 +------------+-----------------------------------------------------------------+
-| XSLT       |                                                                 |
+| XSD        | XML Schema (XSD) je jedno z XML schémat, jazyků pro popis XML.  |
++------------+-----------------------------------------------------------------+
+| XSLT       | Transformace XSLT (eXtensible Stylesheet Language               |
+|            | Transformations) slouží k převodům zdrojových dat ve formátu XML|
+|            | do libovolného jiného požadovaného formátu                      |
 +------------+-----------------------------------------------------------------+
 
 .. only:: html
@@ -217,3 +245,6 @@ standardními postupy (*fork*, *pull request*).
     priloha-f
     priloha-g
 
+.. rubric:: Poznámky pod čarou
+
+.. [#github] https://github.com/OpenGeoLabs/otevrena-geodata/
