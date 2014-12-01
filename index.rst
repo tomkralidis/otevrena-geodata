@@ -77,8 +77,6 @@ standardními postupy (*fork*, *pull request*).
 
 .. rubric:: Seznam zkratek
 
-.. todo:: Doplnit zkratky
-
 .. tabularcolumns:: p{5cm}p{9cm}
          
 +------------+-----------------------------------------------------------------+
@@ -118,6 +116,8 @@ standardními postupy (*fork*, *pull request*).
 | INSPIRE    | INfrastructure for SPatial InfoRmation in Europe je iniciativou |
 |            | Evropské komise pro vybudování evropské                         |
 |            | infrastruktury prostorových informací.                          |
++------------+-----------------------------------------------------------------+
+| IPR        | Institut plánování a rozvoje hl. m. Prahy                       |
 +------------+-----------------------------------------------------------------+
 | ISO        | Mezinárodní organizace pro normalizaci                          |
 +------------+-----------------------------------------------------------------+
