@@ -30,7 +30,7 @@ Po stažení repozitáře máte k dispozici příkaz
 
 Pro vytvoření HTML verze a 
 
-    make pdflatex
+    make latexpdf
 
 Pro převod do formátu LaTeX a následně vytvoření PDF. 
 
