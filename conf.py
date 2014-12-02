@@ -55,7 +55,7 @@ copyright = u'2014, OpenGeoLabs'
 # built documents.
 #
 # The short X.Y version.
-version = '2.0.0'
+version = '2.2.0'
 # The full version, including alpha/beta/rc tags.
 # release = '2.0.0'
 
@@ -221,7 +221,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    ('index', 'otevirani-geografickych-dat.tex', u'Otevírání geografických dat',
+    ('index', 'otevirani-geografickych-dat-%s.tex' % version, u'Otevírání geografických dat',
      u'OpenGeoLabs s.r.o.', u'manual'),
 ]
 
