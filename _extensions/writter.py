@@ -4,7 +4,7 @@ BaseTranslator = sphinx.writers.latex.LaTeXTranslator
 class DocTranslator(BaseTranslator):
 
     def visit_Text(self, node):
-        if self.verbatim is not None:
+        if hasattr(self, 'verbatim') and self.verbatim is not None:
             self.verbatim += node.astext()
         else:
             text = self.encode(node.astext())
