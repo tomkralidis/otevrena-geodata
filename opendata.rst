@@ -115,10 +115,6 @@ vhodných datových formátů:
 |       | proprietární, ale je otevřený; nebo jako OGC GML, což je otevřený standard a   |
 |       | zároveň technická norma ISO                                                    |
 +-------+--------------------------------------------------------------------------------+
-
-.. tabularcolumns:: p{.1\textwidth}p{.8\textwidth}
-
-+-------+--------------------------------------------------------------------------------+
 | ★★★★  | Data jsou opatřena metadaty a jednotlivé datové sady jsou jimi navzájem        |
 |       | provázány. Předpokládá se existence metadatového katalogu, založeného na       |
 |       | standardu OGC Catalog Service for Web (CSW), ve kterém lze data a služby       |
