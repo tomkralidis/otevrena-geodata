@@ -57,16 +57,16 @@ standardními postupy (*fork*, *pull request*).
 |            |            | Radek Augustýn, Jan Michálek  |                                 |
 +------------+------------+-------------------------------+---------------------------------+
 | 2014-11-03 | 2.0.0      | Jáchym Čepický, Martin Landa, | Druhá verze dokumentu.          |
-|            |            | Radek Augustýn, Jan Michálek  | Zapracování připomínek          |
-|            |            |                               | IPR Praha.                      |
+|            |            | Radek Augustýn, Jan Michálek, | Zapracování připomínek          |
+|            |            | Lucie Prunarová               | IPR Praha.                      |
 +------------+------------+-------------------------------+---------------------------------+
 | 2014-11-06 | 2.1.0      | Jáchym Čepický                | Převod dokumentu do             |
 |            |            |                               | formátu reStructuredTex a jeho  |
 |            |            |                               | publikování na serveru          |
 |            |            |                               | Git\-Hub.                       |
 +------------+------------+-------------------------------+---------------------------------+
-| 2014-12-01 | 2.2.0      | Jáchym Čepický, Martin Landa  | Revize textu dle připomínek     |
-|            |            |                               | zástupců IPR Praha, seznam      |
+| 2014-12-01 | 2.2.0      | Jáchym Čepický, Martin Landa, | Revize textu dle připomínek     |
+|            |            | Lucie Prunarová               | zástupců IPR Praha, seznam      |
 |            |            |                               | zkratek, přeformátování         |
 |            |            |                               | struktury.                      |
 +------------+------------+-------------------------------+---------------------------------+
