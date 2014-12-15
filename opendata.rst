@@ -460,7 +460,7 @@ vztahuje technický průvodce [ref28]_.
 Technický průvodce pro implementaci *Stahovací služby INSPIRE* se dotýká právě
 problematiky velkých datových sad. Nabízí dvě možnosti implementace této služby:
 
-* *Předgenerované soubory* s datovou sadou a jejich distribuce prostřednictvím
+* Předgenerované soubory s datovou sadou a jejich distribuce prostřednictvím
   dokumentu ve formátu Atom -- ovšem bez možnosti jejich dotazování či
   výběru části dat prostřednictvím serveru.
 * Webové služby OGC WFS a WCS (tak zvané *datové sady s přímým přístupem*). 
@@ -481,15 +481,25 @@ výše, zátěž je potřeba průběžně sledovat a adekvátně na ni reagovat.
 Otevřené webové služby - OGC OWS
 --------------------------------
 
-Jako nejpřirozenější cestou distribuce otevřených geodat se jeví využít otevřené
-webové standardy OGC Open Web Services (OWS). Nejpoužívanějšími službami jsou
-OGC WMS, WFS a WCS. Existují však i jiné standardy, mající opodstatnění v
+Základním způsobem distribuce otevřených geodat je využítí otevřených
+webových standardů OGC Open Web Services (OWS). Nejpoužívanějšími službami jsou
+OGC Web Map Service, Web Feature Service a Web Coverage Service. Existují však i jiné standardy, mající opodstatnění v
 některých případech použití. Standardy OGC jsou postaveny nejčastěji na
 komunikaci mezi serverem a klientem prostřednictvím zpráv ve formátu XML. Tyto
-standardy mají dobrou podporu ve většině používaných programů. OGC služby jsou
-použité i v technických normách směrnice INSPIRE. 
+standardy jsou podporovány ve většině používaných GIS softwarech. OGC služby jsou
+použité i v technických normách směrnice INSPIRE.
 
-V této části zmíníme pouze nejčastěji používané standardy, které pokrývají
+Při distribuci pomocí webových služeb získává uživatel vždy nejaktuálnější data. Nevýhodou tohoto způsobu je zátěž na
+straně infrastruktury poskytovatele, kterou není možné vždy předvídat, konzument
+navíc očekává garanci jejich dostupnosti. Zátěž serverů je potřeba průběžně
+sledovat a adekvátně na ni reagovat. V tomto směru může být cestou pro
+distribuci otevřených geodat využití cloudového řešení na pronajatých sdílených
+serverech, kde je výkon dynamicky zvyšován podle potřeby a cena potom odpovídá
+využití. K tomu je však potřeba překonat určitou psychologickou bariéru, jelikož
+data a infrastruktura zdánlivě nejsou pod kontrolou jako v případě, že poskytovatel použije
+vlastní řešení.
+
+V této části jsou zmíněny pouze nejčastěji používané standardy, které pokrývají
 většinu případů použití:
 
 * OGC Web Map Service
@@ -498,26 +508,24 @@ většinu případů použití:
 * OGC Web Coverage Service
 * OGC Sensor Observation Service
 
-OGC Web Map Service (OGC WMS)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OGC Web Map Service 
+""""""""""""""""""""
 
-OGC Web Map Service [ref20]_ je standard, pomocí kterého může klient požádat o
+Služba OGC WMS [ref20]_ je standard, pomocí kterého může klient požádat o
 mapový obraz ve formě rastrového souboru. Server jej na základě klientských
-požadavků vytvoří a klientovi odešle. Klient musí specifikovat obsah obrázku
+požadavků vytvoří a klientovi odešle. Klient specifikuje obsah obrázku
 (zobrazené vrstvy), souřadnicový systém, hraniční souřadnice, velikost, formát
-obrázku a další možné detaily. Server odešle opravdu “pouze” obrázek a nikoliv
-vlastní data. To lze s výhodou využít pro případ, že chce uživatelům zpřístupnit
-některé data pouze k nahlédnutí, ale nechce nebo nemůže zpřístupnit data jako
-taková. Standardním formátem výstupu je obrázek ve~formátech PNG nebo JPEG podle charakteru dat.
+obrázku a další možné detaily. Server odešle pouze rastrový obraz dat, nikoli
+vlastní data. To lze s výhodou využít pro případ poskytnutí dat pouze k nahlédnutí z důvodu, že poskytovatel nechce nebo nemůže zpřístupnit zdrojová data. Standardním formátem výstupu je obrázek ve~formátech PNG nebo JPEG podle charakteru dat.
 
-OGC Web Map Tiled Service (OGC WMTS)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OGC Web Map Tiled Service
+"""""""""""""""""""""""""""""
 
-Pokud se data v čase příliš nemění (například letecké snímky, obecně podkladové
-mapy), lze si na straně serveru připravit předgenerované dlaždice (obrázky o
+Služba OGC WMTS [ref23]_ je používána v případě, kdy se data v čase příliš nemění (například letecké snímky, obecně podkladové
+mapy) a lze pro ně na straně serveru připravit předgenerované dlaždice (tiles - obrázky o
 pravidelné velikosti, většinou 256x256 pixelů) do vyrovnávací paměti pro určitá
-měřítka a v určitém rozsahu (*cache*).  Tyto dlaždice pak lze zpřístupnit podle
-standardu OGC WMTS [ref23]_ (nebo i WMS). Výhodou je rychlé odbavení příchozího
+měřítka a v určitém rozsahu (cache). Tyto dlaždice pak lze zpřístupnit podle
+standardu WMTS (nebo i WMS). Výhodou je rychlé odbavení příchozího
 požadavku a nižší zátěž IT infrastruktury. Nevýhodou je, že dlaždice musí být
 omezeny pro určitá měřítka. Obsah je statický (v čase se nemění, datové vrstvy
 vykreslené v obrázku jsou stále stejné). Takto vytvořenou databázi dlaždic je
@@ -531,30 +539,30 @@ dlouhodobě používaná servery ČÚZK, který pro souřadnicový systém S-JTS
 [ref24]_. Pro globální souřadnicové systémy (jako je např. “Spherical Mercator”
 EPSG:3857) se doporučuje používat měřítkovou řadu vyvinutou firmou Google.
 
-OGC Web Feature Service (OGC WFS)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OGC Web Feature Service
+""""""""""""""""""""""""
 
-OGC Web Feature Service [ref21]_ slouží k distribuci vektorových dat. Standard WFS
+Služba OGC WFS [ref21]_ slouží k distribuci vektorových dat. Standard WFS
 2.0.0 umožňuje také spouštět některé analytické operace přímo na serveru,
-jsou-li na něm podporovány. WFS dále podporuje filtrování pouze požadovaných
-geoprvků (vzhledů jevů, features), není tak potřeba stahovat celou datovou
+jsou-li na něm podporovány. WFS dále podporuje filtrování požadovaných
+prvků geodat (vzhled jevů, features), není tak potřeba stahovat celou datovou
 sadu. Pro větší objemy dat je možné použít možnost stránkování odpovědi, tj.
 nemusí být stahována všechna data najednou v jedné odpovědi. Pomocí WFS může
 server vrátit data v libovolném formátu, který podporují knihovny pracující na
-pozadí (i Esri Shapefile, GeoJSON, …), standardní bývá formát OGC GML.
-                                     
-OGC Web Coverage Service (OGC WCS)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pozadí (např. SHP, GeoJSON, …), standardní bývá formát GML.
 
-OGC Web Coverage Service [ref22]_ slouží k distribuci rastrových dat. Tento standard
-je vhodný zejména tam, kde chceme uživatelů nabídnout ke stažení velká rastrová
+OGC Web Coverage Service
+""""""""""""""""""""""""
+
+Služba OGC WCS [ref22]_ slouží k distribuci rastrových dat. Tento standard
+je vhodný zejména tam, kde chceme uživatelům nabídnout ke stažení velká rastrová
 data, která mohou být i multispektrální, či mohou obsahovat více rozměrů.
 Standardním formátem výstupních dat bývá GeoTIFF.
 
-OGC Sensor Observation Service (OGC SOS)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OGC Sensor Observation Service
+"""""""""""""""""""""""""""""""""
 
-Služba OGC Sensor Observation Service [ref72]_ je vhodná pro zpřístupnění měření ze
+Služba OGC SOS[ref72]_ je vhodná pro zpřístupnění měření ze
 senzorů a senzorových sítí, stejně jako pro jejich popis. Senzory většinou
 publikují několik měření k danému místu a v~daném čase. Poloha senzoru může být
 statická, ale může se i v čase měnit. Senzory mohou měřit různé veličiny a
@@ -572,25 +580,31 @@ Předgenerované soubory a formát Atom
 
 Pro datové sady větších objemů je vhodné předgenerovat jejich obsah do cílových
 vektorových formátů a postavit kolem nich architekturu, která v nich umožní
-efektivně vyhledávat. Jako jeden z vhodných nástrojů může být např. formát Atom
-[ref25]_. Tento formát je využíván i v dalších technologických standardech, jako je
-například OGC OWS Context [ref38]_. V principu jde o XML dokument, který obsahuje
-odkazy a základní metadata na dostupné datové sady nebo soubory.
+efektivně vyhledávat. Jedním z vhodných nástrojů je např. formát Atom
+[ref25]_. U dat, která jsou průběžně aktualizována, je nutné umožnit jak
+získávání stavových dat (tj. dat platných k určitému datu), tak změn formou předgenerovaných změnových souborů. Režim poskytování dat je vhodné nastavit s ohledem na
+objem změn. Toto řešení často vede ke snížení zátěže na infrastrukturu
+poskytovatele.
 
 Tento způsob se blíží populárnímu a velice jednoduchému přístupu "vystavit
 soubory na FTP server". To se s formátem Atom nevylučuje - Atom slouží pouze
 jako metadatový dokument, ze kterého lze rychle vyčíst referenci k cílovým
 souborům.
 
+Atom
+"""""""
+Atom je v principu XML dokument, který obsahuje odkazy na dostupné datové sady nebo soubory a jejich základní metadata. Tento formát je využíván i v dalších technologických standardech, jako je
+například OGC OWS Context [ref38]_.
+
 Soubor ve formátu Atom je webový standard pro publikování syndikovaného obsahu.
 Syndikovaný obsah je takový obsah, který na webu již může být publikován,
-souborem Atom se mu ale zpětně přidají některá metadata a tím se zjednodušeně
+souborem Atom se mu ale zpětně přidají vybraná metadata a tím se zjednodušeně
 popíše pro automatické zpracování. Atom má nahradit starší (proprietární a
 stále populární formát RSS) a je původně určen pro webové stránky. Nicméně jeho
 využít pro data se nabízí.
 
-Soubor Atom jednak obsahuje hlavičku, která identifikuje vlastní zdroj a autora
-a jednak seznam "záznamů", také s jednoznačnou identifikací a hlavně s vlastním
+Soubor Atom obsahuje hlavičku, která identifikuje vlastní zdroj a autora
+a seznam "záznamů", také s jednoznačnou identifikací a vlastním
 obsahem nebo odkazem na tento obsah.
 
 Příklad formátu atom je uveden v :ref:`atom-priloha`.
@@ -607,37 +621,34 @@ Služby GitHub
 Služba GitHub [ref41]_ je webové rozhraní k systému pro správu verzí Git, který byl
 původně napsán za účelem správy a údržby zdrojového kódu jádra operačního
 systému GNU/Linux. Od  roku 2014 je možné do této služby nahrávat i geografická
-data v některých z podporovaných formátů GeoJSON a TopoJSON. Tyto soubory jsou
-přímo vizualizovány v jednoduché mapové aplikaci. Podle různých údajů se zdá, že
+data v některých z ?podporovaných formátů GeoJSON a TopoJSON?. Tyto soubory jsou
+přímo vizualizovány v jednoduché mapové aplikaci. Podle různých údajů lze usoudit, že
 limit pro velikost vstupního souboru, má-li být zobrazen v mapové prohlížečce,
-je v současnosti někde okolo 4.5 MB, záleží ale také na struktuře vstupního
-souboru  [ref42]_. U jednodušších struktur může být limit až někde u 10 MB
+je v současnosti cca 4.5 MB, záleží ale také na struktuře vstupního
+souboru  [ref42]_. U jednodušších struktur může být limit až 10 MB
 (maximální velikost souboru na serverech GitHub je cca 100 MB). Pokud je datový
-soubor příliš veliký, tak není zobrazen. Jeho praktickou dostupnost to
-samozřejmě nijak neovlivní.
+soubor příliš veliký, není zobrazen. Jeho praktickou dostupnost to
+ale nijak neovlivní.
 
 Takto jednoduše publikovaná data lze stáhnout opět v jednom z podporovaných
 formátů. Výhoda tohoto přístupu je mimo jiné v tom, že poskytovateli dat zcela
 odpadá starost o IT infrastrukturu. O tu se stará třetí strana - v tomto případě
 GitHub. Uživatelé navíc  získají efektivní nástroj pro verzování dat v čase.
 Pokud by byla služba GitHub v budoucnu uzavřena anebo by se změnila výrazně její
-obchodní politika, nejednalo by se o tak zásadní problém. Systém Git je
+?obchodní politika?, nejednalo by se o tak zásadní problém. Systém Git je
 decentralizovaný, každý uživatel má u sebe lokální kopii celé datové sady včetně
 veškeré historie. Vzhledem k tomu, že je systém pro správu verzí Git vyvíjen
 jako Open Source, tak by bylo možné případný přechod na jinou formu distribuce
 ze služby GitHub realizovat bez větších problémů.
 
-Některé menší obce a samosprávy již se službou GitHub experimentují [ref43]_, [ref44]_.
 Do prostředí GitHub lze nahrát i dlaždicovaná rastrová data a odkazovat se na ně
-formou zápisu identifikátoru URL podle standardu OGC Tile Map Service (TMS).
+formou zápisu identifikátoru URL podle standardu OGC TMS.
 Podle zkušeností uživatelů se jeví tato služba jako dostatečně rychlá. 
 
+Se službou GitHub již experimentují některé menší obce a samosprávy (např. [ref43]_, [ref44]_), ale i větší města  (např. Chicago [ref57]_).
 Tento přístup k publikování geodat je vhodnější pro menší města bez vlastního IT
 oddělení. Nicméně některé koncepty tohoto přístupu (správa verzí, distribuce,
-náhled, atd.) jsou aplikovatelné i na tuto případovou studii. Některá větší
-města již se službou GitHub experimentují, jak dokládá například účet města
-Chicago [ref57]_.
-
+náhled, atd.) jsou aplikovatelné i na tuto případovou studii.
 
 .. _casove_rady:
 
@@ -654,27 +665,26 @@ zohlednit, čas. Potom mluvíme o 4D datech.
 Na časovou složku v datech se můžeme dívat minimálně ze dvou pohledů: Datová
 sada může obsahovat "časovou řadu" nějakého fenoménu (např. vývoj teploty na
 daném území, pohyb senzorů v prostoru a~čase, vývoj jejich hodnot) nebo změna
-verze celé datové sady (nové přesnější zaměření budov, stav k~nějakému datu a
+verze celé datové sady (nové přesnější zaměření budov, stav k~určitému datu a
 podobně). 
 
 Z hlediska distribuce a formátů dat se k oběma typům přistupuje stejně. Tam, kde
-je některá služba nebo formát vhodnější na některý z typů časové složky na to
-upozorníme.
+je některá služba nebo formát vhodnější na jeden z typů časové složky je to zdůrazněno.
 
 ===============================
 Časové řady prohlížecích služeb
 ===============================
 
 
-Standard OGC WMS nabízí možnost, jak definovat další dimenze pro poskytovaná
+Standard WMS nabízí možnost, jak definovat další dimenze pro poskytovaná
 data. Nejčastější formou použití je právě čas, ale může to být např. nadmořská
 výška, teplota, atd. či případně i jejich kombinace. V metadatech služby lze
 uvést buď přesnou časovou specifikaci výčtem časových okamžiků nebo počáteční
 čas a velikost časového kroku mezi jednotlivými datovými vrstvami. Příklady jsou
 uvedeny v~ :ref:`wms-cas`.
 
-Standard OGC WMTS navíc umožňuje definovat různé dimenze k předgenerovaným
-datovým sadám. Princip je podobný jako u zmíněného standardu OGC WMS, příklady
+Standard WMTS navíc umožňuje definovat různé dimenze k předgenerovaným
+datovým sadám. Princip je podobný jako u zmíněného standardu WMS, příklady
 jsou uvedeny v :ref:`wmts-cas`.
 
 ==========================================
@@ -684,7 +694,7 @@ jsou uvedeny v :ref:`wmts-cas`.
 OGC Web Feature Service
 -----------------------
 
-Standard OGC Web Feature Service (WFS) nemá přímou podporu pro časovou dimenzi.
+Standard WFS nemá přímou podporu pro časovou dimenzi.
 Standard odkazuje na OGC Filter Encoding Specification (FES) [ref49]_, pomocí
 kterého lze filtrovat požadovaná data na základně požadavků ze strany klienta.
 Pomocí FES lze nastavit počáteční a koncový hraniční čas (startTime a endTime),
@@ -693,7 +703,7 @@ klíčových slov (např. číslem revize "1.2.3" nebo datem "2014-01-20" a podo
 
 Z uvedeného vyplývá, že WFS slouží jako rozhraní k datové sadě, která obsahuje
 data v různých časových intervalech. Na data vztažená k určitému časovému
-okamžiku se lze dotazovat právě pomocí filtru dle standardu OGC FES 2.0.
+okamžiku se lze dotazovat právě pomocí filtru dle standardu FES 2.0.
 
 OGC Web Coverage Service
 ------------------------
@@ -708,7 +718,7 @@ rámci organizace OGC téma času zásadním způsobem mění, neboť se začín
 zohledňovat různé kalendáře (historické, i používané v různých kulturách či
 technických společnostech) a další s touto problematikou související komplikace.
 Viditelné je to zejména na tom, že ve starších verzích standardů býval definován
-parametr `TIME` explicitně jako vstupní parametr. U nových verzích standardů se
+parametr TIME explicitně jako vstupní parametr. U nových verzích standardů se
 čas mění v jeden z rozměrů dat. Stejně jako stávající rozměry mají své zobrazení
 a souřadnicový systém, musí mít i čas společnou referenci.
 
@@ -741,23 +751,24 @@ komfortně, lze se “vracet v čase”, získat stav souboru k určité revizi 
 podobě (GML, GeoJSON, …). Binární formáty lze technicky vzato spravovat v
 prostředí Git také, potom ale nelze využít specializované verzovací nástroje.
 
-Poskytování datových souborů (RÚIAN best practice)
+Poskytování změnových souborů (RÚIAN best practice)
 --------------------------------------------------
 
 ČÚZK zavedl pro distribuci dat Registru Územní Identifikace, Adres a Nemovitostí
 (RÚIAN) systém měsíční aktualizace stavových dat s denními dávkami změnových
-vět. Tento systém plně pokryje jak potřeby uživatele, který potřebuje
+souborů. Tento systém plně pokryje jak potřeby uživatele, který potřebuje
 jednorázově získat podkladová data, tak uživatele, který potřebuje udržovat
 aktuální obraz celé databáze, aniž by byl nucen stahovat velké objemy dat po
 síti. Možnost získat seznam přírůstků od libovolného data zvyšuje na straně
-uživatele pružnost procesu aktualizace dat. Datové sady jsou nabízeny v různě
+uživatele pružnost procesu aktualizace dat.
+*Datové sady jsou nabízeny v různě
 obsáhlých verzích, v některých případech je dokonce možné volit generalizované
 hranice. Data jsou nabízena buď pro celé území České republiky, anebo po
 jednotlivých obcích. To umožňuje při poměrně malé zátěži na straně serveru
 efektivně obsloužit velké množství klientů. Práce s aktualizací dat se přesouvá
-ze strany serveru ke klientům.
+ze strany serveru ke klientům.*
 
-V jedné věci se však RÚIAN nechová ideálně: Jednotlivé soubory a změnové věty
+V jedné věci se však RÚIAN nechová ideálně: Jednotlivé stavové a změnové soubory
 mají sice pevnou a~strojově předvídatelnou strukturu, chybí jim však centrální
 strojově zpracovatelný zdroj. Tím by mohl být například zmiňovaný formát Atom
 (viz :ref:`atom`). Podle ústního sdělení bude Atom v nejbližší době doplněn [#cuzk-atom]_.
@@ -777,11 +788,11 @@ týká jak rastrových tak vektorových dat.
 ================
 
 Nejtypičtějším příkladem 3D rastrových dat bývá digitální model reliéfu. V tomto
-případ se ale nejedná o plnohodnotná 3D data. V rastrové matici je pouze uložena
+případě se ale nejedná o plnohodnotná 3D data. V rastrové matici je pouze uložena
 výška povrchu, ale už ne informace o tom, co se děje "pod ní". Hovoříme tak o 2.5D
 datech. 
 
-Samozřejmě je možné uložit i plnohodnotná 3D rastrová data (tzv. *volumes*), obsahující např.
+Samozřejmě je možné uložit i plnohodnotná 3D rastrová data (tzv. volumes), obsahující např.
 informaci o půdním profilu, srážkovou mapu a podobně. Většina specializovaných
 GIS má pro podobná data vlastní formát. Pro technologicky neutrální distribuci
 prostorových dat však můžeme využít např. formát GeoTIFF, a jednotlivé vrstvy
@@ -790,12 +801,12 @@ uložit jako "pásma"~rastrového snímku.
 =================
 3D Vektorová data
 =================
-Prakticky všechny formáty vektorových dat dnes umožňují uložení souřadnice `z` k
+Prakticky všechny formáty vektorových dat dnes umožňují uložení souřadnice z k
 lomovým bodům. Některé formáty obsahují i speciální 3D vektorové objekty
-(ekvivalent polygonu `face`, či ekvivalent 2D centroidu pro 3D objekt `kernel`).
+(ekvivalent polygonu face, či ekvivalent 2D centroidu pro 3D objekt kernel).
 
 Pro distribuci otevřených geografických dat ve 3D by pro většinu aplikací měl
-dostačovat běžný formát (GeoPackage, Esri Shapefile, GeoJSON, GML, ...).
+dostačovat běžný formát (GeoPackage, SHP, GeoJSON, GML, ...).
 
 Pro speciální aplikace je vhodné zvážit, zda by bylo možné data distribuovat ve formátu
 CityGML (viz :ref:`citygml`). Tento formát umožňuje popsat nejen geometrický
@@ -815,14 +826,26 @@ Metadata
 Veškerá publikovaná geodata a na ně navazující webové služby je potřeba opatřit
 příslušnými metadaty.  Metadata jsou strukturovaná data o datech. Metadata
 popisují data a služby ve strojově zpracovatelném formátu tak, aby bylo možné v
-jich automaticky vyhledávat a to i na základě jejich relevance a aktuálnosti.
+nich automaticky vyhledávat a to i na základě jejich relevance a aktuálnosti.
 Pro metadata existuje množství standardů a doporučení, ale zdaleka ne všechny
 jsou vhodné pro oblast geodat.
 
 Vlastní metadata mohou (měly by) mít jak vlastní datové sady (kdo je vytvořil,
-kdy, s jakou přesností, co přibližně obsahují, z jaké oblasti přibližně data
+kdy, s jakou přesností, co obsahují, z jaké oblasti data
 jsou atd.), tak i webové služby tyto datové sady publikující (kdo provozuje
 danou službu, jaké datové sady služba publikuje, atd.).
+Metadata by měla být dostupná přes rozhraní webové
+služby OGC Catalog Service for Web (CSW) [ref37]_. Zároveň doporučujeme tuto službu
+otestovat na dostupném software (Esri ArcGIS, QGIS a další) tak, aby byla
+ověřena její praktická funkčnost a dostupnost na různých platformách.
+
+V současné době postupně do oblasti GIS a geodat pronikají vznikající standardy pro obecná otevřená data a to se týká i metadat. Otevřená provázaná data (open linked data) mají vlastní
+metadatové standardy, které jsou již v souladu s INSPIRE mapovatelné tak, aby
+bylo v těchto datových souborech možné vyhledávat pomocí CSW a obráceně,
+linkovaná geodata je možné publikovat na portálech s otevřenými daty.
+
+Legislativní pravidla pro metadata
+===================================
 
 V současné době je pro pořizování a uchovávání metadat v
 geodatové doméně klíčová  mezinárodní technická norma ISO 19115 [ref32]_. Tuto normu
@@ -832,17 +855,8 @@ pravidla směrnice INSPIRE pro metadata [ref34]_. Vlastní fyzické uložení me
 geografické datové sady nebo služby je definováno navazující technickou normou
 ISO 19139 (XML) [ref35]_. Obecně lze říci, že je vhodné držet se metadatového
 profilu České republiky [ref36]_, i když to v první fázi za vysloveně nutné
-nepovažujeme. Důležité je, aby metadata byla dostupná přes rozhraní webové
-služby OGC Catalog Service for Web (CSW) [ref37]_. Zároveň doporučujeme tuto službu
-otestovat na dostupném software (Esri ArcGIS, QGIS a další) tak, aby byla
-ověřena její praktická funkčnost a dostupnost na různých platformách.
+nepovažujeme.
 
-Pro úplnost je potřeba dodat, že postupně do domény geografických informačních
-systémů a geodat pronikají vznikající standardy pro obecná otevřená data a to se
-týká i metadat. Otevřená provázaná data *(open linked data)* mají vlastní
-metadatové standardy, které jsou již v souladu s INSPIRE mapovatelné tak, aby
-bylo v těchto datových souborech možné vyhledávat pomocí OGC CSW a obráceně,
-linkovaná geodata je možné publikovat na portálech s otevřenými daty.
 
 .. index::
     single: Souřadnicové systémy
@@ -860,11 +874,11 @@ Systém souřadnic je soustava základních údajů (referenčních bodů, pří
 křivek), umožňující určovat souřadnice polohy objektu ve zvolené vztažné
 soustavě. Protože převod tvaru Země na plochu papíru (dnes monitoru počítače) je
 vždy provázen určitou nepřesností, existuje množství systémů, které v~daném místě
-na Zemi poskytují známé a popsatelné zkreslení-nepřesnost (samozřejmě existují i
+na Zemi poskytují známé a popsatelné zkreslení-nepřesnost (nebo
 globální systémy, používané pro zobrazení celé Země).
 
 .. note:: Protože existuje množství způsobů, jak popsat konkrétní systém a
-    celkově velké množství souřadnicových systémů, bývá v oboru zvykem, že se používá databáze 
+    velké množství souřadnicových systémů, bývá v oboru zvykem, že se pro souřadnicové systémy používá databáze 
     EPSG (European Petroleum Survey Group). 
     Tu lze stáhnout ze stránek http://www.epsg-registry.org/ nebo využívat
     některou ze služeb nad touto databází postavenou, např. http://epsg.io.
@@ -875,25 +889,25 @@ souřadnicový systém S-42 (EPSG 3835 [#3835]_). Vzhledem k zániku Varšavské
 pozdějšímu přistoupení k NATO se začal místo souřadnicového systému S-42
 používat systém UTM/WGS-84 (zóny 33 - EPSG 32633 [#32633]_ a 34 - EPSG 32634 [#32634]_). Evropská
 směrnice INSPIRE [ref26]_ zejména pak ve specifikaci věnované souřadnicovým systémům
-([ref29]_, str. VII) dále pro měřítka větší než 1:500 000 mezi podporované systémy
+([ref29]_, str. VII) a pro měřítka větší než 1:500 000 mezi podporované systémy
 přidává ETRS89-TM (EPSG 3035 [#3035]_). Praxe si vynutila použití souřadnicového systému
 Spherical Mercator (EPSG 3857 [#3857]_), zavedeného firmou Google pro jejich mapové
 produkty.
 
 .. note:: Dříve používané zápisy S-JTSK, jako EPSG 2065 či ESRI/ESPG 102067, 
-    vznikly díky tomu, že v databázi EPSG nebyl přítomný kód pro Křovákovo zobrazení
+    vznikly díky tomu, že v databázi EPSG nebyl přítomný kód pro S-JTSK
     s "otočenými osami"~(a zápornými hodnotami souřadnic), tzv. "S-JTSK/Krovak
     East North". To dnes již není potřeba a všechny systémy by měly nadále
     používat EPSG 5514.
 
 ==========================================
-Obecná doporučení pro souřadnicové systémy
+Obecná doporučení souřadnicových systémů
 ==========================================
 
 Pro stahovací služby se přikláníme k publikování datových sad v jejich původních
 souřadnicových systémech, což je v praxi většinou S-JTSK. Navíc všechny
 relevantní desktopové GIS programy jsou schopny transformovat geodata do
-uživatelem požadovaných cílových souřadnicových systémů za běhu. Pokud se přeci
+uživatelem požadovaných cílových souřadnicových systémů online. Pokud se přeci
 jen ukáže, že je potřeba poskytnout některým klientům možnost stahovat data v
 jiném souřadnicovém systému, doporučujeme zprovoznit transformační souřadnicovou
 službu podle specifikace INSPIRE [ref30]_.
@@ -968,22 +982,19 @@ datové sady. Vždy je potřeba zvážit charakter dat a převládající způso
 použití. 
 
 Pro předgenerované soubory vektorových dat doporučujeme, v dlouhodobém horizontu,
-formát OGC GeoPackage. V krátkodobém horizontu lze použít i formát Esri
-Shapefile nebo OGC GML, z toho důvodu, že formát GeoPackage není zatím příliš
-rozšířen.
+formát OGC GeoPackage. V krátkodobém horizontu lze použít i formát SHP nebo GML, z toho důvodu, že formát GeoPackage není zatím příliš rozšířen.
 
 Pro publikování formou prohlížecích webových služeb (OGC WMS, WMTS) je vhodné
 volit  v závislosti na charakteru dat formáty PNG a JPEG.
 
 V případě stahovacích služeb doporučujeme pro vektorová data formát
-OGC GML a pro rastrová data potom podle jejich
+GML a pro rastrová data potom podle jejich
 charakteru GeoTIFF či JPEG.
 
 Distribuce otevřených geodat
 ----------------------------
 
-Jako primární doporučujeme využít standardy OGC OWS, zejména Web Map Service
-(WMS), Web Feature Service (WFS) a Web Coverage service (WCS).
+Jako primární doporučujeme využít standardy OGC OWS, zejména WMS, WFS a WCS.
 
 Kde to z důvodu velikosti datových sad nebo pro technická omezení na straně
 poskytovatele není možné, doporučujeme předgenerovat datové soubory ve vhodném
@@ -994,7 +1005,7 @@ Pro datové sady, které se *mění v čase* a jsou příliš velké na to, aby 
 změnou vydávala aktualizovaná verze celé sady, je vhodné publikovat jednou v
 pravidelných intervalech stavová data a současně k nim poskytovat v kratších
 časových intervalech změnové soubory. Toto řešení může výrazně snížit zatížení
-IT infrastruktury, neboť uživatele nemusí vždy stahovat celou datovou sadu ve
+IT infrastruktury, neboť uživatelé nemusí vždy stahovat celou datovou sadu ve
 formě stavových dat, ale pouze menší změnové soubory, které si sami aplikují na
 kopii datové sady tak, aby ji měli co možná nejaktuálnější. Více k tomuto tématu
 v kapitole :ref:`atom`. Více o~časových řadách v části :ref:`casove_rady`.
@@ -1012,25 +1023,25 @@ OGC WMTS
 Pro prohlížecí službu OGC WMTS je výhodné nabízet předgenerované dlaždice
 minimálně pro souřadnicové systémy EPSG 3857 (Spherical Mercator) a to ve
 schématu, ve kterém je nabízí např. mapy firmy Google, ale i projekt
-OpenStreetMap [ref52]_ (ale nakonec i služby ČÚZK) a pro souřadnicový systém S-JTSK
+OpenStreetMap [ref52]_ (nebo služby ČÚZK) a pro souřadnicový systém S-JTSK
 (EPSG 5514) ve schématu používaném servery ČÚZK [ref53]_.
 
 OGC WMS,  WFS a WCS
 ^^^^^^^^^^^^^^^^^^^
 
 Transformace mezi souřadnicovými systémy bývá u současných software poměrně
-rychlá. Opět platí, že služby by měly nabízet data především v původním
+rychlá. Služby by měly nabízet data především v původním
 souřadnicovém systému - převážně S-JTSK (EPSG 5514). Vzhledem k určité
 exotičnosti tohoto systému je vhodné navíc podporovat minimálně ETRS-89 (EPSG
-3035) a WGS84 (EPSG 4326). Spherical Mercator (EPSG 3857) není v tomto případě
-nezbytný, většina webových prohlížeček transformuje vektorová data z WGS84
+3035) a WGS 84 (EPSG 4326). Spherical Mercator (EPSG 3857) není v tomto případě
+nezbytný, většina webových aplikací transformuje vektorová data z WGS84
 automaticky, stejně tak většina desktopových nástrojů.
 
 Předgenerované vektorové a rastrové soubory
 -------------------------------------------
 
 Vzhledem k plánovaným větším objemům dat doporučujeme publikovat datové soubory
-v původním souřadnicovém systému (S-JTSK, EPSG 5514) a případně WGS84 (EPSG
+v původním souřadnicovém systému (S-JTSK, EPSG 5514) a případně WGS 84 (EPSG
 4326). Implementační pravidla směrnice INSPIRE doporučují poskytnout
 transformační službu, která umožní na straně serveru transformovat data přímo do
 cílového systému.
