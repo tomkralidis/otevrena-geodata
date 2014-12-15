@@ -18,7 +18,7 @@ společnosti. Tento fakt začíná být po vzoru našich nejbližších sousedů
 především Německa, ale i Rakouska či Velké Británie reflektován i veřejnou
 správou v České republice v podobě postupného otevírání dat. 
 
-Právě ve Velké Británii vznikly dva celosvětově nejvýznamnější hnutí v
+Právě ve Velké Británii vznikly dvě celosvětově nejvýznamnější hnutí v
 otevírání dat. Prvním z nich je nezisková organizace `Open Knowledge
 Foundation <http://cz.okfn.org/>`_ (OKFN), která se orientuje na
 propagaci otevřenosti ve znalostech a datech obecně. OKFN stojí mimo
@@ -50,7 +50,7 @@ dat sbíraných z veřejných prostředků.
 Otevírání dat je proces, který se týká několika oblastí. Kromě technických
 záležitostí se jedná především o licenční politiku, která v ideálním případě
 umožní vývojářům navazujících aplikací data předávat dál a vytvářet nad nimi
-další odvozená díla, která nebudou zatěžována žádnými restrikcemi či omezeními.
+další odvozená díla, která nebudou zatěžována žádnými restrikcemi.
 
 Obsahem této studie jsou zejména geografická data (tzv. geodata), která se ve
 velké míře řídí na rozdíl od ostatních typů dat vlastními zvyklostmi, standardy
@@ -59,7 +59,7 @@ technologií, na rozdíl od jiných technologických oblastí, podporován již 
 dobu, což výrazně ulehčuje tvorbu dalších doporučení. V současnosti drtivá
 většina výrobců softwarových produktů (proprietárních i otevřených), ale např. i
 Evropská komise skrze směrnici INSPIRE navazuje na
-existující standardy v oblasti, které pomáhá dále rozvíjet. Ty jsou vytvářeny
+existující standardy v této oblasti, které pomáhá dále rozvíjet. Standardy jsou vytvářeny
 mezinárodní standardizační organizací `Open Geospatial Consortium
 <http://www.opengeospatial.org/>`_ (OGC) a technickou komisí `ISO TC 211
 <http://www.isotc211.org/>`_.  Mezinárodní technické normy ISO mohou následně
@@ -81,17 +81,16 @@ legislativou či postoji společnosti.
 
 V současnosti těmito podmínkami myslíme zejména:
 
-* Data jsou dostupná na síti Internet a dohledatelná běžnými nástroji.
-* Data jsou čitelná, tedy v textovém či binárním formátu.
+* Data jsou dostupná na síti Internet a dohledatelná běžnými nástroji
+* Data jsou strojově čitelná, tedy v textovém či binárním formátu
 * Data musí být úplná, tj. jsou zveřejněná v takovém rozsahu, aby nechyběly
   některé fragmenty umožňující jejich využití. Data by zároveň měla být
-  zveřejněna v maximálním možném rozsahu.
-* Legislativní a technické překážky pro využití dat jsou minimální.
+  zveřejněna v maximálním možném rozsahu. //musí být úplná vs. zveřejněna v maximálním možném rozsahu - nejasný význam vět//
+* Legislativní a technické překážky pro využití dat jsou minimální
 
 .. _pet-hvezdicek:
   
-Otevírání dat přináší kromě nákladů na vlastní otevření a provoz také nemalé
-přínosy jak pro poskytovatele, tak pro uživatele. Tim Berners-Lee [ref15]_ sestavil
+Tim Berners-Lee [ref15]_ sestavil
 tzv. *pětihvězdičkový systém* hodnocení otevřenosti dat, jehož smyslem je umožnit
 jednoduchou orientaci ve stupni otevřenosti datových sad. Čím výše se datová
 sada dostane, tím větší je možnost jejího využití veřejností.
@@ -157,8 +156,8 @@ vynaložená práce. Ta je požadována zejména po poskytovateli dat, který, c
 se na určitou úroveň otevřenosti dat dostat, musí do stávajících datových sad
 dodat požadované chybějící informace.
 
-V této části textu rozebereme pozitiva otevírání dat, požadavky
-kladené na poskytovatele otevřených dat, ale i jejich uživatele.
+V této části textu rozebereme pozitiva otevírání dat a požadavky
+kladené na poskytovatele otevřených dat, i jejich uživatele.
 
 Výhody ☑ a omezení ☒ – z hlediska uživatele
 -------------------------------------------
@@ -307,9 +306,8 @@ Některé politické strany zveřejňují své finanční zprávy na Internetu. 
 automatických nástrojů (např. [ref11]_) lze zpracovat a vizualizovat mimo jiné i
 jejich aktuální finanční situaci.
 
-Jako další příklad lze uvést zveřejňování územních plánů, kdy díky tomu
-dochází k většímu zapojení veřejnosti do diskuze o budoucnosti obce [ref14]_ a
-podobně.
+Jako další příklad lze uvést zveřejňování územních plánů, díky kterému
+dochází k většímu zapojení veřejnosti do diskuze o budoucnosti obce [ref14]_.
 
 Redukce administrativy a zátěže IT infrastruktury veřejné správy
 ----------------------------------------------------------------
@@ -340,8 +338,7 @@ sad v České republice je udržován na Wiki stránce české části projektu
 OpenStreetMap [ref52]_.
 
 V této kapitole si představíme některé příklady otevírání
-geografických dat u nás i v zahraničí (v závorce uveden stupeň
-otevřenosti dat dle pětihvězdičkového systému):
+geografických dat u nás i v zahraničí (u příkladu uveden stupeň otevřenosti dat dle pětihvězdičkového systému):
 
 * Londýn
 * Chicago
@@ -351,7 +348,7 @@ otevřenosti dat dle pětihvězdičkového systému):
 * Opava
 * Český statistický úřad
 * Český úřad zeměměřický a katastrální
-* Ministerstvo zemědělství - systém LPIS
+* Ministerstvo zemědělství
 
 .. index::
     single: Londýn
@@ -395,7 +392,7 @@ Město Berlín publikuje na adrese http://daten.berlin.de volně dostupné
 datové sady vesměs pod licencí Creative Commons [ref47]_. Geodata jsou
 publikovaná pomocí proprietárního REST rozhraní, kde
 pro přenos dat využívá formáty XML a JSON. Město
-Berlín dále nabízí WFS službu a Atom na webové portálu územního plánování
+Berlín dále nabízí WFS službu a Atom na webovém portálu územního plánování
 http://www.stadtentwicklung.berlin.de/geoinformation/geodateninfrastruktur/index.shtml.
 
 .. index::
@@ -406,8 +403,8 @@ Vídeň ★★★
 
 Město Vídeň publikuje svá otevřená data na adrese
 https://open.wien.at. Geodata jsou poskytována pomocí webových služeb
-Open Geospatial Consortium (OGC). Pro tabelární data je používán
-jednoduchý formát Comma Separated Values (CSV).
+OGC. Pro tabelární data je používán
+jednoduchý formát CSV.
 
 .. index::
     single: Děčín
@@ -422,8 +419,7 @@ adrese http://www.mmdecin.cz/dokumenty/cat_view/238-otevrena-data a
 označená jako *"otevřená data"*. Uživateli je povoleno data dále šířit
 a komerčně využívat za podmínky uvedení zdroje. Data publikovaná ve
 skupině geografických a mapových dat jsou dostupná ke stažení ve
-formátu Esri Shapefile
-(SHP). Licence těchto dat není nikde na stránkách města zmíněná, lze tedy
+formátu SHP. Licence těchto dat není nikde na stránkách města zmíněná, lze tedy
 soudit, že se jedná o tzv. *public domain* -- veřejné dílo, které je
 volně k použití bez specifické licence.
 
@@ -435,7 +431,7 @@ Opava ★
 
 Podobnou cestou jako Děčín se vydalo město Opava, které na svých
 stránkách na adrese http://www.opava-city.cz/cs/mapovy-portal
-publikuje data ve formě prohlížecích služeb OGC Web Map Services (WMS)
+publikuje data ve formě prohlížecích služeb WMS
 [ref20]_ a některé mapy ve formátu PDF.
 
 .. index::
@@ -461,17 +457,17 @@ formátech CSV, DBF a XML.
 ----------------------------------------
 
 K příkladům *“best practice”* přístupů pro otevírání geodat zcela jistě patří
-aplikace *Veřejného dálkového přístupu* (VDP) k datům RÚIAN (Registr Územní
+aplikace Veřejného dálkového přístupu (VDP) k datům RÚIAN (Registr Územní
 Identifikace, Adres a Nemovitostí) provozovaná Českým úřadem zeměměřickým a
 katastrálním (ČÚZK) na adrese http://vdp.cuzk.cz/. Jedná se o projekt v~českém
 kontextu jedinečný jak svým rozsahem, tak především objemem a kvalitou
-vydávaných geodat, tak i mírou jeho využívání veřejností.
+vydávaných geodat a mírou jeho využívání veřejností.
 
 Na tomto příkladu lze demonstrovat zásadní problémy, které je potřeba pro
 úspěšné otevření geodat vyřešit. Začít můžeme obligátním “kvalitní řešení nemůže
 existovat bez kvalitních dat”. V tomto případě jsou data poskytovaná
 prostřednictvím VDP jako předgenerované soubory ve Výměnném formátu RÚIAN (VFR).
-Data jsou rozčleněna podle územních prvků a dále poskytovaná v různých verzích
+Data jsou rozčleněna podle územních jednotek a dále poskytovaná v různých verzích
 podle typu a úrovně detailu poskytované informace. Zásadním aspektem je i to, že
 jsou poskytována ve dvou formách, jako celá datová sada aktuální k prvnímu dni v
 měsíci a dále jako denní změnové soubory. Tento přístup publikovaní je velmi
@@ -479,8 +475,8 @@ výhodný, dochází k snížení zátěže IT infrastruktury na straně poskyto
 geodat a současně k zlepšení komfortu cílových uživatelů, kteří si mohou
 jednoduše udržovat svoji kopii datové sady v aktuálním stavu pravidelným
 začleňováním změnových souborů. Díky tomu vznikl kolem těchto dat velmi rychle
-relativně bohatý ekosystém nástrojů a služeb. K úspěšnosti přispěla také
-kvalitní dokumentace publikovaná s předstihem před jejím samotným spuštěním.
+relativně bohatý ekosystém nástrojů a služeb. K úspěšnosti aplikace přispěla také
+kvalitní dokumentace publikovaná s předstihem před spuštěním VDP.
 
 Z technického hlediska je formát VFR odvozen ze standardu OGC GML [ref19]_, proto je
 na straně aplikací poměrně snadno uchopitelný. To umožnilo rychlé začlenění
@@ -489,7 +485,7 @@ nástrojů. Zároveň umožňuje vyjádřit vazby mezi jednotlivými prvky s ohl
 strukturu datového modelu, ze kterého RÚIAN vychází. Je potřeba zmínit, že
 výměnný formát VFR není standardizovaný mezinárodní institucí, ale ze standardu
 (GML) vychází, je dobře dokumentovaný a jeho licence je nerestriktivní, proto se
-jedná o formát *otevřený*, i když *proprietární*.
+jedná o formát otevřený, i když proprietární.
 
 .. index::
     single: LPIS
@@ -499,11 +495,10 @@ Ministerstvo zemědělství ★★★
 ----------------------------
 
 Projekt veřejný registr půd LPIS [ref73]_ provozovaný Ministerstvem zemědělství
-představuje novou filozofii v řešení geografického
-informačního systému pro evidenci využití zemědělské půdy. Jeho základním cílem
+představuje novou filozofii v řešení GIS pro evidenci využití zemědělské půdy. Jeho základním cílem
 je umožnit bezproblémové zvládnutí administrace a kontroly žádostí o zemědělské
 dotace. LPIS poskytuje i mapové služby, které lze vyhledat v metadatovém
-katalogu. Mezi jinými je k dispozici i webová služba OGC WFS [ref21]_.
+katalogu. Mezi jinými je k dispozici i webová služba WFS [ref21]_.
 
 ***************************
 Uživatelé otevřených geodat
@@ -557,14 +552,13 @@ své znalosti dále příliš nerozvíjí. Dalším omezením, zejména pokud vy
 proprietární software, může být využívání starých verzí, které ještě nemají
 podporu novějších formátů.
 
-Pro rastrová data je pro tuto skupinu uživatelů ideální využívat data pomocí
-služeb Web Map Service (WMS), případně Web Map Tiled Service (WMTS). U
-vektorových dat je nejvhodnější stahování jednotlivých vrstev v nějakém
-rozšířeném souborovém formátu (např. Esri Shapefile).
-Použití Web Feature Services (WFS) je ideální cílový stav, ale může být
+Pro rastrová data je pro tuto skupinu uživatelů ideální využívat služby WMS, případně WMTS. U
+vektorových dat je nejvhodnější stahování jednotlivých vrstev v jednom z 
+rozšířených souborových formátů (např. SHP).
+Použití WFS je ideální cílový stav, ale může být
 problematické při větších objemech dat, který může uživatel (i když ne
-zcela vědomě) po serveru požadovat. Služba OGC WFS umožňuje odpověď "stránkovat", 
-což bohužel není na všech klientských programech běžně implementováno.
+zcela vědomě) po serveru požadovat. Řešením je "stránkování" odpovědi služby, tato možnost ale 
+bohužel není na všech klientských programech běžně implementována.
 
 Specialista GIS (geoinformatik)
 ===============================
@@ -576,25 +570,25 @@ potřebám. Kromě pokročilých analýz a vizualizací připravuje datové sady
 použití v rámci organizace jak pro vnitřní informační systémy, tak pro méně
 zkušené uživatele.
 
-Překážkou, se kterou se u GIS specialistů někdy setkáváme, je přílišná vazba na
+Překážkou, která se u této skupiny objevuje, je přílišná vazba na
 konkrétní software, se kterým pracují. Specialisté se vyhýbají použití nového,
 pro ně neznámého software a nebo jsou v~situaci, že jim zaměstnavatel či
 pracovní podmínky či oborové zvyklosti neumožní alternativní software využívat.
 
-Obvykle si budují své databáze, ve kterých se snaží udržovat aktuální kopii
+Specialisté si obvykle vytváří vlastní databáze, ve kterých se snaží udržovat aktuální kopii
 celých datových sad, což umožňuje provádět rychlé a komplexní analýzy nad
 velkými daty. Poskytují webové služby s vysokou dostupností dimenzované pro
 potřeby konkrétních aplikací. Pro udržování aktualizované datové sady je
-nejvýhodnějším způsobem distribuce poskytování stavových dat a změnových vět,
+nejvýhodnějším způsobem distribuce poskytování stavových dat a změnových souborů,
 ideálně opatřených kvalitními metadaty ve standardním formátu. V případě
 poskytování dat touto cestou je potřeba, aby bylo umožněno automatizované
 vytěžování dat, tedy umísťování souborů na odvoditelné adrese nebo předávání
-odkazy na soubory ke stažení.
+odkazů na soubory ke stažení.
 
 Datový analytik
 ===============
 
-Další skupinou uživatelů je odborník na analýzu dat bez zázemí GIS. Jelikož
+Další skupinou uživatelů je odborník na analýzu dat bez znalosti GIS. Jelikož
 nezná běžně se vyskytující datové formáty ani pravděpodobně nemá k dispozici
 potřebný software, bývá odkázán na vlastní nástroje (nejčastěji databáze a
 statistický software), pomocí nichž data zkoumá.
