@@ -87,6 +87,7 @@ standardními postupy (*fork*, *pull request*).
 | ATOM       | Atom Syndication Format je webový standard pro publikování      |
 |            | syndikovaného obsahu (obsahu, kterému byly zpětně dodány        |
 |            | aktuální informace)                                             |
++------------+-----------------------------------------------------------------+
 | DBF        | dBase byl první masověji rozšířený systém řízení báze dat       |
 +------------+-----------------------------------------------------------------+
 | CSV        | Comma-separated values (hodnoty oddělené čárkami) je jednoduchý |
@@ -120,7 +121,7 @@ standardními postupy (*fork*, *pull request*).
 |            | Evropské komise pro vybudování evropské                         |
 |            | infrastruktury prostorových informací.                          |
 +------------+-----------------------------------------------------------------+
-| IPR        | Institut plánování a rozvoje hl. m. Prahy                       |
+| IPR Praha  | Institut plánování a rozvoje hl. m. Prahy                       |
 +------------+-----------------------------------------------------------------+
 | ISO        | Mezinárodní organizace pro normalizaci                          |
 +------------+-----------------------------------------------------------------+
@@ -130,7 +131,7 @@ standardními postupy (*fork*, *pull request*).
 | JPEG       | Metoda ztrátové komprese používané pro ukládání počítačových    |
 |            | obrázků ve fotorealistické kvalitě.                             |
 +------------+-----------------------------------------------------------------+
-| KML        | Keyhole Markup Language (KML) je aplikací metajazyka XML pro    |
+| KML        | Keyhole Markup Language je aplikací metajazyka XML pro          |
 |            | publikaci, distribuci geografických dat                         |
 +------------+-----------------------------------------------------------------+
 | LPIS       | Veřejný registr půdy                                            |
@@ -144,10 +145,10 @@ standardními postupy (*fork*, *pull request*).
 | OWS        | Open Web Services, skupina otevřených webových služeb podle     |
 |            | standardů OGC                                                   |
 +------------+-----------------------------------------------------------------+
-| PNG        | PNG (Portable Network Graphics) je grafický formát určený pro   |
+| PNG        | Portable Network Graphics je grafický formát určený pro         |
 |            | bezeztrátovou kompresi rastrové grafiky                         |
 +------------+-----------------------------------------------------------------+
-| RÚIAN      | Registr územní identifikace, adres a nemovitostí (RÚIAN)        |
+| RÚIAN      | Registr územní identifikace, adres a nemovitostí                |
 |            | je jedním ze základních registrů ČR                             |
 +------------+-----------------------------------------------------------------+
 | SHP        | Formát vektorových dat Esri Shapefile                           |
@@ -162,10 +163,10 @@ standardními postupy (*fork*, *pull request*).
 |            | služby podle OGC). SOS umožňuje klientům získat ze serverů různá|
 |            | sensorová data a údaje o pozorování z nich.                     |
 +------------+-----------------------------------------------------------------+
-| SQL        | Structured Query Language (SQL) je standardizovaný dotazovací   |
+| SQL        | Structured Query Language je standardizovaný dotazovací         |
 |            | jazyk používaný pro práci s daty v relačních databázích.        |
 +------------+-----------------------------------------------------------------+
-| TIFF       | TIFF (Tag Image File Format) je jeden ze souborových formátů    |
+| TIFF       | Tag Image File Format je jeden ze souborových formátů           |
 |            | pro ukládání rastrové počítačové grafiky.                       |
 +------------+-----------------------------------------------------------------+
 | TMS        | Tile Map Service, OGC specifikace                               |
@@ -173,11 +174,11 @@ standardními postupy (*fork*, *pull request*).
 | TopoJSON   | TopoJSON je extenze pro GeoJSON umožňující uložení vektorových  |
 |            | dat v topologické formě                                         |
 +------------+-----------------------------------------------------------------+
-| URI        | URI (Uniform Resource Identifier -- jednotný identifikátor      |
+| URI        | Uniform Resource Identifier (jednotný identifikátor             |
 |            | zdroje) je textový řetězec s definovanou strukturou, který      |
 |            | slouží k přesné specifikaci zdroje informací na Internetu       |
 +------------+-----------------------------------------------------------------+
-| URL        | URL (Uniform Resource Locator -- jednotná adresa zdroje) je     |
+| URL        | Uniform Resource Locator (jednotná adresa zdroje) je            |
 |            | řetězec znaků s definovanou strukturou, který slouží k přesné   |
 |            | specifikaci umístění zdrojů informací na Internetu              |
 +------------+-----------------------------------------------------------------+
@@ -195,7 +196,7 @@ standardními postupy (*fork*, *pull request*).
 |            | podle  OGC), umožňující klientovi požadovat po serveru          |
 |            | vektorová data                                                  |
 +------------+-----------------------------------------------------------------+
-| WGS        | World Geodetic System 1984 (zkratka WGS 84), česky Světový      |
+| WGS 84     | World Geodetic System 1984, česky Světový                       |
 |            | geodetický systém 1984                                          |
 +------------+-----------------------------------------------------------------+
 | WMS        | Web Map Service, standard OGC OWS (otevřené webové služby podle |
@@ -211,13 +212,13 @@ standardními postupy (*fork*, *pull request*).
 |            | obecný značkovací jazyk, který byl vyvinut a standardizován     |
 |            | konsorciem W3C                                                  |
 +------------+-----------------------------------------------------------------+
-| XML-RPC    | XML-RPC je protokol, s jehož pomocí lze velice jednoduše        |
+| XML-RPC    | Protokol, s jehož pomocí lze velice jednoduše                   |
 |            | provádět vzdálené volání procedur.                              |
 +------------+-----------------------------------------------------------------+
-| XSD        | XML Schema (XSD) je jedno z XML schémat, jazyků pro popis XML.  |
+| XSD        | XML Schema XSD je jedno z XML schémat, jazyků pro popis XML.    |
 +------------+-----------------------------------------------------------------+
-| XSLT       | Transformace XSLT (eXtensible Stylesheet Language               |
-|            | Transformations) slouží k převodům zdrojových dat ve formátu XML|
+| XSLT       | eXtensible Stylesheet Language Transformations (Transformace    |
+|            | XSLT) slouží k převodům zdrojových dat ve formátu XML           |
 |            | do libovolného jiného požadovaného formátu                      |
 +------------+-----------------------------------------------------------------+
 | ZCHÚ       | Zvláště chráněná území                                          |
