@@ -13,7 +13,7 @@ populárního formátu RSS (který nikdy zcela nevytlačil).
 Samotný kanál a jednotlivé jeho položky musí mít uvedený název, jedinečný
 identifikátor (URI) a datum poslední změny. Data (text, XML či binární data)
 mohou být přímo součástí kanálu, to ovšem pro geodata není z pochopitelných
-důvodů vhodné a proto je lepší uvézt odkaz (`link`) na datovou sadu.
+důvodů vhodné a proto je lepší uvést odkaz (`link`) na datovou sadu.
 
 Níže uvádíme *hypotetický* příklad kanálu ve formátu Atom, který obsahuje 3
 položky, a to vrstevnice s~přesností 1, 2 a 5 metrů.
