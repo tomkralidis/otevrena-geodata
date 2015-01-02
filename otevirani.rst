@@ -51,12 +51,12 @@ Příprava datových sad pro zveřejnění by měla zahrnovat následující kro
 Pro identifikaci datových sad je vhodné zvolit kombinaci z následujících
 možností:
 
-1. dotazníkové šetření v komunitě uživatelů,
-2. analýza požadavků stávajících uživatelů,
+1. dotazníkové šetření v komunitě uživatelů
+2. analýza požadavků stávajících uživatelů
 3. analýza nákladů na zveřejnění a porovnání s náklady na stávající systém
-   distribuce,
-4. analýza složitosti zveřejnění (legislativní omezení, čištění dat, …),
-5. odhad potřeb/pozorování uživatelů.
+   distribuce
+4. analýza složitosti zveřejnění (legislativní omezení, čištění dat, …)
+5. odhad potřeb/pozorování uživatelů
 
 Důležité je nejenom jednorázově provést průzkum a odhad potřeb uživatelů, ale
 také umožnit uživatelům zpětnou vazbu směrem k poskytovateli, minimálně pomocí
@@ -88,7 +88,7 @@ odolnost celého řešení.
   infrastruktury pro poskytování otevřených dat.
 * Data jsou publikována v souladu s platnými standardy. Je možné, že stávající
   softwarové vybavení nebude tuto podmínku splňovat. Softwarové řešení může být
-  hybridní (Open Source vs. propritarní), každopádně takové, aby plnilo daný
+  hybridní (Open Source a proprietarní), každopádně takové, aby plnilo daný
   účel.
 * Pokud to licenční podmínky umožní, je vhodné v maximální míře využít
   stávajících technologií tak, aby se zbytečně nerozšiřovalo spektrum
@@ -130,7 +130,7 @@ definice souřadnicového systému poskytovaných dat lze použít transformačn
 nástroje Open Source knihovny GDAL [ref59]_. Dále je pomocí této knihovny vhodné
 ověřit konzistenci a validitu dat včetně nastavení kódování češtiny v
 poskytovaných datech. To je možné zpětným importem a porovnáním s původními
-daty. Knihovna GDAL je taktéž využívána systémem ArcGIS firmy Esri, lze ji tedy
+daty. Knihovna GDAL je taktéž využívána systémem Esri ArcGIS, lze ji tedy
 považovat za vhodnou referenční knihovnu. Pro úplnost dodáváme, že za
 ekvivaletní řešení ke knihovně GDAL pro prostředí jazyka Java lze považovat
 knihovnu GeoTools [ref63]_.
@@ -145,13 +145,13 @@ Pro automatické testování validity a dostupnosti webových služeb můžeme s
 výhodnou využít knihovnu OWSLib [ref62]_, kterou lze spouštět periodicky na serveru
 a provádět tak pravidelnou kontrolu.
 
+Pro ověření funkčnosti a dostupnosti webových služeb, ale i předgenerovaných
+rastrových dlaždic prostřednictvím služby OGC WMTS, je vhodné využít i webové
+aplikace, např. pomocí knihoven Leaf\-let~ [ref64]_ nebo OpenLayers [ref65]_. Více v :doc:`priloha-a`.
+
 U poskytovaných geodat, kde předpokládáme migraci na straně uživatele do
 geodatabáze, jakou jsou například objemnější data v relační nebo stromové
 struktuře, případně soubory se změnovými větami, je na místě tuto migraci
 otestovat. Pakliže se zaměříme na Open Source řešení, tak se jako nejvhodnější
 referenční geodatabáze jeví PostGIS [ref60]_. Zde je třeba počítat s tím, že postup
 nebude triviální a není od věci jej publikovat, například na stránkách IPR Praha. 
-
-Pro ověření funkčnosti a dostupnosti webových služeb, ale i předgenerovaných
-rastrových dlaždic prostřednictvím služby OGC WMTS, je vhodné využít i webové
-aplikace, např. pomocí knihoven Leaf\-let~ [ref64]_ nebo OpenLayers [ref65]_. Více v :doc:`priloha-a`.
