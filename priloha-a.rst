@@ -101,16 +101,16 @@ mapovým serverem MapServer je možné knihovnu GDAL použít i pro implementaci
 testů validity a konzistence publikovaných geodat.
 
 .. index::
-    single: PyCSW
+    single: pycsw
 
-PyCWS
+pycsw
 -----
 
-PyCWS [ref69]_ je serverová implementace standardu OGC CWS napsaná v jazyce Python.
-PyCWS umožňuje publikovat a vyhledávat v metadatech geografických datových sad.
+pycsw [ref69]_ je serverová implementace standardu OGC CSW napsaná v jazyce Python.
+pycsw umožňuje publikovat a vyhledávat v metadatech geografických datových sad.
 Pomocí tohoto serverového řešení lze postavit v rámci infrastruktury geodat
 (SDI) katalog metadat odpovídající v současnosti platné technické normě ISO,
-evropské směrnici INSPIRE  a souvisejícím národním profilům. PyCWS je
+evropské směrnici INSPIRE  a souvisejícím národním profilům. pycsw je
 certifikovaný OGC software.
 
 .. index::
